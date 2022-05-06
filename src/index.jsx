@@ -1,6 +1,5 @@
 import React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 import App from './components/App/App';
 
@@ -16,9 +15,7 @@ const root = ReactDOMClient.createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <App />
   </React.StrictMode>
 );
 
