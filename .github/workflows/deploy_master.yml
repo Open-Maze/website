@@ -33,6 +33,8 @@ jobs:
 
       - name: Build app
         run: |
+          npm logout
+          npx vsts-npm-auth -config .npmrc
           npm install
           npm run build
 
