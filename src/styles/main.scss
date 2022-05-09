@@ -1,2 +1,14 @@
 @import './variables';
 @import './mixin';
+
+.cta_button {
+  padding: 12.5px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: $white;
+
+  &.purple {
+    background-color: $purple;
+  }
+}

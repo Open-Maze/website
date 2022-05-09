@@ -1,10 +1,23 @@
 // Colors
 $black: #000000;
 $white: #ffffff;
+$purple: #8c1cec;
+$dark_purple: #5c0f9e;
+$blue: #32cbe4;
+$bleach: #f4f4f4;
+
 
 // Fonts
-$font: 'Manrope', Helvetica, Arial, sans-serif;
-$font-body: 'Silka', Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+$font: 'Manrope',
+Helvetica,
+Arial,
+sans-serif;
+$font-body: 'Silka',
+Helvetica,
+Arial,
+sans-serif;
 $font-h1: 53px;
 $font-h2: 34px;
 $font-h3: 28px;
@@ -35,6 +48,7 @@ $spacing-048: 48px;
 $spacing-064: 64px;
 $spacing-096: 96px;
 $spacing-128: 128px;
+$spacing-270: 270px;
 
 // Radius
 $border-radius-5: 5px;
