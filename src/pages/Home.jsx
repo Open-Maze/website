@@ -6,8 +6,8 @@ import './shared.scss';
 const Home = () => (
   // const { loading, error, data } = useFetch('http://localhost:1337/');
 
-        <div className="page home">
-          <h1>OpenMaze</h1>
-        </div>
+  <div className="page home">
+    <h1>OpenMaze</h1>
+  </div>
 );
 export default Home;
