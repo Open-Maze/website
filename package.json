@@ -31,6 +31,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
+    "lint-staged": "^12.4.1",
     "prettier": "^2.6.1",
     "sass": "^1.49.11"
   },
@@ -56,6 +57,15 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*": [
+      "npx prettier --write .",
+      "git add ."
     ]
   }
 }
