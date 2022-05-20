@@ -7,7 +7,7 @@ const Home = () => (
   // const { loading, error, data } = useFetch('http://localhost:1337/');
 
   <div className="page home">
-    <h1>Welcome to OpenMaze</h1>
+    <h1>Welcome at OpenMaze</h1>
   </div>
 );
 export default Home;
