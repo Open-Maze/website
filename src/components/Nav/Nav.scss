@@ -27,12 +27,9 @@
     font-size: 16px;
     color: $white;
 
-    &.purple {
-      background-color: $purple;
+    &.violet {
+      background-color: $violet;
       transition: all ease 0.3s;
-
-      &:hover {
-      }
     }
   }
 }

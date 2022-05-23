@@ -16,7 +16,7 @@ const Nav = () => (
         <Link to="/">contact</Link>
       </div>
       <div className="cta">
-        <Link to="/" className="cta_button purple">
+        <Link to="/" className="cta_button violet">
           Schedule demo
         </Link>
       </div>

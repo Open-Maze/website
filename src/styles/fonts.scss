@@ -1,55 +1,66 @@
 @import './variables';
 @import './mixin';
 
+@font-face {
+  font-family: 'Silka';
+  src: url('../assets/fonts/silka/silka-regular.eot');
+  src: url('../assets/fonts/silka/silka-regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/silka/silka-regular.woff2') format('woff2'),
+    url('../assets/fonts/silka/silka-regular.woff') format('woff'),
+    url('../assets/fonts/silka/silka-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Silka';
+  src: url('../assets/fonts/silka/silka-regularitalic.eot');
+  src: url('../assets/fonts/silka/silka-regularitalic.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/silka/silka-regularitalic.woff2') format('woff2'),
+    url('../assets/fonts/silka/silka-regularitalic.woff') format('woff'),
+    url('../assets/fonts/silka/silka-regularitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-  font-family: $font-body;
+  font-family: $silka;
   color: $black;
 }
 
 h1 {
-  font-size: $font-h1;
-  font-weight: $font-weight-bold;
-  line-height: 60px;
+  font-size: $fs-h1;
+  font-weight: $fw-700;
+  line-height: $lh-h1;
 }
 
 h2 {
-  font-size: $font-h2;
-  font-weight: $font-weight-bold;
-  line-height: 40px;
+  font-size: $fs-h2;
+  font-weight: $fw-700;
+  line-height: $lh-h2;
 }
 
 h3 {
-  font-size: $font-h3;
-  font-weight: $font-weight-regular;
-  line-height: 34px;
+  font-size: $fs-h3;
+  font-weight: $fw-400;
+  line-height: $lh-h3;
 }
 
 h4 {
-  font-size: $font-h4;
-  font-weight: $font-weight-regular;
-  line-height: 30px;
+  font-size: $fs-h4;
+  font-weight: $fw-400;
+  line-height: $lh-h4;
 }
 
 a,
-strong,
 span,
 li,
 input,
 textarea,
-button {
-  font-size: $font-normal;
-  font-weight: $font-weight-regular;
-  line-height: 30px;
-}
-
+button,
+select,
 p {
-  font-size: $font-normal;
-  font-weight: $font-weight-regular;
-}
-
-input,
-textarea,
-select {
-  font-family: $font-body;
-  font-weight: $font-weight-regular;
+  font-size: $fs-p;
+  font-weight: $fw-400;
+  line-height: 30px;
 }
