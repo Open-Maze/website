@@ -1,6 +1,28 @@
 @import './variables';
 @import './mixin';
 
+@font-face {
+  font-family: 'silkaregular';
+  src: url('../assets/fonts/silka/silka-regular.eot');
+  src: url('../assets/fonts/silka/silka-regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/silka/silka-regular.woff2') format('woff2'),
+    url('../assets/fonts/silka/silka-regular.woff') format('woff'),
+    url('../assets/fonts/silka/silka-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'silkaitalic';
+  src: url('../assets/fonts/silka/silka-regularitalic.eot');
+  src: url('../assets/fonts/silka/silka-regularitalic.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/silka/silka-regularitalic.woff2') format('woff2'),
+    url('../assets/fonts/silka/silka-regularitalic.woff') format('woff'),
+    url('../assets/fonts/silka/silka-regularitalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: $font-body;
   color: $black;
