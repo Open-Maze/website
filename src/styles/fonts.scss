@@ -24,31 +24,31 @@
 }
 
 body {
-  font-family: $font-body;
+  font-family: $silka;
   color: $black;
 }
 
 h1 {
-  font-size: $font-h1;
-  font-weight: $font-weight-bold;
+  font-size: $fs-h1;
+  font-weight: $fw-700;
   line-height: 60px;
 }
 
 h2 {
-  font-size: $font-h2;
-  font-weight: $font-weight-bold;
+  font-size: $fs-h2;
+  font-weight: $fw-700;
   line-height: 40px;
 }
 
 h3 {
-  font-size: $font-h3;
-  font-weight: $font-weight-regular;
+  font-size: $fs-h3;
+  font-weight: $fw-400;
   line-height: 34px;
 }
 
 h4 {
-  font-size: $font-h4;
-  font-weight: $font-weight-regular;
+  font-size: $fs-h4;
+  font-weight: $fw-400;
   line-height: 30px;
 }
 
@@ -59,19 +59,19 @@ li,
 input,
 textarea,
 button {
-  font-size: $font-normal;
-  font-weight: $font-weight-regular;
+  font-size: $fs-p;
+  font-weight: $fw-400;
   line-height: 30px;
 }
 
 p {
-  font-size: $font-normal;
-  font-weight: $font-weight-regular;
+  font-size: $fs-p;
+  font-weight: $fw-400;
 }
 
 input,
 textarea,
 select {
-  font-family: $font-body;
-  font-weight: $font-weight-regular;
+  font-family: $silka;
+  font-weight: $fw-400;
 }
