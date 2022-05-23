@@ -1,10 +1,6 @@
 @import './variables';
 @import './mixin';
 
-:root {
-  --text-color: #000;
-}
-
 body {
-  background-color: #fff;
+  background-color: $bleach;
 }
