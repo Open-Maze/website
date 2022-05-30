@@ -4,23 +4,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-h1:after {
-  content: '\A';
-  width: 9px;
-  height: 9px;
-  border-radius: 100%;
-  background: $skyline;
-  display: inline-block;
-  margin-left: 2px;
-}
-
-h2:after {
-  content: '\A';
-  width: 6px;
-  height: 6px;
-  border-radius: 100%;
-  background: $skyline;
-  display: inline-block;
-  margin-left: 2px;
-}
