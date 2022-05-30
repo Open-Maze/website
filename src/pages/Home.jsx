@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import './shared.scss';
 import Button from '../components/Button/Button';
 
@@ -9,7 +9,7 @@ const Home = () => (
     <h4>Lorem ipsum</h4>
     <h2>Our core values</h2>
     <p>Wij zijn OpenMaze, en dit zijn onze belangrijkste uitgangspunten</p>
-    <Button> TEST</Button>
+    <Button>TEST</Button>
   </div>
 );
 export default Home;

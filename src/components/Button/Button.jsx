@@ -1,10 +1,10 @@
 import React from 'react';
 import './Button.scss';
 
-export const Button = ({ children, type, onClick }) => {
-  return (
-    <button onClick={onClick} type={type}>
-      {children}
-    </button>
-  );
-};
+const Button = ({ children, onClick }) => (
+  <button onClick={onClick} type="button">
+    {children}
+  </button>
+);
+
+export default Button;
