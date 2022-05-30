@@ -20,7 +20,7 @@
     url('../assets/fonts/silka/silka-regularitalic.woff') format('woff'),
     url('../assets/fonts/silka/silka-regularitalic.ttf') format('truetype');
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
 }
 
 body {
@@ -29,26 +29,30 @@ body {
 }
 
 h1 {
+  font-family: $manrope;
   font-size: $fs-h1;
   font-weight: $fw-700;
   line-height: $lh-h1;
 }
 
 h2 {
+  font-family: $manrope;
   font-size: $fs-h2;
   font-weight: $fw-700;
   line-height: $lh-h2;
 }
 
 h3 {
+  font-family: $manrope;
   font-size: $fs-h3;
-  font-weight: $fw-400;
+  font-weight: $fw-500;
   line-height: $lh-h3;
 }
 
 h4 {
+  font-family: $manrope;
   font-size: $fs-h4;
-  font-weight: $fw-400;
+  font-weight: $fw-500;
   line-height: $lh-h4;
 }
 
