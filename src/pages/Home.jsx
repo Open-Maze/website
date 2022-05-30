@@ -9,7 +9,9 @@ const Home = () => (
     <h4>Lorem ipsum</h4>
     <h2>Our core values</h2>
     <p>Wij zijn OpenMaze, en dit zijn onze belangrijkste uitgangspunten</p>
-    <Button>TEST</Button>
+
+    <Button className="btn-purple-solid"> buynow</Button>
+    <Button className="btn-purple-outline"> buynow</Button>
   </div>
 );
 export default Home;

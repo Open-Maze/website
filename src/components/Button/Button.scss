@@ -2,9 +2,35 @@
 @import '../../styles/mixin';
 
 .btn-purple-solid {
-  background-color: $violet, border radius 10px;
+  background-color: $violet !important;
+  border-color: $violet !important;
+  border-style: solid;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 25px !important;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.btn-purple-solid:hover {
+  background-color: $white !important;
+  color: $violet;
+  border-color: $violet !important;
+  border-style: solid;
 }
 
 .btn-purple-outline {
-  background-color: $white, border radius 10px;
+  background-color: $white;
+  color: $violet;
+  border-color: $violet !important;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 8px 25px !important;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.btn-purple-outline:hover {
+  background: $violet;
+  color: white;
 }
