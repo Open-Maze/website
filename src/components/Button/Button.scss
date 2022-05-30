@@ -1,0 +1,10 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.btn-purple-solid {
+  background-color: $violet, border radius 10px;
+}
+
+.btn-purple-outline {
+  background-color: $white, border radius 10px;
+}
