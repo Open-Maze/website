@@ -46,5 +46,5 @@ jobs:
           username: ${{ secrets.OPENMAZE_STAGING_USERNAME }}
           password: ${{ secrets.OPENMAZE_STAGING_PASSWORD }}
           port: ${{ secrets.OPENMAZE_STAGING_PORT }}
-          source: "build/"
+          source: 'build/'
           target: ${{ secrets.OPENMAZE_STAGING_DIR }}
