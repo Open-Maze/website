@@ -40,10 +40,11 @@ jobs:
         run: find build/ -print
 
       - name: Deploy app
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: appleboy/scp-action@master
         with:
-          server: ${{ secrets.MASTER_IP }}
-          username: ${{ secrets.MASTER_USER }}
-          password: ${{ secrets.MASTER_PASSWORD }}
-          server-dir: ${{ secrets.MASTER_REMOTE }}
-          local-dir: build/
+          host: ${{ secrets.OPENMAZE_MASTER_HOST }}
+          username: ${{ secrets.OPENMAZE_MASTER_USERNAME }}
+          password: ${{ secrets.OPENMAZE_MASTER_PASSWORD }}
+          port: ${{ secrets.OPENMAZE_MASTER_PORT }}
+          source: 'build/'
+          target: ${{ secrets.OPENMAZE_MASTER_DIR }}
