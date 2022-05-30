@@ -1,19 +1,21 @@
 import React from 'react';
 import './Nav.scss';
 
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
 
 const Nav = () => (
   <div className="nav">
     <div className="nav-left">
-      <LogoPurpleBlue />
+      <Link to="/">
+        <LogoPurpleBlue />
+      </Link>
     </div>
     <div className="nav-right">
       <div className="nav-right-menu">
         <NavLink to="/" className="menu-item" activeClassName="active">
-          <p className={`menu-item `}>home</p>
+          <p className="menu-item">home</p>
         </NavLink>
         <NavLink to="/products" className="menu-item" activeClassName="active">
           <p className="menu-item">products</p>

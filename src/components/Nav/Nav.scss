@@ -9,6 +9,9 @@
   align-items: center;
   padding: 0 $spacing-064;
   border-bottom: 2px solid $bleach;
+  position: fixed;
+  background: $white;
+  z-index: 1;
 
   .nav-left {
     svg {
