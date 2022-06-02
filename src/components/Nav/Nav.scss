@@ -16,12 +16,14 @@
   .nav-left {
     svg {
       height: 22px;
+      margin-top: 5px;
     }
   }
 
   .nav-right {
     .nav-right-menu {
       display: flex;
+      align-items: center;
       gap: $spacing-048;
       color: $dark;
 

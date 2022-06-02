@@ -5,6 +5,8 @@ import { Link, NavLink } from 'react-router-dom';
 
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
 
+import Button from '../Button/Button';
+
 const Nav = () => (
   <div className="nav">
     <div className="nav-left">
@@ -26,9 +28,7 @@ const Nav = () => (
         <NavLink to="/contact" className="menu-item" activeClassName="active">
           <p className="menu-item">contact</p>
         </NavLink>
-        <NavLink to="/contact" className="menu-item" activeClassName="active">
-          <p className="menu-button">schedule a demo</p>
-        </NavLink>
+        <Button className="btn-purple-solid">schedule a demo</Button>
       </div>
     </div>
   </div>
