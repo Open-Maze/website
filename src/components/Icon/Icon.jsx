@@ -14,8 +14,8 @@ const Icon = ({ front, back }) => {
 
   return (
     <div className="icon">
-      <FontAwesomeIcon className="icon-front" icon={front} />
       <FontAwesomeIcon className="icon-back" icon={back} />
+      <FontAwesomeIcon className="icon-front" icon={front} />
     </div>
   );
 };
