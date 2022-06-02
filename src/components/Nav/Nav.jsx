@@ -28,7 +28,9 @@ const Nav = () => (
         <NavLink to="/contact" className="menu-item" activeClassName="active">
           <p className="menu-item">contact</p>
         </NavLink>
-        <Button className="btn-purple-solid">schedule a demo</Button>
+        <Button pageUrl="/contact" className="btn-purple-solid">
+          schedule a demo
+        </Button>
       </div>
     </div>
   </div>
