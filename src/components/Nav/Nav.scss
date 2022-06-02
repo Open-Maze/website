@@ -3,33 +3,69 @@
 
 .nav {
   width: 100%;
-  height: 110px;
+  height: 90px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 $spacing-128;
-  border: 1px solid $bleach;
+  padding: 0 $spacing-048;
+  border-bottom: 2px solid $bleach;
+  position: fixed;
+  background: $white;
+  z-index: 1;
 
-  font-size .right {
-    display: flex;
-    flex-direction: row;
-
-    .menu {
-      margin-right: 50px;
+  .nav-left {
+    svg {
+      height: 22px;
+      margin-top: 5px;
     }
   }
 
-  .cta_button {
-    padding: 12.5px 20px;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    color: $white;
+  .nav-right {
+    .nav-right-menu {
+      display: flex;
+      align-items: center;
+      gap: $spacing-048;
+      color: $dark;
 
-    &.violet {
-      background-color: $violet;
-      transition: all ease 0.3s;
+      .menu-item {
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          bottom: -4px;
+          left: 0;
+          right: 0;
+          width: 0;
+          margin: 0 auto;
+          background: $dark;
+          transition: 0.5s;
+        }
+
+        &:hover:after {
+          width: calc(100% - 2px);
+          background: $midnight;
+        }
+
+        &:hover {
+          color: $midnight;
+        }
+      }
+
+      .active {
+        color: $violet;
+        transition: 0.5s;
+
+        &:after {
+          width: 20px;
+          background: $violet;
+        }
+
+        &:hover:after {
+          background: $midnight;
+        }
+      }
     }
   }
 }

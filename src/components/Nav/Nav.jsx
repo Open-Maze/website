@@ -1,24 +1,34 @@
 import React from 'react';
 import './Nav.scss';
 
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+
+import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
+
+import Button from '../Button/Button';
 
 const Nav = () => (
   <div className="nav">
-    <div className="left">
-      <img src="" alt="Logo" />
+    <div className="nav-left">
+      <Link to="/">
+        <LogoPurpleBlue />
+      </Link>
     </div>
-    <div className="right">
-      <div className="menu">
-        <Link to="/">home</Link>
-        <Link to="/">products</Link>
-        <Link to="/">about</Link>
-        <Link to="/">contact</Link>
-      </div>
-      <div className="cta">
-        <Link to="/" className="cta_button violet">
-          Schedule demo
-        </Link>
+    <div className="nav-right">
+      <div className="nav-right-menu">
+        <NavLink to="/" className="menu-item" activeClassName="active">
+          <p className="menu-item">home</p>
+        </NavLink>
+        <NavLink to="/products" className="menu-item" activeClassName="active">
+          <p className="menu-item">products</p>
+        </NavLink>
+        <NavLink to="/about" className="menu-item" activeClassName="active">
+          <p className="menu-item">about</p>
+        </NavLink>
+        <NavLink to="/contact" className="menu-item" activeClassName="active">
+          <p className="menu-item">contact</p>
+        </NavLink>
+        <Button className="btn-purple-solid">schedule a demo</Button>
       </div>
     </div>
   </div>

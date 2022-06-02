@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.icon {
+  font-size: 57px;
+  position: relative;
+
+  .icon-front {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    filter: drop-shadow(2px 0 4px rgba(0, 0, 0, 0.23));
+    backdrop-filter: blur(2px);
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .icon-back {
+    color: $skyline;
+    position: absolute;
+    top: 0;
+    left: 15px;
+  }
+}

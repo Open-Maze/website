@@ -29,26 +29,50 @@ body {
 }
 
 h1 {
+  font-family: $manrope;
   font-size: $fs-h1;
   font-weight: $fw-700;
   line-height: $lh-h1;
+
+  &:after {
+    content: '\A';
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    background: $skyline;
+    display: inline-block;
+    margin-left: 2px;
+  }
 }
 
 h2 {
+  font-family: $manrope;
   font-size: $fs-h2;
   font-weight: $fw-700;
   line-height: $lh-h2;
+
+  &:after {
+    content: '\A';
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: $skyline;
+    display: inline-block;
+    margin-left: 2px;
+  }
 }
 
 h3 {
+  font-family: $manrope;
   font-size: $fs-h3;
-  font-weight: $fw-400;
+  font-weight: $fw-500;
   line-height: $lh-h3;
 }
 
 h4 {
+  font-family: $manrope;
   font-size: $fs-h4;
-  font-weight: $fw-400;
+  font-weight: $fw-500;
   line-height: $lh-h4;
 }
 
@@ -63,4 +87,17 @@ p {
   font-size: $fs-p;
   font-weight: $fw-400;
   line-height: 30px;
+}
+
+::selection {
+  color: #fff;
+  background: $violet;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+img::selection {
+  color: #fff;
+  background: $midnight;
 }
