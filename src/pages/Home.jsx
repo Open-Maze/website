@@ -11,6 +11,8 @@ const Home = () => (
     <p>Wij zijn OpenMaze, en dit zijn onze belangrijkste uitgangspunten</p>
 
     <Button className="btn-purple-solid"> buynow</Button>
+    <br />
+    <br />
     <Button className="btn-purple-outline"> buynow</Button>
   </div>
 );
