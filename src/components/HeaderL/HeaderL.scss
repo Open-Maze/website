@@ -1,0 +1,67 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.header_l {
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url('../../assets/images/logo/header-l-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .left {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      margin-bottom: $spacing-024;
+    }
+
+    p {
+      margin-bottom: $spacing-024;
+    }
+
+    .buttons button:first-child {
+      margin-right: $spacing-024;
+    }
+  }
+
+  .right {
+    max-width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .header_l {
+    .left,
+    .right {
+      max-width: 40%;
+    }
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .header_l {
+    .right {
+      display: none;
+    }
+
+    .left {
+      max-width: 90%;
+
+      .buttons button:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 383px) {
+  .header_l .left .buttons button:first-child {
+    margin-bottom: 10px;
+  }
+}
