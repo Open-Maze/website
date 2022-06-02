@@ -88,3 +88,16 @@ p {
   font-weight: $fw-400;
   line-height: 30px;
 }
+
+::selection {
+  color: #fff;
+  background: $violet;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+img::selection {
+  color: #fff;
+  background: $midnight;
+}
