@@ -30,6 +30,7 @@
 
       .menu-item {
         position: relative;
+        transition: all 0.3s ease-out;
 
         &:after {
           content: '';
@@ -41,22 +42,21 @@
           width: 0;
           margin: 0 auto;
           background: $dark;
-          transition: 0.5s;
+          transition: all 0.3s ease-out;
         }
 
         &:hover:after {
           width: calc(100% - 2px);
-          background: $midnight;
+          background: $violet;
         }
 
         &:hover {
-          color: $midnight;
+          color: $violet;
         }
       }
 
       .active {
         color: $violet;
-        transition: 0.5s;
 
         &:after {
           width: 20px;
@@ -64,7 +64,7 @@
         }
 
         &:hover:after {
-          background: $midnight;
+          background: $violet;
         }
       }
     }
