@@ -16,7 +16,7 @@ const Home = () => (
     <br />
     <br />
     <Button className="btn-purple-outline">Learn more</Button>
-  
+
     <Input
       value={inputValue}
       handleChange={(event) => {
