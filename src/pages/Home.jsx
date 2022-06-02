@@ -18,10 +18,14 @@ const Home = () => {
       <p>Wij zijn OpenMaze, en dit zijn onze belangrijkste uitgangspunten</p>
       <br />
       <br />
-      <Button className="btn-purple-solid">Learn more</Button>
+      <Button pageUrl="/contact" className="btn-purple-solid">
+        Learn more
+      </Button>
       <br />
       <br />
-      <Button className="btn-purple-outline">Learn more</Button>
+      <Button pageUrl="/contact" className="btn-purple-outline">
+        Learn more
+      </Button>
       <br />
       <br />
       <Input
