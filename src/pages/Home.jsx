@@ -35,6 +35,8 @@ const Home = () => {
       <br />
       <br />
       <Icon front="heart" back="circle" />
+      <Icon front="rocket" back="circle" />
+      <Icon front="user" back="circle" />
     </div>
   );
 };
