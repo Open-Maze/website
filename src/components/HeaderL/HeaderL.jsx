@@ -1,7 +1,7 @@
 import React from 'react';
 import './HeaderL.scss';
 import Button from '../Button/Button';
-import headerSvg from '../../assets/images/illustrations/header-l.svg';
+import headerSvg from '../../assets/images/illustrations/header.svg';
 
 const HeaderL = () => (
   <section className="header_l">
