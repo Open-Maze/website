@@ -101,3 +101,43 @@ img::selection {
   color: #fff;
   background: $midnight;
 }
+
+@media only screen and (max-width: 1245px) {
+  h1 {
+    font-size: $fs-h2;
+
+    &:after {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  h2 {
+    font-size: $fs-h3;
+
+    &:after {
+      width: 5px;
+      height: 5px;
+      margin-left: 2px;
+    }
+  }
+
+  h3 {
+    font-size: $fs-h4;
+  }
+
+  h4 {
+    font-size: $fs-h5;
+  }
+
+  a,
+  span,
+  li,
+  input,
+  textarea,
+  button,
+  select,
+  p {
+    font-size: $fs-p-small;
+  }
+}

@@ -4,12 +4,14 @@ import './shared.scss';
 import Input from '../components/Input/Input';
 import Button from '../components/Button/Button';
 import Icon from '../components/Icon/Icon';
+import HeaderL from '../components/HeaderL/HeaderL';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
 
   return (
     <div className="page home">
+      <HeaderL />
       <h1>Welcome at OpenMaze</h1>
       <h4>Lorem ipsum</h4>
       <h2>Our core values</h2>
