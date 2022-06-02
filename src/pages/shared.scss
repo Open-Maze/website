@@ -4,9 +4,13 @@
 .page {
   height: 100%;
   min-height: 100vh;
-  padding: $spacing-048;
+  overflow: hidden;
+
+  .section {
+    padding: $spacing-048;
+  }
 
   h1 {
-    margin-top: $spacing-096;
+    // margin-top: $spacing-096;
   }
 }
