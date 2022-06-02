@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.btn-purple-solid {
+  color: $white;
+  border: 2px solid $violet;
+  border-radius: 10px;
+  padding: 8px 25px !important;
+  background-color: $violet !important;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    background-color: #841be0 !important;
+    border: 2px solid #841be0;
+  }
+}
+
+.btn-purple-outline {
+  color: $violet;
+  border: 2px solid $violet;
+  border-radius: 10px;
+  padding: 8px 25px !important;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    background-color: #841be0;
+    color: $white;
+  }
+}
