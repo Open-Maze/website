@@ -1,5 +1,6 @@
 import React from 'react';
 import './shared.scss';
+
 import Button from '../components/Button/Button';
 
 const Home = () => (
@@ -10,10 +11,10 @@ const Home = () => (
     <h2>Our core values</h2>
     <p>Wij zijn OpenMaze, en dit zijn onze belangrijkste uitgangspunten</p>
 
-    <Button className="btn-purple-solid"> buynow</Button>
+    <Button className="btn-purple-solid">Learn more</Button>
     <br />
     <br />
-    <Button className="btn-purple-outline"> buynow</Button>
+    <Button className="btn-purple-outline">Learn more</Button>
   </div>
 );
 export default Home;

@@ -1,11 +1,12 @@
 import React from 'react';
 import './Button.scss';
+
 import { motion } from 'framer-motion';
 
 const Button = ({ children, onClick, className }) => (
   <motion.button
-    whileHover={{ scale: 0.9 }}
-    whileTap={{ scale: 0.7 }}
+    whileHover={{ scale: 0.95 }}
+    whileTap={{ scale: 0.9 }}
     onClick={onClick}
     type="button"
     className={className}
