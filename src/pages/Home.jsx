@@ -11,6 +11,7 @@ const Home = () => {
       <h4>Lorem ipsum</h4>
       <h2>Our core values</h2>
       <p>Wij zijn OpenMaze, en dit zijn onze belangrijkste uitgangspunten</p>
+
       <Input
         value={inputValue}
         handleChange={(event) => {
