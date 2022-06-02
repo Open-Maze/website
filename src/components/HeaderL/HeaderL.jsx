@@ -1,9 +1,10 @@
 import React from 'react';
 import './HeaderL.scss';
-import Button from '../components/Button/Button';
+import Button from '../Button/Button';
+import headerSvg from '../../assets/images/illustrations/header-l.svg';
 
 const HeaderL = () => (
-  <div className="header_l">
+  <section className="header_l">
     <div className="left">
       <h1>Welcome to OpenMaze</h1>
       <p>
@@ -16,9 +17,9 @@ const HeaderL = () => (
       </div>
     </div>
     <div className="right">
-      <img src="" alt="" />
+      <img src={headerSvg} alt="Illustration" />
     </div>
-  </div>
+  </section>
 );
 
 export default HeaderL;
