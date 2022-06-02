@@ -1,5 +1,6 @@
 import React from 'react';
 import './shared.scss';
+
 import HeaderS from '../components/HeaderS/HeaderS';
 import headerSvg from '../assets/images/illustrations/header.svg';
 
