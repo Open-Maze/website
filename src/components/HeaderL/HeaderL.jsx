@@ -12,8 +12,12 @@ const HeaderL = () => (
         interdum interdum.
       </p>
       <div className="buttons">
-        <Button className="btn-purple-solid">Schedule demo</Button>
-        <Button className="btn-purple-outline">See more</Button>
+        <Button pageUrl="/contact" className="btn-purple-solid">
+          Schedule demo
+        </Button>
+        <Button pageUrl="/contact" className="btn-purple-outline">
+          See more
+        </Button>
       </div>
     </div>
     <div className="right">
