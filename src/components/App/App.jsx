@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import { createMemoryHistory } from 'history';
 
 import Nav from '../Nav/Nav';
