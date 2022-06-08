@@ -5,6 +5,7 @@ import Input from '../components/Input/Input';
 import Button from '../components/Button/Button';
 import Icon from '../components/Icon/Icon';
 import HeaderL from '../components/HeaderL/HeaderL';
+import ContactCardS from '../components/ContactCardS/ContactCardS';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
@@ -41,6 +42,9 @@ const Home = () => {
       <Icon front="heart" back="circle" />
       <Icon front="rocket" back="circle" />
       <Icon front="user" back="circle" />
+      <br />
+      <br />
+      <ContactCardS />
     </div>
   );
 };
