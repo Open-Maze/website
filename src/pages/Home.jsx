@@ -7,6 +7,7 @@ import Icon from '../components/Icon/Icon';
 import HeaderL from '../components/HeaderL/HeaderL';
 import Information from '../components/Information/Information';
 import FeatureComponent from '../components/FeatureComponent/FeatureComponent';
+import ContactCardS from '../components/ContactCardS/ContactCardS';
 
 import Svg from '../assets/images/illustrations/header.svg';
 import IphonePlaceholder from '../assets/images/iphone-placeholder.png';
@@ -60,6 +61,9 @@ const Home = () => {
       <Icon front="heart" back="circle" />
       <Icon front="rocket" back="circle" />
       <Icon front="user" back="circle" />
+      <br />
+      <br />
+      <ContactCardS />
     </div>
   );
 };
