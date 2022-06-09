@@ -5,6 +5,9 @@ import Input from '../components/Input/Input';
 import Button from '../components/Button/Button';
 import Icon from '../components/Icon/Icon';
 import HeaderL from '../components/HeaderL/HeaderL';
+import Information from '../components/Information/Information';
+
+import Svg from '../assets/images/illustrations/header.svg';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
@@ -35,6 +38,14 @@ const Home = () => {
         }}
         label="Voornaam"
         placeholder="Voornaam"
+      />
+      <Information
+        title="About us"
+        description="OpenMaze aims to provide users of online educational environments with greater insight into their own learning journey and performance through the use of AI-based tools. The use of such tooling often means that people working in the educational sector have to do less menial tasks."
+        buttonLabel="View more"
+        buttonLink="/about"
+        image={Svg}
+        flipped
       />
       <br />
       <br />
