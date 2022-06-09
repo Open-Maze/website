@@ -39,7 +39,7 @@ const Home = () => {
           setInputValue(event.target.value);
         }}
         label="Voornaam"
-        placeholder="Stijn"
+        placeholder="Voornaam"
       />
       <Information
         title="About us"
