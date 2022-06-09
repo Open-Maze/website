@@ -37,7 +37,7 @@
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: $break-lg) {
   .header_l {
     .left,
     .right {
@@ -46,7 +46,7 @@
   }
 }
 
-@media only screen and (max-width: 825px) {
+@media only screen and (max-width: $break-md) {
   .header_l {
     .right {
       display: none;
@@ -62,7 +62,7 @@
   }
 }
 
-@media only screen and (max-width: 383px) {
+@media only screen and (max-width: $break-sm) {
   .header_l .left .buttons button:first-child {
     margin-bottom: 10px;
   }
