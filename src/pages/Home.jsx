@@ -34,6 +34,14 @@ const Home = () => {
       </Button>
       <br />
       <br />
+      <Button pageUrl="/contact" className="btn-blue-solid">
+        Learn more
+      </Button>
+      <br />
+      <br />
+      <Button pageUrl="/contact" className="btn-blue-outline">
+        Learn more
+      </Button>
       <Input
         value={inputValue}
         handleChange={(event) => {
