@@ -17,17 +17,17 @@ const Footer = () => (
         </Link>
       </div>
       <div className="footer-middle">
-        <NavLink to="/" className="menu-item" activeClassName="active">
-          <p className="menu-item">home</p>
+        <NavLink to="/" className="menu-item-footer" activeClassName="active">
+          <p className="menu-item-footer">home</p>
         </NavLink>
-        <NavLink to="/products" className="menu-item" activeClassName="active">
-          <p className="menu-item">products</p>
+        <NavLink to="/products" className="menu-item-footer" activeClassName="active">
+          <p className="menu-item-footer">products</p>
         </NavLink>
-        <NavLink to="/about" className="menu-item" activeClassName="active">
-          <p className="menu-item">about</p>
+        <NavLink to="/about" className="menu-item-footer" activeClassName="active">
+          <p className="menu-item-footer">about</p>
         </NavLink>
-        <NavLink to="/contact" className="menu-item" activeClassName="active">
-          <p className="menu-item">contact</p>
+        <NavLink to="/contact" className="menu-item-footer" activeClassName="active">
+          <p className="menu-item-footer">contact</p>
         </NavLink>
       </div>
       <div className="footer-right">
@@ -42,6 +42,9 @@ const Footer = () => (
     </div>
     <div className="copyright">
       <p>Copyright &copy; 2022 OpenMaze</p>
+      <div className="footer-right-arrow-sm">
+        <FontAwesomeIcon icon={solid('circle-arrow-up')} />
+      </div>
     </div>
   </div>
 );

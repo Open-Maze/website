@@ -5,7 +5,6 @@
   width: 100%;
   background: $white;
   bottom: 0;
-  height: 90px;
   display: flex;
   padding: 0 $spacing-048;
   justify-content: space-between;
@@ -23,7 +22,7 @@
 .footer-middle {
   display: flex;
 
-  .menu-item {
+  .menu-item-footer {
     position: relative;
     color: $light;
     padding: 0 $spacing-016;
@@ -64,8 +63,63 @@
   color: $light;
   bottom: 0;
   height: 70px;
+  flex-direction: column;
   display: flex;
   padding: 0 $spacing-048;
   justify-content: center;
   align-items: center;
+
+  svg {
+    color: $violet;
+    height: 22px;
+    position: relative;
+    padding: 0 $spacing-016;
+  }
+}
+
+.footer-right-arrow-sm {
+  display: none;
+}
+
+@media only screen and (max-width: $break-lg) {
+  .footer {
+    padding: 0;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-left {
+    padding: $spacing-048 $spacing-048 0;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: $spacing-048;
+  }
+
+  .menu-item-footer {
+    padding: 0 !important;
+  }
+
+  .footer-right {
+    padding: $spacing-048;
+    border-top: 2px solid $bleach;
+    .footer-right-arrow {
+      display: none;
+    }
+  }
+
+  .footer-right-arrow-sm {
+    display: block;
+    margin-left: auto;
+  }
+
+  .copyright {
+    padding: $spacing-048;
+    p {
+      margin-right: auto;
+    }
+  }
 }
