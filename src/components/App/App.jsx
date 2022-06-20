@@ -9,6 +9,7 @@ import HeaderL from '../HeaderL/HeaderL';
 import Information from '../Information/Information';
 import FeatureComponent from '../FeatureComponent/FeatureComponent';
 import ContactCardS from '../ContactCardS/ContactCardS';
+import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 
 import Svg from '../../assets/images/illustrations/header.svg';
@@ -77,6 +78,7 @@ const App = () => {
         <br />
         <ContactCardS />
       </div>
+      <Contact />
       <Footer />
     </div>
   );

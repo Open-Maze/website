@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.contact-area {
+  background-color: white;
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  max-width: $break-2xl;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: $spacing-024;
+}
+
+p {
+  margin-bottom: $spacing-024;
+}
+
+.left {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button:first-child {
+  margin-right: $spacing-024;
+}
