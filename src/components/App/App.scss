@@ -17,11 +17,11 @@
     .core-values-cards {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: $spacing-032;
+      gap: $spacing-040;
       margin-top: $spacing-080;
 
       h3 {
-        margin: $spacing-016 0;
+        margin: $spacing-024 0;
       }
 
       @media only screen and (max-width: $break-2xl) {
