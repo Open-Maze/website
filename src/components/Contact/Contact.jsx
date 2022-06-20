@@ -13,7 +13,7 @@ const Contact = () => (
           Vivamus interdum interdum.
         </p>
         <div className="buttons">
-          <Button pageUrl="/contact" className="btn-purple-solid">
+          <Button pageUrl="tel:0401234567" className="btn-purple-solid">
             Call now
           </Button>
         </div>
