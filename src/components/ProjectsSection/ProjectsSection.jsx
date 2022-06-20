@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 
-import './ProjectSection.scss';
+import './ProjectsSection.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import IphonePlaceholder from '../../assets/images/iphone-placeholder.png';
 
