@@ -45,7 +45,6 @@ const App = () => (
         buttonLabel="View more"
         buttonLink="/about"
         image={Svg}
-        flipped
       />
       <ProjectsSection />
     </div>
