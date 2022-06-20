@@ -47,7 +47,6 @@ const App = () => (
         image={Svg}
         flipped
       />
-
       <ProjectsSection />
     </div>
     <Footer />

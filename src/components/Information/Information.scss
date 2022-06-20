@@ -2,64 +2,65 @@
 @import '../../styles/mixin';
 
 .information {
-  width: 100vw;
-  height: 100vh;
   background-color: $white;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 
-  .left {
-    max-width: 30%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-
-    h1 {
-      margin-bottom: $spacing-024;
-    }
-
-    p {
-      margin-bottom: $spacing-024;
-    }
-
-    .buttons button:first-child {
-      margin-right: $spacing-024;
-    }
-  }
-
-  .right {
-    max-width: 30%;
-  }
-}
-
-@media only screen and (max-width: $break-lg) {
-  .information {
-    .left,
-    .right {
-      max-width: 40%;
-    }
-  }
-}
-
-@media only screen and (max-width: $break-md) {
-  .information {
-    .right {
-      display: none;
-    }
+  .information-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-080;
+    align-items: center;
+    max-width: $break-2xl;
+    margin: $spacing-160 auto;
 
     .left {
-      max-width: 90%;
+      background-color: yellow;
+
+      h1 {
+        margin-bottom: $spacing-024;
+      }
+
+      p {
+        margin-bottom: $spacing-024;
+      }
 
       .buttons button:first-child {
-        margin-right: 10px;
+        margin-right: $spacing-024;
+      }
+    }
+
+    .right {
+      background-color: red;
+    }
+  }
+
+  @media only screen and (max-width: $break-lg) {
+    .information {
+      .left,
+      .right {
+        max-width: 40%;
       }
     }
   }
-}
 
-@media only screen and (max-width: $break-sm) {
-  .information .left .buttons button:first-child {
-    margin-bottom: 10px;
+  @media only screen and (max-width: $break-md) {
+    .information {
+      .right {
+        display: none;
+      }
+
+      .left {
+        max-width: 90%;
+
+        .buttons button:first-child {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $break-sm) {
+    .information .left .buttons button:first-child {
+      margin-bottom: 10px;
+    }
   }
 }
