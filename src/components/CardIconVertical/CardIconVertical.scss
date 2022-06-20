@@ -2,4 +2,8 @@
 @import '../../styles/mixin';
 
 .card-icon-vertical {
+  width: 100%;
+  background-color: $white;
+  border-radius: $br-10;
+  padding: $spacing-032;
 }
