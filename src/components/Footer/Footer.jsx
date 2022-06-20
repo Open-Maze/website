@@ -1,8 +1,6 @@
 import React from 'react';
 import './Footer.scss';
 
-import { Link, NavLink } from 'react-router-dom';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
@@ -12,23 +10,9 @@ const Footer = () => (
   <div>
     <div className="footer">
       <div className="footer-left">
-        <Link to="/">
+        <a href="/">
           <LogoPurpleBlue />
-        </Link>
-      </div>
-      <div className="footer-middle">
-        <NavLink to="/" className="menu-item-footer" activeClassName="active">
-          <p className="menu-item-footer">home</p>
-        </NavLink>
-        <NavLink to="/products" className="menu-item-footer" activeClassName="active">
-          <p className="menu-item-footer">products</p>
-        </NavLink>
-        <NavLink to="/about" className="menu-item-footer" activeClassName="active">
-          <p className="menu-item-footer">about</p>
-        </NavLink>
-        <NavLink to="/contact" className="menu-item-footer" activeClassName="active">
-          <p className="menu-item-footer">contact</p>
-        </NavLink>
+        </a>
       </div>
       <div className="footer-right">
         <FontAwesomeIcon icon={brands('instagram')} />
