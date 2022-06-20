@@ -1,13 +1,16 @@
 @import '../../styles/variables';
 @import '../../styles/mixin';
 
-.contact-area {
+.contact {
   background-color: white;
-  display: flex;
-  height: 60vh;
-  align-items: center;
-  max-width: $break-2xl;
-  margin: 0 auto;
+
+  .contact-area {
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    max-width: $break-2xl;
+    margin: 0 auto;
+  }
 }
 
 h2 {
