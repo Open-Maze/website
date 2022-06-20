@@ -11,6 +11,7 @@ import ContactCardS from '../components/ContactCardS/ContactCardS';
 
 import Svg from '../assets/images/illustrations/header.svg';
 import IphonePlaceholder from '../assets/images/iphone-placeholder.png';
+import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
@@ -72,6 +73,9 @@ const Home = () => {
       <br />
       <br />
       <ContactCardS />
+      <br />
+      <br />
+      <ProjectsSection />
     </div>
   );
 };
