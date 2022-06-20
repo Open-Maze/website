@@ -5,6 +5,7 @@ import Nav from '../Nav/Nav';
 import HeaderL from '../HeaderL/HeaderL';
 import CardIconVertical from '../CardIconVertical/CardIconVertical';
 import Information from '../Information/Information';
+import ContactCardS from '../ContactCardS/ContactCardS';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import ProjectsSection from '../ProjectsSection/ProjectsSection';
@@ -49,6 +50,8 @@ const App = () => (
         flipped
       />
       <ProjectsSection />
+
+      <ContactCardS />
       <Contact />
     </div>
     <Footer />

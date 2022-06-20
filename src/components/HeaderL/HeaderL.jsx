@@ -14,8 +14,8 @@ const HeaderL = () => (
         </h1>
         <p>
           <mark>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam ac commodo erat, quis venenatis turpis.
-            Vivamus interdum interdum.
+            We aim to provide users of online educational environments with greater insight into their own learning
+            journey and performance through the use of AI-based tools.
           </mark>
         </p>
         <div className="buttons">

@@ -2,4 +2,40 @@
 @import '../../styles/mixin';
 
 .ContactCardS {
+  background-color: $light;
+  display: flex;
+  align-items: center;
+  padding: $spacing-024;
+  border-radius: 20px;
+  width: fit-content;
+
+  .left {
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: rgba(116, 21, 197, 0.3);
+    padding: auto;
+
+    svg {
+      color: $midnight;
+      height: 22px;
+      position: relative;
+      padding: 0 $spacing-016;
+    }
+  }
+
+  .middle {
+    padding: 0 $spacing-016;
+  }
+
+  .right {
+    p {
+      color: $midnight;
+      padding: 0 $spacing-016;
+    }
+  }
 }
