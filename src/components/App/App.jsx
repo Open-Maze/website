@@ -7,6 +7,7 @@ import CardIconVertical from '../CardIconVertical/CardIconVertical';
 import Information from '../Information/Information';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
+import ProjectsSection from '../ProjectsSection/ProjectsSection';
 
 import Svg from '../../assets/images/illustrations/header.svg';
 
@@ -47,6 +48,7 @@ const App = () => (
         image={Svg}
         flipped
       />
+      <ProjectsSection />
       <Contact />
     </div>
     <Footer />
