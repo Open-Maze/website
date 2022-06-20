@@ -3,33 +3,26 @@
 
 .information {
   background-color: $white;
+  padding: $spacing-160 0;
 
   .information-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: $spacing-080;
+    gap: $spacing-160;
     align-items: center;
     max-width: $break-2xl;
-    margin: $spacing-160 auto;
+    margin: 0 auto;
 
     .left {
-      background-color: yellow;
-
-      h1 {
-        margin-bottom: $spacing-024;
-      }
-
       p {
-        margin-bottom: $spacing-024;
-      }
-
-      .buttons button:first-child {
-        margin-right: $spacing-024;
+        margin: $spacing-040 0;
       }
     }
 
     .right {
-      background-color: red;
+      img {
+        width: 100%;
+      }
     }
   }
 
