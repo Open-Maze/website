@@ -1,34 +1,44 @@
 import React from 'react';
 import './Information.scss';
+
 import Button from '../Button/Button';
 
 const Information = ({ title, description, buttonLabel, buttonLink, image, flipped }) => {
-  let flexDirection;
+  let orderLeft;
+  let orderRight;
   if (flipped) {
-    flexDirection = {
-      flexDirection: 'row-reverse',
+    orderLeft = {
+      order: '1',
+    };
+    orderRight = {
+      order: '2',
     };
   } else {
-    flexDirection = {
-      flexDirection: 'row',
+    orderLeft = {
+      order: '2',
+    };
+    orderRight = {
+      order: '1',
     };
   }
 
   return (
-    <section className="information" style={flexDirection}>
-      <div className="left">
-        <h1>{title}</h1>
-        <p>{description}</p>
-        <div className="buttons">
-          <Button pageUrl={buttonLink} className="btn-purple-solid">
-            {buttonLabel}
-          </Button>
+    <div className="information">
+      <div className="information-wrapper">
+        <div className="left" style={orderLeft}>
+          <h1>{title}</h1>
+          <p>{description}</p>
+          <div className="buttons">
+            <Button pageUrl={buttonLink} className="btn-purple-solid">
+              {buttonLabel}
+            </Button>
+          </div>
+        </div>
+        <div className="right" style={orderRight}>
+          <img src={image} alt="Illustration" />
         </div>
       </div>
-      <div className="right">
-        <img src={image} alt="Illustration" />
-      </div>
-    </section>
+    </div>
   );
 };
 
