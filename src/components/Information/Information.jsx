@@ -3,7 +3,7 @@ import './Information.scss';
 
 import Button from '../Button/Button';
 
-const Information = ({ title, description, buttonLabel, buttonLink, image, flipped }) => {
+const Information = ({ subtitle, title, description, buttonLabel, buttonLink, image, flipped }) => {
   let orderLeft;
   let orderRight;
   if (flipped) {
@@ -26,6 +26,7 @@ const Information = ({ title, description, buttonLabel, buttonLink, image, flipp
     <div className="information">
       <div className="information-wrapper">
         <div className="left" style={orderLeft}>
+          <h4>{subtitle}</h4>
           <h1>{title}</h1>
           <p>{description}</p>
           <div className="buttons">

@@ -14,6 +14,10 @@
     max-width: $break-2xl;
     margin: $spacing-160 auto;
 
+    h2 {
+      margin-top: $spacing-008;
+    }
+
     .core-values-cards {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;

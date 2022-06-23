@@ -42,6 +42,7 @@ const App = () => (
         </div>
       </div>
       <Information
+        subtitle="Lorem ipsum"
         title="About us"
         description="OpenMaze aims to provide users of online educational environments with greater insight into their own learning journey and performance through the use of AI-based tools. The use of such tooling often means that people working in the educational sector have to do less menial tasks."
         buttonLabel="View more"
@@ -49,7 +50,6 @@ const App = () => (
         image={Svg}
       />
       <ProjectsSection />
-
       <ContactCardS />
       <Contact />
     </div>
