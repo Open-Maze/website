@@ -3,22 +3,19 @@
 
 .contact {
   background-color: $white;
+  padding: $spacing-160 0;
 
   .contact-area {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-160;
     align-items: center;
-    height: 60vh;
     max-width: $break-2xl;
     margin: 0 auto;
 
     .left {
-      max-width: 30%;
-      display: flex;
-      flex-direction: column;
-
       p {
-        margin: $spacing-024 0;
+        margin: $spacing-040 0;
       }
     }
 

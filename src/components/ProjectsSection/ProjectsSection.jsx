@@ -1,7 +1,8 @@
-import { React, useState } from 'react';
-
+import React, { useState } from 'react';
 import './ProjectsSection.scss';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import IphonePlaceholder from '../../assets/images/iphone-placeholder.png';
 
 const ProjectsSection = () => {
@@ -10,8 +11,9 @@ const ProjectsSection = () => {
   const [isActive3, setIsActive3] = useState(false);
 
   return (
-    <section className="projects_section">
+    <div className="projects_section">
       <div className="left">
+        <h4>Lorem ipsum</h4>
         <h2>Solutions for every subject, student and school</h2>
         <div className="bottom">
           <button
@@ -93,7 +95,7 @@ const ProjectsSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
