@@ -2,12 +2,13 @@
 @import '../../styles/mixin';
 
 .ContactCardS {
-  background-color: $light;
+  background-color: $bleach;
   display: flex;
   align-items: center;
-  padding: $spacing-024;
+  justify-content: flex-start;
+  padding: $spacing-024 $spacing-024;
   border-radius: 20px;
-  width: fit-content;
+  min-width: 100%;
 
   .left {
     width: 52px;
@@ -16,8 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100px;
-    background-color: rgba(116, 21, 197, 0.3);
+    background-color: rgba(116, 21, 197, 0.2);
     padding: auto;
 
     svg {
@@ -29,13 +29,13 @@
   }
 
   .middle {
-    padding: 0 $spacing-016;
+    padding: 0 $spacing-024;
   }
 
   .right {
-    p {
-      color: $midnight;
-      padding: 0 $spacing-016;
-    }
+    color: $midnight;
+    padding: 0 $spacing-016;
+    text-align: right;
+    margin-left: auto;
   }
 }

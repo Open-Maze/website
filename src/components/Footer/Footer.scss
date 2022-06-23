@@ -10,50 +10,49 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid $bleach;
-}
 
-.footer-left {
-  svg {
-    height: 22px;
-    margin-top: 5px;
-  }
-}
-
-.footer-middle {
-  display: flex;
-
-  .menu-item-footer {
-    position: relative;
-    color: $light;
-    padding: 0 $spacing-016;
-
-    &:hover {
-      color: $violet;
+  .footer-left {
+    svg {
+      height: 22px;
+      margin-top: 5px;
     }
   }
-}
 
-.footer-right {
-  display: flex;
-  align-items: center;
-  height: 100%;
+  .footer-middle {
+    display: flex;
 
-  svg {
-    color: $violet;
-    height: 22px;
-    position: relative;
-    padding: 0 $spacing-016;
+    .menu-item-footer {
+      position: relative;
+      color: $light;
+      padding: 0 $spacing-016;
+
+      &:hover {
+        color: $violet;
+      }
+    }
   }
 
-  .footer-right-arrow {
-    border-left: 2px solid $bleach;
-    border-right: 2px solid $bleach;
-    height: 100%;
+  .footer-right {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: $spacing-016;
-    padding: 0 $spacing-016;
+    height: 100%;
+
+    svg {
+      color: $violet;
+      height: 22px;
+      position: relative;
+      padding: 0 $spacing-016;
+    }
+
+    .footer-right-arrow {
+      border-left: 2px solid $bleach;
+      border-right: 2px solid $bleach;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: $spacing-016;
+    }
   }
 }
 

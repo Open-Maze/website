@@ -2,6 +2,7 @@ import React from 'react';
 import './Contact.scss';
 
 import Button from '../Button/Button';
+import ContactCardS from '../ContactCardS/ContactCardS';
 
 const Contact = () => (
   <div className="contact">
@@ -18,7 +19,11 @@ const Contact = () => (
           </Button>
         </div>
       </div>
-      <div className="right" />
+      <div className="right">
+        <ContactCardS icon="envelope" title="Send an e-mail" content="hello@openmaze.io" />
+        <br />
+        <ContactCardS icon="envelope-open" title="LinkedIn" content="/open-maze" />
+      </div>
     </div>
   </div>
 );
