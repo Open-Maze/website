@@ -7,7 +7,7 @@ import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
 
 const Footer = () => (
-  <div>
+  <>
     <div className="footer">
       <div className="footer-left">
         <a href="/">
@@ -30,7 +30,7 @@ const Footer = () => (
         <FontAwesomeIcon icon={solid('circle-arrow-up')} />
       </div>
     </div>
-  </div>
+  </>
 );
 
 export default Footer;
