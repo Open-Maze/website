@@ -3,12 +3,12 @@ import './App.scss';
 
 import Nav from '../Nav/Nav';
 import HeaderL from '../HeaderL/HeaderL';
-import CardIconVertical from '../CardIconVertical/CardIconVertical';
+import CoreValues from '../CoreValues/CoreValues';
 import Information from '../Information/Information';
+import ProjectsSection from '../ProjectsSection/ProjectsSection';
 import ContactCardS from '../ContactCardS/ContactCardS';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
-import ProjectsSection from '../ProjectsSection/ProjectsSection';
 
 import Svg from '../../assets/images/illustrations/header.svg';
 
@@ -17,30 +17,7 @@ const App = () => (
     <Nav />
     <div className="page">
       <HeaderL />
-      <div className="core-values">
-        <h4>Lorem ipsum</h4>
-        <h2>Our core values</h2>
-        <div className="core-values-cards">
-          <CardIconVertical
-            iconFront="rocket"
-            iconBack="circle"
-            title="Progression"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          />
-          <CardIconVertical
-            iconFront="rocket"
-            iconBack="circle"
-            title="Progression"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          />
-          <CardIconVertical
-            iconFront="rocket"
-            iconBack="circle"
-            title="Progression"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          />
-        </div>
-      </div>
+      <CoreValues />
       <Information
         subtitle="Lorem ipsum"
         title="About us"
