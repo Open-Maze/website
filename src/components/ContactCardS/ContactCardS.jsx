@@ -2,20 +2,19 @@ import React from 'react';
 import './ContactCardS.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
-const ContactCardS = () => (
+const ContactCardS = ({ icon, title, content }) => (
   <div className="ContactCardS">
     <div className="left">
-      <FontAwesomeIcon icon={solid('phone')} />
+      <FontAwesomeIcon className="icon" icon={icon} />
     </div>
 
     <div className="middle">
-      <h4>Call us</h4>
+      <h4>{title}</h4>
     </div>
 
     <div className="right">
-      <p>+31 (0)40 1234567</p>
+      <p>{content}</p>
     </div>
   </div>
 );

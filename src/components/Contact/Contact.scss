@@ -22,12 +22,6 @@
       }
     }
 
-    .right {
-      max-width: 50%;
-      display: flex;
-      flex-direction: column;
-    }
-
     .buttons button:first-child {
       margin-right: $spacing-024;
     }

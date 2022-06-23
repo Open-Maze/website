@@ -2,10 +2,12 @@
 @import '../../styles/mixin';
 
 .ContactCardS {
-  background-color: $light;
+  background-color: $bleach;
   display: flex;
   align-items: center;
-  padding: $spacing-024;
+  padding: 0 $spacing-096;
+  padding-top: $spacing-024;
+  padding-bottom: $spacing-024;
   border-radius: 20px;
   width: fit-content;
 

@@ -2,6 +2,7 @@ import React from 'react';
 import './Contact.scss';
 
 import Button from '../Button/Button';
+import ContactCardS from '../ContactCardS/ContactCardS';
 
 const Contact = () => (
   <div className="contact">
@@ -18,7 +19,10 @@ const Contact = () => (
           </Button>
         </div>
       </div>
-      <div className="right" />
+      <div className="right">
+        <ContactCardS icon="phone" title="Call us" content="+31401234567" />
+        <ContactCardS icon="envelope-open" title="LinkedIn" content="/open-maze" />
+      </div>
     </div>
   </div>
 );
