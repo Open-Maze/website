@@ -1,9 +1,7 @@
 import React from 'react';
 import './Information.scss';
 
-import Button from '../Button/Button';
-
-const Information = ({ title, description, buttonLabel, buttonLink, image, flipped }) => {
+const Information = ({ title, description, image, flipped }) => {
   let orderLeft;
   let orderRight;
   if (flipped) {
@@ -28,11 +26,6 @@ const Information = ({ title, description, buttonLabel, buttonLink, image, flipp
         <div className="left" style={orderLeft}>
           <h1>{title}</h1>
           <p>{description}</p>
-          <div className="buttons">
-            <Button pageUrl={buttonLink} className="btn-purple-solid">
-              {buttonLabel}
-            </Button>
-          </div>
         </div>
         <div className="right" style={orderRight}>
           <img src={image} alt="Illustration" />
