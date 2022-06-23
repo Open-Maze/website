@@ -20,9 +20,19 @@ const Contact = () => (
         </div>
       </div>
       <div className="right">
-        <ContactCardS icon="envelope" title="Send an e-mail" content="hello@openmaze.io" />
+        <ContactCardS
+          link="mailto:hello@openmaze.io"
+          icon="envelope"
+          title="Send an e-mail"
+          content="hello@openmaze.io"
+        />
         <br />
-        <ContactCardS icon="envelope-open" title="LinkedIn" content="/open-maze" />
+        <ContactCardS
+          link="https://linkedin.com/company/open-maze"
+          icon="envelope-open"
+          title="LinkedIn"
+          content="/open-maze"
+        />
       </div>
     </div>
   </div>

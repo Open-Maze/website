@@ -9,6 +9,7 @@
   padding: $spacing-024 $spacing-024;
   border-radius: 20px;
   min-width: 100%;
+  transition: all 0.2s ease-out;
 
   .left {
     width: 52px;
@@ -37,5 +38,23 @@
     padding: 0 $spacing-016;
     text-align: right;
     margin-left: auto;
+  }
+
+  &:hover {
+    background-color: $violet;
+    color: $white;
+    cursor: pointer;
+
+    .left {
+      background-color: rgba(255, 255, 255, 0.2);
+
+      .icon {
+        color: $white;
+      }
+    }
+
+    .right {
+      color: $bleach;
+    }
   }
 }

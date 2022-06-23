@@ -18,10 +18,11 @@ const Footer = () => (
         <FontAwesomeIcon icon={brands('instagram')} />
         <FontAwesomeIcon icon={brands('twitter')} />
         <FontAwesomeIcon icon={brands('facebook')} />
-
-        <div className="footer-right-arrow aspect-square">
-          <FontAwesomeIcon icon={solid('circle-arrow-up')} />
-        </div>
+        <a href="#top">
+          <div className="footer-right-arrow aspect-square">
+            <FontAwesomeIcon icon={solid('circle-arrow-up')} />
+          </div>
+        </a>
       </div>
     </div>
     <div className="copyright">

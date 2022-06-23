@@ -29,6 +29,8 @@ const ProjectsSection = () => {
             <FontAwesomeIcon className="icon" icon="comment-dots" />
             <span>Auto Feedback Tool</span>
           </button>
+          <br />
+          <br />
           <button
             id="button_2"
             onClick={() => {
@@ -42,6 +44,8 @@ const ProjectsSection = () => {
             <FontAwesomeIcon className="icon" icon="book" />
             <span>Q-App</span>
           </button>
+          <br />
+          <br />
           <button
             id="button_3"
             onClick={() => {
