@@ -14,8 +14,8 @@ const Contact = () => (
           Vivamus interdum interdum.
         </p>
         <div className="buttons">
-          <Button pageUrl="tel:0401234567" className="btn-purple-solid">
-            Call now
+          <Button pageUrl="mailto:hello@openmaze.io" className="btn-purple-solid">
+            Mail us
           </Button>
         </div>
       </div>

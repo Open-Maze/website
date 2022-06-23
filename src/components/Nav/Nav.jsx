@@ -15,7 +15,7 @@ const Nav = () => (
     <div className="nav-right">
       <div className="nav-right-menu">
         <Button pageUrl="#bottom" className="btn-purple-solid">
-          schedule a demo
+          Get in touch
         </Button>
       </div>
     </div>
