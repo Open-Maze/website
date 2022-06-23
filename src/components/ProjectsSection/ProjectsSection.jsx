@@ -24,8 +24,8 @@ const ProjectsSection = () => {
             className={isActive1 ? 'projects_button active' : 'projects_button'}
             type="button"
           >
-            <FontAwesomeIcon className="icon" icon="book" />
-            <span>Feedback Tool</span>
+            <FontAwesomeIcon className="icon" icon="comment-dots" />
+            <span>Auto Feedback Tool</span>
           </button>
           <button
             id="button_2"
@@ -37,8 +37,8 @@ const ProjectsSection = () => {
             className={isActive2 ? 'projects_button active' : 'projects_button'}
             type="button"
           >
-            <FontAwesomeIcon className="icon" icon="flask" />
-            <span>qApp</span>
+            <FontAwesomeIcon className="icon" icon="book" />
+            <span>Q-App</span>
           </button>
           <button
             id="button_3"
@@ -50,8 +50,8 @@ const ProjectsSection = () => {
             className={isActive3 ? 'projects_button active' : 'projects_button'}
             type="button"
           >
-            <FontAwesomeIcon className="icon" icon="screwdriver-wrench" />
-            <span>Knowledge Profile</span>
+            <FontAwesomeIcon className="icon" icon="graduation-cap" />
+            <span>Knowledge Profiler</span>
           </button>
         </div>
       </div>
@@ -59,33 +59,36 @@ const ProjectsSection = () => {
         <div id="card_1" className={isActive1 ? 'card active' : 'card'}>
           <div className="image" style={{ backgroundImage: `url(${IphonePlaceholder})` }} />
           <div className="text">
-            <h3>Instant feedback</h3>
+            <h3>Auto Feedback Tool</h3>
             <p>
-              The Document Feedback Tool allows students to have their documents fully reviewed immediately, before they
-              are graded by teachers. The purpose of the feedback tool is to eliminate that first round of feedback and
-              allow the teacher and student to engage in meaningful dialogue.
+              Students often have difficulty getting feedback, let alone getting it in a timely manner. In addition, we
+              have found that the feedback they do receive is often very generic. Our Auto Feedback Toolbuilt into your
+              LMS solves these problems by providing feedback on the following: document structure, research questions
+              answered, text coherence, idea cohesion, and other contextual and structural aspects. This then allows
+              students and teachers to immediately engage in meaningful dialogue.
             </p>
           </div>
         </div>
         <div id="card_2" className={isActive2 ? 'card active' : 'card'}>
           <div className="image" style={{ backgroundImage: `url(${IphonePlaceholder})` }} />
           <div className="text">
-            <h3>qApp</h3>
+            <h3>Q-App</h3>
             <p>
-              The Document Feedback Tool allows students to have their documents fully reviewed immediately, before they
-              are graded by teachers. The purpose of the feedback tool is to eliminate that first round of feedback and
-              allow the teacher and student to engage in meaningful dialogue.
+              People often interact with documents such as research papers or articles in a very linear way. With the Q
+              app seamlessly integrated into your LMS, users can ask questions of documents as if they were talking to
+              the author. This leads to a whole new interactive way of working with products. The Q-App not only
+              provides a better customer experience, but also saves time.
             </p>
           </div>
         </div>
         <div id="card_3" className={isActive3 ? 'card active' : 'card'}>
           <div className="image" style={{ backgroundImage: `url(${IphonePlaceholder})` }} />
           <div className="text">
-            <h3>Knowledge Profile</h3>
+            <h3>Knowledge Profiler</h3>
             <p>
-              The Document Feedback Tool allows students to have their documents fully reviewed immediately, before they
-              are graded by teachers. The purpose of the feedback tool is to eliminate that first round of feedback and
-              allow the teacher and student to engage in meaningful dialogue.
+              Educational institutions allow their students more freedom in what they are learning. Each student has a
+              unique and personal knowledge profile. The Knowledge Profiler integrated with the LMS automatically
+              processes what a student has submitted and creates a validated overview of the student&apos;s skills.
             </p>
           </div>
         </div>
