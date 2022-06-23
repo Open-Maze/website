@@ -21,6 +21,7 @@ const Contact = () => (
       </div>
       <div className="right">
         <ContactCardS icon="phone" title="Call us" content="+31401234567" />
+        <br />
         <ContactCardS icon="envelope-open" title="LinkedIn" content="/open-maze" />
       </div>
     </div>
