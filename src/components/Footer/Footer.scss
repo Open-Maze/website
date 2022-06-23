@@ -42,6 +42,10 @@
       height: 22px;
       position: relative;
       padding: 0 $spacing-016;
+
+      &:hover {
+        color: $violet-hover;
+      }
     }
 
     .footer-right-arrow {

@@ -8,11 +8,13 @@ import Button from '../Button/Button';
 const Nav = () => (
   <div className="nav">
     <div className="nav-left">
-      <LogoPurpleBlue />
+      <a href="#top">
+        <LogoPurpleBlue />
+      </a>
     </div>
     <div className="nav-right">
       <div className="nav-right-menu">
-        <Button pageUrl="/contact" className="btn-purple-solid">
+        <Button pageUrl="#bottom" className="btn-purple-solid">
           schedule a demo
         </Button>
       </div>
