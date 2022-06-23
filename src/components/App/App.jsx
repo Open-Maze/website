@@ -18,37 +18,30 @@ const App = () => (
     <div className="page">
       <HeaderL />
       <div className="core-values">
-        <h4>Lorem ipsum</h4>
-        <h2>Our core values</h2>
+        {/* <h4>Our</h4> */}
+        <h2>Core values</h2>
         <div className="core-values-cards">
           <CardIconVertical
             iconFront="rocket"
             iconBack="circle"
-            title="Progression"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            title="Cutting edge"
+            text="We differ ourselves from existing EdTech companies by implementing state of the art technologies, broadening the diversity of tools available. We unite context and technology."
           />
           <CardIconVertical
-            iconFront="rocket"
+            iconFront="lock"
             iconBack="circle"
-            title="Progression"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            title="Privacy"
+            text="We are of the opinion that data ownership should always remain with the user. We not only comply with regulations, but go the extra mile to ensure that you control your data."
           />
           <CardIconVertical
-            iconFront="rocket"
+            iconFront="universal-access"
             iconBack="circle"
-            title="Progression"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            title="Integrity"
+            text="AI can be scary. We think that technology should always be transparent and explainable. Our technology should above all be trusted by its users."
           />
         </div>
       </div>
-      <Information
-        title="About us"
-        description="OpenMaze aims to provide users of online educational environments with greater insight into their own learning journey and performance through the use of AI-based tools. The use of such tooling often means that people working in the educational sector have to do less menial tasks."
-        buttonLabel="View more"
-        buttonLink="/about"
-        image={Svg}
-        flipped
-      />
+      <Information title="About us" image={Svg} />
       <ProjectsSection />
 
       <ContactCardS />
