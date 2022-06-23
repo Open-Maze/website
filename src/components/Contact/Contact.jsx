@@ -29,7 +29,7 @@ const Contact = () => (
         <br />
         <ContactCardS
           link="https://linkedin.com/company/open-maze"
-          icon="envelope-open"
+          icon="linkedin"
           title="LinkedIn"
           content="/open-maze"
         />
@@ -37,4 +37,5 @@ const Contact = () => (
     </div>
   </div>
 );
+
 export default Contact;

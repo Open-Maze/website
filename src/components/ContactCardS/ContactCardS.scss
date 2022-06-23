@@ -19,13 +19,19 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(116, 21, 197, 0.2);
-    padding: auto;
 
-    svg {
-      color: $midnight;
-      height: 22px;
-      position: relative;
-      padding: 0 $spacing-016;
+    &.envelope {
+      background-image: url('../../assets/images/icons/envelope.svg');
+      background-position: center center;
+      background-size: 40%;
+      background-repeat: no-repeat;
+    }
+
+    &.linkedin {
+      background-image: url('../../assets/images/icons/linkedin.svg');
+      background-position: center center;
+      background-size: 40%;
+      background-repeat: no-repeat;
     }
   }
 
@@ -48,8 +54,12 @@
     .left {
       background-color: rgba(255, 255, 255, 0.2);
 
-      .icon {
-        color: $white;
+      &.envelope {
+        background-image: url('../../assets/images/icons/envelope-open.svg');
+      }
+
+      &.linkedin {
+        background-image: url('../../assets/images/icons/linkedin-hover.svg');
       }
     }
 

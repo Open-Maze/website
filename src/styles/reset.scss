@@ -15,6 +15,15 @@ svg {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background: $super-light-gray;
+
+  &-thumb {
+    background: $midnight;
+  }
+}
+
 body,
 h1,
 h2,
