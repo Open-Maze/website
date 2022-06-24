@@ -19,11 +19,8 @@ const HeaderL = () => (
           </mark>
         </p>
         <div className="buttons">
-          <Button pageUrl="/contact" className="btn-purple-solid">
-            Schedule demo
-          </Button>
-          <Button pageUrl="/contact" className="btn-purple-outline">
-            See more
+          <Button pageUrl="#bottom" className="btn-purple-solid">
+            Get in touch
           </Button>
         </div>
       </div>

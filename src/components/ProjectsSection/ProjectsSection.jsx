@@ -13,7 +13,7 @@ const ProjectsSection = () => {
   return (
     <div className="projects_section">
       <div className="left">
-        <h4>Lorem ipsum</h4>
+        <h4>Enhanced experiences</h4>
         <h2>Solutions for every subject, student and school</h2>
         <div className="bottom">
           <button
@@ -80,8 +80,8 @@ const ProjectsSection = () => {
           <div className="text">
             <h3>Q-App</h3>
             <p>
-              People often interact with documents such as research papers or articles in a very linear way. With the Q
-              app seamlessly integrated into your LMS, users can ask questions of documents as if they were talking to
+              People often interact with documents such as research papers or articles in a very linear way. With the
+              Q-App seamlessly integrated into your LMS, users can ask questions of documents as if they were talking to
               the author. This leads to a whole new interactive way of working with products. The Q-App not only
               provides a better customer experience, but also saves time.
             </p>

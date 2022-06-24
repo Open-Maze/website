@@ -18,11 +18,10 @@ const App = () => (
       <HeaderL />
       <CoreValues />
       <Information
-        subtitle="Lorem ipsum"
+        subtitle="Passionate work"
         title="About us"
-        description="OpenMaze aims to provide users of online educational environments with greater insight into their own learning journey and performance through the use of AI-based tools. The use of such tooling often means that people working in the educational sector have to do less menial tasks."
-        buttonLabel="View more"
-        buttonLink="/about"
+        buttonLabel="Contact us"
+        buttonLink="#bottom"
         image={Svg}
       />
       <ProjectsSection />

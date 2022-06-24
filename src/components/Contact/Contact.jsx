@@ -10,8 +10,8 @@ const Contact = () => (
       <div className="left">
         <h2>Get in touch</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam ac commodo erat, quis venenatis turpis.
-          Vivamus interdum interdum.
+          Questions about our tools or just want to? Feel free to mail us at the address listed here! You can also
+          follow us on LinkedIn for the latest news about OpenMaze!
         </p>
         <div className="buttons">
           <Button pageUrl="mailto:hello@openmaze.io" className="btn-purple-solid">
