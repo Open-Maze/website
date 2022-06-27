@@ -1,6 +1,10 @@
 @import './variables';
 @import './mixin';
 
+html {
+  scroll-behavior: smooth;
+}
+
 svg {
   display: block;
 }
@@ -9,6 +13,15 @@ svg {
 ::before,
 ::after {
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: $super-light-gray;
+
+  &-thumb {
+    background: $midnight;
+  }
 }
 
 body,

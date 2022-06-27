@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.core-values {
+  max-width: $break-2xl;
+  margin: $spacing-160 auto;
+
+  h2 {
+    margin-top: $spacing-008;
+  }
+
+  .core-values-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: $spacing-040;
+    margin-top: $spacing-080;
+
+    h3 {
+      margin: $spacing-024 0;
+    }
+
+    @media only screen and (max-width: $break-2xl) {
+      grid-template-columns: 1fr;
+      gap: $spacing-040;
+    }
+  }
+
+  @media only screen and (max-width: calc($break-2xl + 320px)) {
+    max-width: 100%;
+    padding: 0 160px;
+  }
+
+  @media only screen and (max-width: calc($break-lg + 100px)) {
+    padding: 0 20px;
+  }
+}

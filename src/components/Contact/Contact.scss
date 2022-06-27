@@ -1,11 +1,11 @@
 @import '../../styles/variables';
 @import '../../styles/mixin';
 
-.information {
+.contact {
   background-color: $white;
   padding: $spacing-160 0;
 
-  .information-wrapper {
+  .contact-area {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: $spacing-160;
@@ -14,31 +14,27 @@
     margin: 0 auto;
 
     .left {
-      h1 {
-        margin-top: $spacing-008;
-      }
-
       p {
         margin: $spacing-040 0;
       }
     }
 
-    .right {
-      img {
-        width: 100%;
-        border-radius: $br-10;
-      }
+    .buttons button:first-child {
+      margin-right: $spacing-024;
     }
 
     @media only screen and (max-width: calc($break-2xl + 320px)) {
-      max-width: 100%;
       padding: 0 160px;
+    }
+
+    @media only screen and (max-width: calc($break-lg + 320px)) {
+      max-width: 100%;
+      grid-template-columns: 1fr;
+      gap: $spacing-080;
     }
 
     @media only screen and (max-width: calc($break-lg + 100px)) {
       padding: 0 20px;
-      grid-template-columns: 1fr;
-      gap: $spacing-080;
     }
   }
 }

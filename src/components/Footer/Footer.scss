@@ -10,50 +10,53 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid $bleach;
-}
 
-.footer-left {
-  svg {
-    height: 22px;
-    margin-top: 5px;
-  }
-}
-
-.footer-middle {
-  display: flex;
-
-  .menu-item-footer {
-    position: relative;
-    color: $light;
-    padding: 0 $spacing-016;
-
-    &:hover {
-      color: $violet;
+  .footer-left {
+    svg {
+      height: 22px;
+      margin-top: 5px;
     }
   }
-}
 
-.footer-right {
-  display: flex;
-  align-items: center;
-  height: 100%;
+  .footer-middle {
+    display: flex;
 
-  svg {
-    color: $violet;
-    height: 22px;
-    position: relative;
-    padding: 0 $spacing-016;
+    .menu-item-footer {
+      position: relative;
+      color: $light;
+      padding: 0 $spacing-016;
+
+      &:hover {
+        color: $violet;
+      }
+    }
   }
 
-  .footer-right-arrow {
-    border-left: 2px solid $bleach;
-    border-right: 2px solid $bleach;
-    height: 100%;
+  .footer-right {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: $spacing-016;
-    padding: 0 $spacing-016;
+    height: 100%;
+
+    svg {
+      color: $violet;
+      height: 22px;
+      position: relative;
+      padding: 0 $spacing-016;
+
+      &:hover {
+        color: $violet-hover;
+      }
+    }
+
+    .footer-right-arrow {
+      border-left: 2px solid $bleach;
+      border-right: 2px solid $bleach;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: $spacing-016;
+    }
   }
 }
 
@@ -62,8 +65,7 @@
   background: $white;
   color: $light;
   bottom: 0;
-  height: 70px;
-  flex-direction: column;
+  height: 80px;
   display: flex;
   padding: 0 $spacing-048;
   justify-content: center;
@@ -81,7 +83,7 @@
   display: none;
 }
 
-@media only screen and (max-width: $break-lg) {
+@media only screen and (max-width: calc($break-lg + 100px)) {
   .footer {
     padding: 0;
     align-items: stretch;
@@ -90,13 +92,13 @@
   }
 
   .footer-left {
-    padding: $spacing-048 $spacing-048 0;
+    padding: 0 30px;
   }
 
   .footer-middle {
     flex-direction: column;
     justify-content: flex-start;
-    padding: $spacing-048;
+    padding: 0 30px;
   }
 
   .menu-item-footer {
@@ -104,10 +106,11 @@
   }
 
   .footer-right {
-    padding: $spacing-048;
+    padding: 48px 30px;
     border-top: 2px solid $bleach;
+
     .footer-right-arrow {
-      display: none;
+      display: none !important;
     }
   }
 
@@ -117,9 +120,6 @@
   }
 
   .copyright {
-    padding: $spacing-048;
-    p {
-      margin-right: auto;
-    }
+    padding: 0 30px;
   }
 }

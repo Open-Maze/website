@@ -2,4 +2,73 @@
 @import '../../styles/mixin';
 
 .ContactCardS {
+  background-color: $bleach;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: $spacing-024 $spacing-024;
+  border-radius: 20px;
+  min-width: 100%;
+  transition: all 0.2s ease-out;
+
+  .left {
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(116, 21, 197, 0.2);
+
+    &.envelope {
+      background-image: url('../../assets/images/icons/envelope.svg');
+      background-position: center center;
+      background-size: 40%;
+      background-repeat: no-repeat;
+    }
+
+    &.linkedin {
+      background-image: url('../../assets/images/icons/linkedin.svg');
+      background-position: center center;
+      background-size: 40%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .middle {
+    padding: 0 $spacing-024;
+
+    @media only screen and (max-width: $break-md) {
+      display: none;
+    }
+  }
+
+  .right {
+    color: $midnight;
+    padding: 0 $spacing-016;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  &:hover {
+    background-color: $violet;
+    color: $white;
+    cursor: pointer;
+
+    .left {
+      background-color: rgba(255, 255, 255, 0.2);
+
+      &.envelope {
+        background-image: url('../../assets/images/icons/envelope-open.svg');
+      }
+
+      &.linkedin {
+        background-image: url('../../assets/images/icons/linkedin-hover.svg');
+      }
+    }
+
+    .right {
+      color: $bleach;
+    }
+  }
 }

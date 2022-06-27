@@ -1,29 +1,34 @@
 import React from 'react';
 import './HeaderL.scss';
+
 import Button from '../Button/Button';
+
 import headerSvg from '../../assets/images/illustrations/header.svg';
 
 const HeaderL = () => (
-  <section className="header_l">
-    <div className="left">
-      <h1>Welcome to OpenMaze</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam ac commodo erat, quis venenatis turpis. Vivamus
-        interdum interdum.
-      </p>
-      <div className="buttons">
-        <Button pageUrl="/contact" className="btn-purple-solid">
-          Schedule demo
-        </Button>
-        <Button pageUrl="/contact" className="btn-purple-outline">
-          See more
-        </Button>
+  <div className="header_l">
+    <div className="header_l__wrapper">
+      <div className="left">
+        <h1 data-aos="fade-up">
+          <mark>Welcome to OpenMaze</mark>
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="100">
+          <mark>
+            We aim to provide users of online educational environments with greater insight into their own learning
+            journey and performance through the use of AI-based tools.
+          </mark>
+        </p>
+        <div className="buttons" data-aos="fade-up" data-aos-delay="200">
+          <Button pageUrl="#bottom" className="btn-purple-solid">
+            Get in touch
+          </Button>
+        </div>
+      </div>
+      <div className="right">
+        <img src={headerSvg} alt="Illustration" data-aos="fade-up" />
       </div>
     </div>
-    <div className="right">
-      <img src={headerSvg} alt="Illustration" />
-    </div>
-  </section>
+  </div>
 );
 
 export default HeaderL;

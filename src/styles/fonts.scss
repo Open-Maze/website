@@ -87,7 +87,7 @@ h2 {
 h3 {
   font-family: $manrope;
   font-size: $fs-h3;
-  font-weight: $fw-500;
+  font-weight: $fw-700;
   line-height: $lh-h3;
 }
 
@@ -124,7 +124,7 @@ img::selection {
   background: $midnight;
 }
 
-@media only screen and (max-width: 1245px) {
+@media only screen and (max-width: calc($break-xl + 150px)) {
   h1 {
     font-size: $fs-h2;
 
@@ -135,7 +135,7 @@ img::selection {
   }
 
   h2 {
-    font-size: $fs-h3;
+    font-size: 36px;
 
     &:after {
       width: 5px;
@@ -145,11 +145,11 @@ img::selection {
   }
 
   h3 {
-    font-size: $fs-h4;
+    font-size: $fs-h3;
   }
 
   h4 {
-    font-size: $fs-h5;
+    font-size: $fs-h4;
   }
 
   a,

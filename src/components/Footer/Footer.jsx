@@ -1,52 +1,58 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Footer.scss';
-
-import { Link, NavLink } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
+import Moment from 'react-moment';
+import 'moment-timezone';
+
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
 
-const Footer = () => (
-  <div>
-    <div className="footer">
-      <div className="footer-left">
-        <Link to="/">
-          <LogoPurpleBlue />
-        </Link>
-      </div>
-      <div className="footer-middle">
-        <NavLink to="/" className="menu-item-footer" activeClassName="active">
-          <p className="menu-item-footer">home</p>
-        </NavLink>
-        <NavLink to="/products" className="menu-item-footer" activeClassName="active">
-          <p className="menu-item-footer">products</p>
-        </NavLink>
-        <NavLink to="/about" className="menu-item-footer" activeClassName="active">
-          <p className="menu-item-footer">about</p>
-        </NavLink>
-        <NavLink to="/contact" className="menu-item-footer" activeClassName="active">
-          <p className="menu-item-footer">contact</p>
-        </NavLink>
-      </div>
-      <div className="footer-right">
-        <FontAwesomeIcon icon={brands('instagram')} />
-        <FontAwesomeIcon icon={brands('twitter')} />
-        <FontAwesomeIcon icon={brands('facebook')} />
+const Footer = () => {
+  Moment.globalLocale = 'nl';
+  const today = Date();
+  const date = 'YYYY';
+  const currentTime = useState(Date.now());
 
-        <div className="footer-right-arrow aspect-square">
-          <FontAwesomeIcon icon={solid('circle-arrow-up')} />
+  useEffect(() => {
+    const interval = setInterval(() => currentTime[1](Date.now()), 1000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  return (
+    <>
+      <div className="footer">
+        <div className="footer-left">
+          <a href="/">
+            <LogoPurpleBlue />
+          </a>
+        </div>
+        <div className="footer-right">
+          <a href="https://linkedin.com/company/open-maze" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={brands('linkedin-in')} />
+          </a>
+          <a href="#top">
+            <div className="footer-right-arrow aspect-square">
+              <FontAwesomeIcon icon={solid('circle-arrow-up')} />
+            </div>
+          </a>
         </div>
       </div>
-    </div>
-    <div className="copyright">
-      <p>Copyright &copy; 2022 OpenMaze</p>
-      <div className="footer-right-arrow-sm">
-        <FontAwesomeIcon icon={solid('circle-arrow-up')} />
+      <div className="copyright">
+        <p>
+          Copyright &copy; <Moment interval={1000} date={today} format={date} /> OpenMaze
+        </p>
+        <a href="#top" className="footer-right-arrow-sm">
+          <div>
+            <FontAwesomeIcon icon={solid('circle-arrow-up')} />
+          </div>
+        </a>
       </div>
-    </div>
-  </div>
-);
+    </>
+  );
+};
 
 export default Footer;

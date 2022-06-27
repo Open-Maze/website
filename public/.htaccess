@@ -1,4 +1,8 @@
 Options -MultiViews
 RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^openmaze\.io
+RewriteRule ^(.*)$ https://www.openmaze.io$1 [R=permanent,L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.html [QSA,L]
