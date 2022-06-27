@@ -37,6 +37,11 @@
     align-items: center;
     height: 100%;
 
+    .footer-right-social {
+      display: flex;
+      align-items: center;
+    }
+
     svg {
       color: $violet;
       height: 22px;
@@ -93,6 +98,7 @@
 
   .footer-left {
     padding: 0 30px;
+    margin-bottom: 30px;
   }
 
   .footer-middle {
@@ -106,8 +112,12 @@
   }
 
   .footer-right {
-    padding: 48px 30px;
+    padding: 30px;
     border-top: 2px solid $bleach;
+
+    svg {
+      padding: 0 !important;
+    }
 
     .footer-right-arrow {
       display: none !important;

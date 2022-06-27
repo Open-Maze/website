@@ -31,7 +31,12 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-right">
-          <a href="https://linkedin.com/company/open-maze" target="_blank" rel="noreferrer">
+          <a
+            href="https://linkedin.com/company/open-maze"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-right-social"
+          >
             <FontAwesomeIcon icon={brands('linkedin-in')} />
           </a>
           <a href="#top">
