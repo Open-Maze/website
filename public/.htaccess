@@ -6,3 +6,8 @@ RewriteRule ^(.\*)$ https://www.openmaze.io/$1 [R=permanent,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.html [QSA,L]
+
+Redirect 301 /l https://linkedin.com/company/open-maze
+Redirect 301 /in https://linkedin.com/company/open-maze
+Redirect 301 /linkedin https://linkedin.com/company/open-maze
+Redirect 301 /linked-in https://linkedin.com/company/open-maze
