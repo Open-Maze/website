@@ -97,8 +97,8 @@ const ProjectsSection = () => {
             </h3>
             <p data-aos="fade-up" data-aos-delay="300">
               People often interact with documents such as research papers or articles in a very linear way. With the
-              Q-App, seamlessly integrated into your LMS, users can ask questions of documents as if they were talking to
-              the author. This leads to a whole new interactive way of working with products. The Q-App not only
+              Q-App, seamlessly integrated into your LMS, users can ask questions of documents as if they were talking
+              to the author. This leads to a whole new interactive way of working with products. The Q-App not only
               provides a better customer experience, but also saves time.
             </p>
           </div>
