@@ -31,8 +31,6 @@
       max-width: 100%;
       grid-template-columns: 1fr;
       gap: $spacing-080;
-      margin-top: $spacing-160;
-      margin-bottom: $spacing-160;
     }
 
     @media only screen and (max-width: calc($break-lg + 100px)) {
