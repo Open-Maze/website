@@ -82,7 +82,7 @@ const ProjectsSection = () => {
             </h3>
             <p data-aos="fade-up" data-aos-delay="300">
               Students often have difficulty getting feedback, let alone getting it in a timely manner. In addition, we
-              have found that the feedback they do receive is often very generic. Our Auto Feedback Toolbuilt into your
+              have found that the feedback they do receive is often very generic. Our Auto Feedback Tool built into your
               LMS solves these problems by providing feedback on the following: document structure, research questions
               answered, text coherence, idea cohesion, and other contextual and structural aspects. This then allows
               students and teachers to immediately engage in meaningful dialogue.
@@ -97,7 +97,7 @@ const ProjectsSection = () => {
             </h3>
             <p data-aos="fade-up" data-aos-delay="300">
               People often interact with documents such as research papers or articles in a very linear way. With the
-              Q-App seamlessly integrated into your LMS, users can ask questions of documents as if they were talking to
+              Q-App, seamlessly integrated into your LMS, users can ask questions of documents as if they were talking to
               the author. This leads to a whole new interactive way of working with products. The Q-App not only
               provides a better customer experience, but also saves time.
             </p>
@@ -117,7 +117,7 @@ const ProjectsSection = () => {
             <p data-aos="fade-up" data-aos-delay="300">
               Educational institutions allow their students more freedom in what they are learning. Each student has a
               unique and personal knowledge profile. The Knowledge Profiler integrated with the LMS automatically
-              processes what a student has submitted and creates a validated overview of the student&apos;s skills.
+              processes what a student has submitted and creates a validated overview of the their skills.
             </p>
           </div>
         </div>
