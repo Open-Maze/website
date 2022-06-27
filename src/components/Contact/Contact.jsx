@@ -10,7 +10,7 @@ const Contact = () => (
       <div className="left">
         <h2 data-aos="fade-up">Get in touch</h2>
         <p data-aos="fade-up" data-aos-delay="100">
-          Questions about our tools or just want to? Feel free to mail us at the address listed here! You can also
+          Questions about our tools or just want to say hi? Feel free to mail us at the address listed here! You can also
           follow us on LinkedIn for the latest news about OpenMaze!
         </p>
         <div className="buttons" data-aos="fade-up" data-aos-delay="200">
