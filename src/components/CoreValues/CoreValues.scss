@@ -19,7 +19,7 @@
       margin: $spacing-024 0;
     }
 
-    @media only screen and (max-width: $break-2xl) {
+    @media only screen and (max-width: $break-xl) {
       grid-template-columns: 1fr;
       gap: $spacing-040;
     }
