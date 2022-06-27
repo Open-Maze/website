@@ -37,6 +37,10 @@
 
   .middle {
     padding: 0 $spacing-024;
+
+    @media only screen and (max-width: $break-md) {
+      display: none;
+    }
   }
 
   .right {

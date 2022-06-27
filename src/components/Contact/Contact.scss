@@ -22,5 +22,21 @@
     .buttons button:first-child {
       margin-right: $spacing-024;
     }
+
+    @media only screen and (max-width: calc($break-2xl + 320px)) {
+      padding: 0 160px;
+    }
+
+    @media only screen and (max-width: calc($break-lg + 320px)) {
+      max-width: 100%;
+      grid-template-columns: 1fr;
+      gap: $spacing-080;
+      margin-top: $spacing-160;
+      margin-bottom: $spacing-160;
+    }
+
+    @media only screen and (max-width: calc($break-lg + 100px)) {
+      padding: 0 20px;
+    }
   }
 }
