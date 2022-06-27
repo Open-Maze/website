@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './ProjectsSection.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import IphonePlaceholder from '../../assets/images/iphone-placeholder.png';
+import knowledgeProfiler from '../../assets/images/illustrations-products/knowlegde-profiler.svg';
+import qApp from '../../assets/images/illustrations-products/q-app.svg';
+import topicExtraction from '../../assets/images/illustrations-products/topic-extraction.svg';
 
 const ProjectsSection = () => {
   const [isActive1, setIsActive1] = useState(true);
@@ -63,7 +64,7 @@ const ProjectsSection = () => {
       </div>
       <div className="right">
         <div id="card_1" className={isActive1 ? 'card active' : 'card'}>
-          <div className="image" style={{ backgroundImage: `url(${IphonePlaceholder})` }} />
+          <div className="image" style={{ backgroundImage: `url(${topicExtraction})` }} />
           <div className="text">
             <h3>Auto Feedback Tool</h3>
             <p>
@@ -76,7 +77,7 @@ const ProjectsSection = () => {
           </div>
         </div>
         <div id="card_2" className={isActive2 ? 'card active' : 'card'}>
-          <div className="image" style={{ backgroundImage: `url(${IphonePlaceholder})` }} />
+          <div className="image" style={{ backgroundImage: `url(${qApp})` }} />
           <div className="text">
             <h3>Q-App</h3>
             <p>
@@ -88,7 +89,7 @@ const ProjectsSection = () => {
           </div>
         </div>
         <div id="card_3" className={isActive3 ? 'card active' : 'card'}>
-          <div className="image" style={{ backgroundImage: `url(${IphonePlaceholder})` }} />
+          <div className="image" style={{ backgroundImage: `url(${knowledgeProfiler})` }} />
           <div className="text">
             <h3>Knowledge Profiler</h3>
             <p>

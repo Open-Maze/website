@@ -47,7 +47,7 @@ const Information = ({ subtitle, title, buttonLabel, buttonLink, image, flipped 
           </div>
         </div>
         <div className="right" style={orderRight}>
-          <img src={image} alt="Illustration" />
+          <img src={image} alt="teamPicture" />
         </div>
       </div>
     </div>

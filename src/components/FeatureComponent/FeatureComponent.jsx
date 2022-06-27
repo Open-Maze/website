@@ -9,7 +9,7 @@ const FeatureComponent = ({ featureNr, title, description, image }) => (
       <p>{description}</p>
     </div>
     <div className="right">
-      <img src={image} alt="Illustration" />
+      <img src={image} alt="Illustration-products" />
     </div>
   </section>
 );
