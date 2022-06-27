@@ -9,6 +9,19 @@
   margin: 0 auto;
   padding: $spacing-160 0;
 
+  @media only screen and (max-width: calc($break-2xl + 320px)) {
+    max-width: 100%;
+    padding: 0 160px;
+  }
+
+  @media only screen and (max-width: calc($break-lg + 100px)) {
+    padding: 0 20px;
+    grid-template-columns: 1fr;
+    gap: $spacing-080;
+    margin-top: $spacing-160;
+    margin-bottom: $spacing-160;
+  }
+
   .left {
     h2 {
       margin-top: $spacing-008;
