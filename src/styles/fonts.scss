@@ -135,7 +135,7 @@ img::selection {
   }
 
   h2 {
-    font-size: $fs-h3;
+    font-size: 36px;
 
     &:after {
       width: 5px;
@@ -145,11 +145,11 @@ img::selection {
   }
 
   h3 {
-    font-size: $fs-h4;
+    font-size: $fs-h3;
   }
 
   h4 {
-    font-size: $fs-h5;
+    font-size: $fs-h4;
   }
 
   a,

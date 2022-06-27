@@ -21,6 +21,16 @@
 
     @media only screen and (max-width: $break-2xl) {
       grid-template-columns: 1fr;
+      gap: $spacing-040;
     }
+  }
+
+  @media only screen and (max-width: calc($break-2xl + 320px)) {
+    max-width: 100%;
+    padding: 0 160px;
+  }
+
+  @media only screen and (max-width: calc($break-lg + 100px)) {
+    padding: 0 20px;
   }
 }
