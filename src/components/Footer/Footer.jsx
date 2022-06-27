@@ -45,9 +45,11 @@ const Footer = () => {
         <p>
           Copyright &copy; <Moment interval={1000} date={today} format={date} /> OpenMaze
         </p>
-        <div className="footer-right-arrow-sm">
-          <FontAwesomeIcon icon={solid('circle-arrow-up')} />
-        </div>
+        <a href="#top" className="footer-right-arrow-sm">
+          <div>
+            <FontAwesomeIcon icon={solid('circle-arrow-up')} />
+          </div>
+        </a>
       </div>
     </>
   );
