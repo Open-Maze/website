@@ -8,8 +8,8 @@ import Information from '../Information/Information';
 import ProjectsSection from '../ProjectsSection/ProjectsSection';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
-
-import Svg from '../../assets/images/illustrations/header.svg';
+import Team from '../../assets/images/team.jpg';
+// import Svg from '../../assets/images/illustrations/header.svg';
 
 const App = () => (
   <div className="app">
@@ -22,7 +22,7 @@ const App = () => (
         title="About us"
         buttonLabel="Contact us"
         buttonLink="#bottom"
-        image={Svg}
+        image={Team}
       />
       <ProjectsSection />
       <Contact />
