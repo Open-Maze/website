@@ -1,23 +1,20 @@
 import React from 'react';
 import './ContactCardS.scss';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
-
-const ContactCardS = () => (
-  <div className="ContactCardS">
-    <div className="left">
-      <FontAwesomeIcon icon={solid('phone')} />
+const ContactCardS = ({ link, icon, title, content, delay }) => (
+  <a href={link} target="_blank" rel="noreferrer">
+    <div className="ContactCardS" data-aos="fade-up" data-aos-delay={delay}>
+      <div className="ContactCardS-inner">
+        <div className={`left ${icon}`} />
+        <div className="middle">
+          <p>{title}</p>
+        </div>
+        <div className="right">
+          <p>{content}</p>
+        </div>
+      </div>
     </div>
-
-    <div className="middle">
-      <h4>Call us</h4>
-    </div>
-
-    <div className="right">
-      <p>+31 (0)40 1234567</p>
-    </div>
-  </div>
+  </a>
 );
 
 export default ContactCardS;

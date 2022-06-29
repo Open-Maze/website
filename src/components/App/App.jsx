@@ -1,58 +1,44 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.scss';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import Nav from '../Nav/Nav';
 import HeaderL from '../HeaderL/HeaderL';
-import CardIconVertical from '../CardIconVertical/CardIconVertical';
+import CoreValues from '../CoreValues/CoreValues';
 import Information from '../Information/Information';
-import ContactCardS from '../ContactCardS/ContactCardS';
+import ProjectsSection from '../ProjectsSection/ProjectsSection';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
-import ProjectsSection from '../ProjectsSection/ProjectsSection';
 
-import Svg from '../../assets/images/illustrations/header.svg';
+import Team from '../../assets/images/team.jpg';
 
-const App = () => (
-  <div className="app">
-    <Nav />
-    <div className="page">
-      <HeaderL />
-      <div className="core-values">
-        <h4>Lorem ipsum</h4>
-        <h2>Our core values</h2>
-        <div className="core-values-cards">
-          <CardIconVertical
-            iconFront="rocket"
-            iconBack="circle"
-            title="Progression"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          />
-          <CardIconVertical
-            iconFront="rocket"
-            iconBack="circle"
-            title="Progression"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          />
-          <CardIconVertical
-            iconFront="rocket"
-            iconBack="circle"
-            title="Progression"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          />
-        </div>
+const App = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
+  return (
+    <div className="app">
+      <Nav />
+      <div className="page">
+        <HeaderL />
+        <CoreValues />
+        <Information
+          subtitle="Passionate work"
+          title="About us"
+          buttonLabel="Contact us"
+          buttonLink="#bottom"
+          image={Team}
+        />
+        <ProjectsSection />
+        <Contact />
       </div>
-      <Information
-        title="About us"
-        description="OpenMaze aims to provide users of online educational environments with greater insight into their own learning journey and performance through the use of AI-based tools. The use of such tooling often means that people working in the educational sector have to do less menial tasks."
-        image={Svg}
-      />
-      <ProjectsSection />
-
-      <ContactCardS />
-      <Contact />
+      <Footer />
     </div>
-    <Footer />
-  </div>
-);
+  );
+};
 
 export default App;
