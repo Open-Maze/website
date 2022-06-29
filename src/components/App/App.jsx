@@ -27,7 +27,7 @@ const App = () => {
         <HeaderL />
         <CoreValues />
         <Information
-          subtitle="Passionate work"
+          subtitle="Passionate People"
           title="About us"
           buttonLabel="Contact us"
           buttonLink="#bottom"

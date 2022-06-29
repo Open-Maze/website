@@ -14,6 +14,10 @@
     margin: 0 auto;
 
     .left {
+      h4 {
+        margin-bottom: $spacing-008;
+      }
+
       p {
         margin: $spacing-040 0;
       }

@@ -5,7 +5,7 @@ import CardIconVertical from '../CardIconVertical/CardIconVertical';
 
 const CoreValues = () => (
   <div className="core-values">
-    <h4 data-aos="fade-up">Our beliefs</h4>
+    <h4 data-aos="fade-up">Our Beliefs</h4>
     <h2 data-aos="fade-up" data-aos-delay="100">
       Core values
     </h2>

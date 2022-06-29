@@ -8,12 +8,15 @@ const Contact = () => (
   <div className="contact">
     <div className="contact-area">
       <div className="left">
-        <h2 data-aos="fade-up">Get in touch</h2>
-        <p data-aos="fade-up" data-aos-delay="100">
+        <h4 data-aos="fade-up">Meaningful Connections</h4>
+        <h2 data-aos="fade-up" data-aos-delay="100">
+          Get in touch
+        </h2>
+        <p data-aos="fade-up" data-aos-delay="200">
           Questions about our tools or just want to say hi? Feel free to mail us at the address listed here! You can
           also follow us on LinkedIn for the latest news about OpenMaze!
         </p>
-        <div className="buttons" data-aos="fade-up" data-aos-delay="200">
+        <div className="buttons" data-aos="fade-up" data-aos-delay="300">
           <Button pageUrl="mailto:hello@openmaze.io" className="btn-purple-solid">
             Mail us
           </Button>
@@ -25,7 +28,7 @@ const Contact = () => (
           icon="envelope"
           title="Send an e-mail"
           content="hello@openmaze.io"
-          delay={300}
+          delay={400}
         />
         <br />
         <ContactCardS
@@ -33,7 +36,7 @@ const Contact = () => (
           icon="linkedin"
           title="LinkedIn"
           content="/open-maze"
-          delay={400}
+          delay={500}
         />
       </div>
     </div>

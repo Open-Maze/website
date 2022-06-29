@@ -14,7 +14,7 @@ const ProjectsSection = () => {
   return (
     <div className="projects_section">
       <div className="left">
-        <h4 data-aos="fade-up">Enhanced experiences</h4>
+        <h4 data-aos="fade-up">Impactful Decisions</h4>
         <h2 data-aos="fade-up" data-aos-delay="100">
           Solutions for every subject, student and school
         </h2>
