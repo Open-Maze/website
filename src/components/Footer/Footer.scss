@@ -90,6 +90,15 @@
   }
 
   @media only screen and (max-width: calc($break-lg + 100px)) {
+    .footer-copyright {
+      padding: 0 30px;
+
+      .footer-right-arrow-sm {
+        display: block;
+        margin-left: auto;
+      }
+    }
+
     .footer-wrapper {
       padding: 0;
       align-items: stretch;
@@ -123,15 +132,6 @@
           display: none !important;
         }
       }
-
-      .footer-right-arrow-sm {
-        display: block;
-        margin-left: auto;
-      }
-    }
-
-    .footer-copyright {
-      padding: 0 30px;
     }
   }
 }
