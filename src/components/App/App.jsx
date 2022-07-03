@@ -14,6 +14,7 @@ import Contact from '../../pages/Contact';
 
 // Components
 import Nav from '../Nav/Nav';
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import Footer from '../Footer/Footer';
 
 const App = () => {
@@ -26,12 +27,14 @@ const App = () => {
     <div className="app">
       <Router>
         <Nav />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </ScrollToTop>
         <Footer />
       </Router>
     </div>
