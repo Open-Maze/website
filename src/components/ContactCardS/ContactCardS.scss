@@ -1,8 +1,8 @@
 @import '../../styles/variables';
 @import '../../styles/mixin';
 
-.ContactCardS {
-  .ContactCardS-inner {
+.contact-card-s {
+  .contact-card-s-inner {
     background-color: $bleach;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgba(116, 21, 197, 0.2);
+      background-color: rgb(116 21 197 / 20%);
 
       &.envelope {
         background-image: url('../../assets/images/icons/envelope.svg');
@@ -57,7 +57,7 @@
       cursor: pointer;
 
       .left {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgb(255 255 255 / 20%);
 
         &.envelope {
           background-image: url('../../assets/images/icons/envelope-open.svg');

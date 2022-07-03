@@ -1,6 +1,7 @@
 import React from 'react';
 import './CardIconVertical.scss';
 
+// Components
 import Icon from '../Icon/Icon';
 
 const CardIconVertical = ({ iconFront, iconBack, title, text, delay }) => (

@@ -2,7 +2,7 @@ import React from 'react';
 import './FeatureComponent.scss';
 
 const FeatureComponent = ({ featureNr, title, description, image }) => (
-  <section className="feature_component">
+  <section className="feature-component">
     <div className="left">
       <span>{featureNr}</span>
       <h2>{title}</h2>

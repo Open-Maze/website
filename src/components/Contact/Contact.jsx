@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.scss';
 
+// Components
 import Button from '../Button/Button';
 import ContactCardS from '../ContactCardS/ContactCardS';
 

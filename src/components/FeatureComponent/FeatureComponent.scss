@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 @import '../../styles/mixin';
 
-.feature_component {
+.feature-component {
   max-width: 1100px;
   height: 430px;
   margin: 0 auto;
@@ -25,20 +25,17 @@
 }
 
 @media only screen and (max-width: $break-lg) {
-  .feature_component {
+  .feature-component {
     .left {
       padding: 25px 25px 25px 50px;
-    }
-
-    .right {
     }
   }
 }
 
 @media only screen and (max-width: $break-md) {
-  .feature_component {
+  .feature-component {
     flex-direction: column;
-    margin: 50px 50px;
+    margin: 50px;
 
     .left {
       width: 100%;

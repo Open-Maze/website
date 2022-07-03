@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './ProjectsSection.scss';
 
+// External
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// Assets
 import knowledgeProfiler from '../../assets/images/illustrations-products/knowlegde-profiler.svg';
 import qApp from '../../assets/images/illustrations-products/q-app.svg';
 import topicExtraction from '../../assets/images/illustrations-products/topic-extraction.svg';
@@ -12,7 +15,7 @@ const ProjectsSection = () => {
   const [isActive3, setIsActive3] = useState(false);
 
   return (
-    <div className="projects_section">
+    <div className="projects-section">
       <div className="left">
         <h4 data-aos="fade-up">Impactful Decisions</h4>
         <h2 data-aos="fade-up" data-aos-delay="100">
@@ -21,13 +24,13 @@ const ProjectsSection = () => {
         <div className="bottom">
           <div data-aos="fade-up" data-aos-delay="200">
             <button
-              id="button_1"
+              id="button-1"
               onClick={() => {
                 setIsActive1(true);
                 setIsActive2(false);
                 setIsActive3(false);
               }}
-              className={isActive1 ? 'projects_button active' : 'projects_button'}
+              className={isActive1 ? 'projects-button active' : 'projects-button'}
               type="button"
             >
               <FontAwesomeIcon className="icon" icon="comment-dots" />
@@ -37,13 +40,13 @@ const ProjectsSection = () => {
           <br />
           <div data-aos="fade-up" data-aos-delay="300">
             <button
-              id="button_2"
+              id="button-2"
               onClick={() => {
                 setIsActive1(false);
                 setIsActive2(true);
                 setIsActive3(false);
               }}
-              className={isActive2 ? 'projects_button active' : 'projects_button'}
+              className={isActive2 ? 'projects-button active' : 'projects-button'}
               type="button"
             >
               <FontAwesomeIcon className="icon" icon="book" />
@@ -53,13 +56,13 @@ const ProjectsSection = () => {
           <br />
           <div data-aos="fade-up" data-aos-delay="400">
             <button
-              id="button_3"
+              id="button-3"
               onClick={() => {
                 setIsActive1(false);
                 setIsActive2(false);
                 setIsActive3(true);
               }}
-              className={isActive3 ? 'projects_button active' : 'projects_button'}
+              className={isActive3 ? 'projects-button active' : 'projects-button'}
               type="button"
             >
               <FontAwesomeIcon className="icon" icon="graduation-cap" />
@@ -69,7 +72,7 @@ const ProjectsSection = () => {
         </div>
       </div>
       <div className="right">
-        <div id="card_1" className={isActive1 ? 'card active' : 'card'}>
+        <div id="card-1" className={isActive1 ? 'card active' : 'card'}>
           <div
             className="image"
             style={{ backgroundImage: `url(${topicExtraction})` }}
@@ -89,7 +92,7 @@ const ProjectsSection = () => {
             </p>
           </div>
         </div>
-        <div id="card_2" className={isActive2 ? 'card active' : 'card'}>
+        <div id="card-2" className={isActive2 ? 'card active' : 'card'}>
           <div className="image" style={{ backgroundImage: `url(${qApp})` }} data-aos="fade-up" data-aos-delay="100" />
           <div className="text">
             <h3 data-aos="fade-up" data-aos-delay="200">
@@ -103,7 +106,7 @@ const ProjectsSection = () => {
             </p>
           </div>
         </div>
-        <div id="card_3" className={isActive3 ? 'card active' : 'card'}>
+        <div id="card-3" className={isActive3 ? 'card active' : 'card'}>
           <div
             className="image"
             style={{ backgroundImage: `url(${knowledgeProfiler})` }}

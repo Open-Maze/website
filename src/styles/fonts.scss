@@ -2,7 +2,7 @@
 @import './mixin';
 
 @font-face {
-  font-family: 'Silka';
+  font-family: Silka;
   src: url('../assets/fonts/silka/Silka-Regular.eot');
   src: url('../assets/fonts/silka/Silka-Regular.eot?#iefix') format('embedded-opentype'),
     url('../assets/fonts/silka/Silka-Regular.woff2') format('woff2'),
@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: 'Silka';
+  font-family: Silka;
   src: url('../assets/fonts/silka/Silka-Medium.eot');
   src: url('../assets/fonts/silka/Silka-Medium.eot?#iefix') format('embedded-opentype'),
     url('../assets/fonts/silka/Silka-Medium.woff2') format('woff2'),
@@ -24,7 +24,7 @@
 }
 
 @font-face {
-  font-family: 'Silka';
+  font-family: Silka;
   src: url('../assets/fonts/silka/Silka-Semibold.eot');
   src: url('../assets/fonts/silka/Silka-Semibold.eot?#iefix') format('embedded-opentype'),
     url('../assets/fonts/silka/Silka-Semibold.woff2') format('woff2'),
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-  font-family: 'Silka';
+  font-family: Silka;
   src: url('../assets/fonts/silka/Silka-Bold.eot');
   src: url('../assets/fonts/silka/Silka-Bold.eot?#iefix') format('embedded-opentype'),
     url('../assets/fonts/silka/Silka-Bold.woff2') format('woff2'),
@@ -56,7 +56,7 @@ h1 {
   font-weight: $fw-700;
   line-height: $lh-h1;
 
-  &:after {
+  &::after {
     content: '\A';
     width: 9px;
     height: 9px;
@@ -73,7 +73,7 @@ h2 {
   font-weight: $fw-700;
   line-height: $lh-h2;
 
-  &:after {
+  &::after {
     content: '\A';
     width: 6px;
     height: 6px;
@@ -128,7 +128,7 @@ img::selection {
   h1 {
     font-size: $fs-h2;
 
-    &:after {
+    &::after {
       width: 8px;
       height: 8px;
     }
@@ -137,7 +137,7 @@ img::selection {
   h2 {
     font-size: 36px;
 
-    &:after {
+    &::after {
       width: 5px;
       height: 5px;
       margin-left: 2px;

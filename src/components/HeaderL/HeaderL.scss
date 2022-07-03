@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 @import '../../styles/mixin';
 
-.header_l {
+.header-l {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  .header_l__wrapper {
+  .header-l-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;

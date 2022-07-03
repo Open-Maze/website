@@ -1,13 +1,15 @@
 import React from 'react';
 import './HeaderL.scss';
 
+// Components
 import Button from '../Button/Button';
 
+// Assets
 import headerSvg from '../../assets/images/illustrations/header.svg';
 
 const HeaderL = () => (
-  <div className="header_l">
-    <div className="header_l__wrapper">
+  <div className="header-l">
+    <div className="header-l-wrapper">
       <div className="left">
         <h1 data-aos="fade-up">
           <mark>Welcome to OpenMaze</mark>

@@ -1,6 +1,7 @@
-@import 'src/styles/variables';
+@import '../../styles/variables';
+@import '../../styles/mixin';
 
-.Input {
+.input {
   max-width: 100%;
   overflow: hidden;
   display: grid;
@@ -33,7 +34,7 @@
 
       &.white {
         border: 1.5px solid $light-gray;
-        background-color: white;
+        background-color: $white;
         border-radius: $br-5;
       }
 

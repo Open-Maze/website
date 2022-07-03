@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './Footer.scss';
 
+// External
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro';
-
 import Moment from 'react-moment';
 import 'moment-timezone';
 
+// Assets
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
 
 const Footer = () => {
@@ -23,8 +24,8 @@ const Footer = () => {
   }, []);
 
   return (
-    <>
-      <div className="footer">
+    <div className="footer">
+      <div className="footer-wrapper">
         <div className="footer-left">
           <a href="/">
             <LogoPurpleBlue />
@@ -46,7 +47,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="copyright">
+      <div className="footer-copyright">
         <p>
           Copyright &copy; <Moment interval={1000} date={today} format={date} /> OpenMaze
         </p>
@@ -56,7 +57,7 @@ const Footer = () => {
           </div>
         </a>
       </div>
-    </>
+    </div>
   );
 };
 

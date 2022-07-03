@@ -1,9 +1,11 @@
 import React from 'react';
 import './Nav.scss';
 
-import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
-
+// Components
 import Button from '../Button/Button';
+
+// Assets
+import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
 
 const Nav = () => (
   <div className="nav">

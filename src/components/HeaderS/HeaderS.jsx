@@ -1,9 +1,11 @@
 import React from 'react';
 import './HeaderS.scss';
+
+// Components
 import Button from '../Button/Button';
 
 const HeaderS = ({ title, description, buttonLabel, buttonLink, svg }) => (
-  <section className="header_s">
+  <section className="header-s">
     <div className="left">
       <h1>{title}</h1>
       <p>{description}</p>

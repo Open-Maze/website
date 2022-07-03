@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 @import '../../styles/mixin';
 
-.projects_section {
+.projects-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: $spacing-032;
@@ -29,7 +29,7 @@
     }
 
     .bottom {
-      .projects_button {
+      .projects-button {
         color: #9c9b9b;
         border: 2px solid #ebebeb;
         border-radius: 10px;
@@ -63,7 +63,7 @@
   .right {
     .card {
       padding-top: $spacing-032;
-      background-color: #ffffff;
+      background-color: #fff;
       border-radius: 10px;
       box-shadow: inset 0 -3px 0 $skyline;
       display: none;

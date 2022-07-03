@@ -1,6 +1,7 @@
 import React from 'react';
 import './Icon.scss';
 
+// External
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as Icons from '@fortawesome/free-solid-svg-icons';
