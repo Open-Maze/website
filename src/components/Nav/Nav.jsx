@@ -10,7 +10,7 @@ import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoP
 const Nav = () => (
   <div className="nav">
     <div className="nav-left">
-      <a href="#top">
+      <a href="/">
         <LogoPurpleBlue />
       </a>
     </div>

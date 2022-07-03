@@ -4,7 +4,7 @@ on:
   push:
     branches: [development]
   pull_request:
-    branches: [main, development]
+    branches: [main, staging, development]
   workflow_dispatch:
 
 jobs:
@@ -52,3 +52,14 @@ jobs:
         uses: creyD/prettier_action@v4.2
         with:
           prettier_options: --check .
+
+  stylelint:
+    name: Stylelint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Stylelint
+        uses: actions-hub/stylelint@master

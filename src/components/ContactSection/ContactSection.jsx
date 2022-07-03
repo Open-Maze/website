@@ -1,12 +1,12 @@
 import React from 'react';
-import './Contact.scss';
+import './ContactSection.scss';
 
 // Components
 import Button from '../Button/Button';
 import ContactCardS from '../ContactCardS/ContactCardS';
 
-const Contact = () => (
-  <div className="contact">
+const ContactSection = () => (
+  <div className="contact-section">
     <div className="contact-area">
       <div className="left">
         <h4 data-aos="fade-up">Meaningful Connections</h4>
@@ -44,4 +44,4 @@ const Contact = () => (
   </div>
 );
 
-export default Contact;
+export default ContactSection;

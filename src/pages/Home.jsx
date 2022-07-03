@@ -6,7 +6,7 @@ import HeaderL from '../components/HeaderL/HeaderL';
 import CoreValues from '../components/CoreValues/CoreValues';
 import Information from '../components/Information/Information';
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
-import Contact from '../components/Contact/Contact';
+import ContactSection from '../components/ContactSection/ContactSection';
 
 // Assets
 import Team from '../assets/images/team.jpg';
@@ -23,7 +23,7 @@ const Home = () => (
       image={Team}
     />
     <ProjectsSection />
-    <Contact />
+    <ContactSection />
   </div>
 );
 

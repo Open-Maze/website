@@ -1,8 +1,8 @@
-name: Deploy Main
+name: Deploy Staging
 
 on:
   push:
-    branches: [main]
+    branches: [staging]
   workflow_dispatch:
 
 jobs:
@@ -42,9 +42,10 @@ jobs:
       - name: Deploy app
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.OPENMAZE_MASTER_HOST }}
-          port: ${{ secrets.OPENMAZE_MASTER_PORT }}
-          username: ${{ secrets.OPENMAZE_MASTER_USERNAME }}
-          password: ${{ secrets.OPENMAZE_MASTER_PASSWORD }}
-          target: ${{ secrets.OPENMAZE_MASTER_DIR }}
+          host: ${{ secrets.OPENMAZE_STAGING_HOST }}
+          port: ${{ secrets.OPENMAZE_STAGING_PORT }}
+          username: ${{ secrets.OPENMAZE_STAGING_USERNAME }}
+          password: ${{ secrets.OPENMAZE_STAGING_PASSWORD }}
+          port: ${{ secrets.OPENMAZE_STAGING_PORT }}
+          target: ${{ secrets.OPENMAZE_STAGING_DIR }}
           source: 'build/'
