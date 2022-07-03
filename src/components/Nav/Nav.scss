@@ -21,11 +21,52 @@
     }
   }
 
-  @media only screen and (max-width: calc($break-lg + 100px)) {
-    padding: 0 30px;
+  .nav-right {
+    .nav-right-menu {
+      display: flex;
+      align-items: center;
+      gap: $spacing-048;
+      color: $dark;
 
-    .nav-right {
-      display: none;
+      .menu-item {
+        position: relative;
+        transition: all 0.3s ease-out;
+
+        &::after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          bottom: -4px;
+          left: 0;
+          right: 0;
+          width: 0;
+          margin: 0 auto;
+          background: $dark;
+          transition: all 0.3s ease-out;
+        }
+
+        &:hover::after {
+          width: calc(100% - 2px);
+          background: $violet;
+        }
+
+        &:hover {
+          color: $violet;
+        }
+      }
+
+      .active {
+        color: $violet;
+
+        &::after {
+          width: 20px;
+          background: $violet;
+        }
+
+        &:hover::after {
+          background: $violet;
+        }
+      }
     }
   }
 }
