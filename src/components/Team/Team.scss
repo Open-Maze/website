@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.team {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: $spacing-048;
+
+  & > div {
+    background-color: $midnight;
+  }
+}
+
+@media only screen and (max-width: $break-md) {
+  .team {
+    margin: 50px;
+  }
+}
+
+@media only screen and (max-width: $break-lg) {
+  .team-grid {
+    grid-template-columns: auto;
+  }
+}
