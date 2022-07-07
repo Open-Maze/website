@@ -25,7 +25,7 @@ const HeaderL = () => (
         </div>
       </div>
       <div className="right">
-        <img src={headerSvg} alt="Illustration" data-aos="fade-up" />
+        <img src={headerSvg} alt="Illustration" data-aos="fade-up" data-aos-delay="100" />
       </div>
     </div>
   </div>
