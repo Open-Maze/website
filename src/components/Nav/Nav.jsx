@@ -15,7 +15,7 @@ const Nav = () => {
 
   return (
     <div className="nav">
-      <div className="nav-left">
+      <div className="nav-left" data-aos="fade-down">
         {location.pathname === '/' && (
           <a href="#top">
             <LogoPurpleBlue />
@@ -27,7 +27,7 @@ const Nav = () => {
           </Link>
         )}
       </div>
-      <div className="nav-right">
+      <div className="nav-right" data-aos="fade-down">
         <div className="nav-right-menu">
           <NavLink to="/" className="menu-item" activeClassName="active">
             <p className="menu-item">home</p>
