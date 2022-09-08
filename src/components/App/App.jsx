@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './App.scss';
 
 // External
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

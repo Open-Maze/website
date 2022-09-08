@@ -1,5 +1,4 @@
 import React from 'react';
-import './TeamMember.scss';
 
 const TeamMember = () => (
   <div>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Footer.scss';
 
 // External
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

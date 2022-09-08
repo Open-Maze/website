@@ -1,5 +1,4 @@
 import React from 'react';
-import './CardIconVertical.scss';
 
 // Components
 import Icon from '../Icon/Icon';

@@ -1,5 +1,4 @@
 import React from 'react';
-import './CoreValues.scss';
 
 // Components
 import CardIconVertical from '../CardIconVertical/CardIconVertical';

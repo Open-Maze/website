@@ -1,5 +1,4 @@
 import React from 'react';
-import './Team.scss';
 
 import TeamMember from '../TeamMember/TeamMember';
 

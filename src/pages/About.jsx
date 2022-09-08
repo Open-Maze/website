@@ -1,5 +1,4 @@
 import React from 'react';
-import './shared.scss';
 
 const About = () => (
   <div className="page about">

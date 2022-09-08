@@ -1,5 +1,4 @@
 import React from 'react';
-import './Icon.scss';
 
 // External
 import { library } from '@fortawesome/fontawesome-svg-core';

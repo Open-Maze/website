@@ -1,5 +1,4 @@
 import React from 'react';
-import './ContactCardS.scss';
 
 const ContactCardS = ({ link, icon, title, content, delay }) => (
   <a href={link} target="_blank" rel="noreferrer">

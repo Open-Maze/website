@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './ProjectsSection.scss';
 
 // External
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

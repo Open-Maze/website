@@ -1,5 +1,4 @@
 import React from 'react';
-import './FeatureComponent.scss';
 
 const FeatureComponent = ({ featureNr, title, description, image }) => (
   <section className="feature-component">

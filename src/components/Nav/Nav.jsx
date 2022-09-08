@@ -1,5 +1,4 @@
 import React from 'react';
-import './Nav.scss';
 
 // External
 import { Link, NavLink, useLocation } from 'react-router-dom';

@@ -1,5 +1,4 @@
 import React from 'react';
-import './HeaderS.scss';
 
 // Components
 import Button from '../Button/Button';

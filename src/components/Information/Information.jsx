@@ -1,5 +1,4 @@
 import React from 'react';
-import './Information.scss';
 
 // Components
 import Button from '../Button/Button';
