@@ -56,7 +56,7 @@
   }
 
   body {
-    @apply font-silka text-base leading-relaxed;
+    @apply bg-bleach font-silka text-base leading-relaxed;
   }
 
   ::selection {

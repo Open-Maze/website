@@ -14,7 +14,7 @@ const ContactSection = () => (
         <h2 className="pb-6" data-aos="fade-up" data-aos-delay="100">
           Get in touch
         </h2>
-        <p className="pb-10" data-aos="fade-up" data-aos-delay="200">
+        <p className="pb-10 text-slate-700" data-aos="fade-up" data-aos-delay="200">
           Questions about our tools or just want to say hi? Feel free to mail us at the address listed here! You can
           also follow us on LinkedIn for the latest news about OpenMaze!
         </p>

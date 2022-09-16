@@ -4,7 +4,7 @@ import React from 'react';
 import CardIconVertical from '../CardIconVertical/CardIconVertical';
 
 const CoreValues = () => (
-  <div className="core-values">
+  <div className="cms-block">
     <h4 data-aos="fade-up">Our Beliefs</h4>
     <h2 data-aos="fade-up" data-aos-delay="100">
       Core values
