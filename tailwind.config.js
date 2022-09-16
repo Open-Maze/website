@@ -9,12 +9,12 @@ module.exports = {
         dark: '#505050',
         light: '#cacaca',
         violet: {
-          default: '#8c1cec',
+          DEFAULT: '#8c1cec',
           darker: '#841be0',
         },
         midnight: '#5c0f9e',
         skyline: {
-          default: '#32cbe4',
+          DEFAULT: '#32cbe4',
           darker: '#2fbed4',
         },
         bleach: '#f4f4f4',

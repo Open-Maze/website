@@ -1,0 +1,3 @@
+.btn-purple-solid {
+  @apply rounded-lg border-2 border-solid border-violet bg-violet px-6 py-2 text-white transition hover:border-violet-darker hover:bg-violet-darker;
+}

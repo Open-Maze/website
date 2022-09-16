@@ -4,15 +4,15 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Pages
-import Home from '../../pages/Home';
-import Products from '../../pages/Products';
-import About from '../../pages/About';
-import Contact from '../../pages/Contact';
+import Home from './pages/Home';
+import Products from './pages/Products';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 // Components
-import Nav from '../Nav/Nav';
-import ScrollToTop from '../ScrollToTop/ScrollToTop';
-import Footer from '../Footer/Footer';
+import Nav from './components/Nav/Nav';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Footer from './components/Footer/Footer';
 
 const App = () => (
   <div className="app">

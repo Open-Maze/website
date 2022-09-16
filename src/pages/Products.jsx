@@ -1,4 +1,5 @@
 import React from 'react';
+import './shared.css';
 
 const Products = () => (
   <div className="page products">

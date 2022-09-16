@@ -1,4 +1,5 @@
 import React from 'react';
+import './shared.css';
 
 // Components
 import HeaderL from '../components/HeaderL/HeaderL';
