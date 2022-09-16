@@ -10,6 +10,7 @@ module.exports = {
         light: '#cacaca',
         violet: {
           DEFAULT: '#8c1cec',
+          lighter: '#dcbaf9',
           darker: '#841be0',
         },
         midnight: '#5c0f9e',

@@ -2,9 +2,9 @@ import React from 'react';
 
 const ContactCardS = ({ link, icon, title, content, delay }) => (
   <a href={link} target="_blank" rel="noreferrer">
-    <div className="contact-card-s" data-aos="fade-up" data-aos-delay={delay}>
-      <div className="contact-card-s-inner">
-        <div className={`left ${icon}`} />
+    <div data-aos="fade-up" data-aos-delay={delay}>
+      <div className="radius flex min-w-full items-center justify-start rounded-3xl bg-bleach p-6 transition">
+        <div className={`flex h-12 w-12 items-center justify-center rounded-full bg-violet-lighter ${icon}`} />
         <div className="middle">
           <p>{title}</p>
         </div>
