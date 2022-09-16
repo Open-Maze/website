@@ -24,24 +24,30 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <div className="footer-wrapper">
-        <div className="footer-left">
+      <div className="flex w-full items-center justify-between border-b-2 border-solid border-bleach bg-white px-10">
+        <div>
           <a href="/">
-            <LogoPurpleBlue />
+            <LogoPurpleBlue className="mt-3 h-6" />
           </a>
         </div>
-        <div className="footer-right">
+        <div className="flex h-full items-center">
           <a
             href="https://linkedin.com/company/open-maze"
             target="_blank"
             rel="noreferrer"
-            className="footer-right-social"
+            className="flex items-center"
           >
-            <FontAwesomeIcon icon={brands('linkedin-in')} />
+            <FontAwesomeIcon
+              icon={brands('linkedin-in')}
+              className="h-6 px-6 text-violet transition hover:text-violet-darker"
+            />
           </a>
           <a href="#top">
-            <div className="footer-right-arrow aspect-square">
-              <FontAwesomeIcon icon={solid('circle-arrow-up')} />
+            <div className="flex aspect-square items-center justify-center border-x-2 border-solid border-bleach">
+              <FontAwesomeIcon
+                icon={solid('circle-arrow-up')}
+                className="h-6 px-6 text-violet transition hover:text-violet-darker"
+              />
             </div>
           </a>
         </div>
