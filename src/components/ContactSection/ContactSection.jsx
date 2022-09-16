@@ -5,10 +5,10 @@ import Button from '../Button/Button';
 import ContactCardS from '../ContactCardS/ContactCardS';
 
 const ContactSection = () => (
-  <div className="cms-block bg-white py-40">
-    <div className="container grid grid-cols-12 items-center">
-      <div className="col-span-5 col-start-1">
-        <h4 className="pb-2 text-skyline" data-aos="fade-up">
+  <div className="cms-block bg-white">
+    <div className="container grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
+      <div className="col-span-5 lg:col-start-1">
+        <h4 className="pb-2 text-midnight" data-aos="fade-up">
           Meaningful Connections
         </h4>
         <h2 className="pb-6" data-aos="fade-up" data-aos-delay="100">
@@ -24,7 +24,7 @@ const ContactSection = () => (
           </Button>
         </div>
       </div>
-      <div className="col-span-6 col-end-13">
+      <div className="col-span-6 lg:col-end-13">
         <ContactCardS
           link="mailto:hello@openmaze.io"
           icon="envelope"
