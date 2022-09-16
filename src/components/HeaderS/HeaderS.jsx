@@ -9,7 +9,7 @@ const HeaderS = ({ title, description, buttonLabel, buttonLink, svg }) => (
       <h1>{title}</h1>
       <p>{description}</p>
       <div className="buttons">
-        <Button pageUrl={buttonLink} className="btn-purple-solid">
+        <Button pageUrl={buttonLink} className="button--violet">
           {buttonLabel}
         </Button>
       </div>

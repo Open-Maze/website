@@ -43,7 +43,7 @@ const Information = ({ subtitle, title, buttonLabel, buttonLink, image, flipped 
             students, indirectly benefit teachers, often relieving them of tedious tasks.
           </p>
           <div className="buttons" data-aos="fade-up" data-aos-delay="300">
-            <Button pageUrl={buttonLink} className="btn-purple-solid">
+            <Button pageUrl={buttonLink} className="button--violet">
               {buttonLabel}
             </Button>
           </div>
