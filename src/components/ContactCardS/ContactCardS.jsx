@@ -4,14 +4,14 @@ import './ContactCardS.css';
 const ContactCardS = ({ link, icon, title, content, delay }) => (
   <a href={link} target="_blank" rel="noreferrer">
     <div data-aos="fade-up" data-aos-delay={delay}>
-      <div className="radius flex min-w-full items-center justify-start rounded-3xl bg-bleach p-6 transition">
+      <div className="contact-card-s-container flex min-w-full items-center justify-start rounded-3xl bg-bleach p-6 transition hover:cursor-pointer hover:bg-violet-darker hover:text-white">
         <div
-          className={`flex h-12 w-12 items-center justify-center rounded-full bg-violet-lighter bg-40 bg-center bg-no-repeat ${icon} `}
+          className={`contact-card-s-container-left flex h-12 w-12 items-center justify-center rounded-full bg-violet-lighter bg-40 bg-center bg-no-repeat ${icon}`}
         />
-        <div className="middle">
+        <div className="ml-6 hidden py-6 md:block">
           <p>{title}</p>
         </div>
-        <div className="right">
+        <div className="contact-card-s-container-right ml-auto py-4 text-right text-midnight">
           <p>{content}</p>
         </div>
       </div>
