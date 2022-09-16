@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <div className="flex w-full items-center justify-between border-b-2 border-solid border-bleach bg-white px-10">
+      <div className="flex w-full flex-col items-stretch justify-start border-b-2 border-solid border-bleach bg-white px-10">
         <div>
           <a href="/">
             <LogoPurpleBlue className="mt-3 h-6" />
@@ -42,7 +42,7 @@ const Footer = () => {
               className="h-6 px-6 text-violet transition hover:text-violet-darker"
             />
           </a>
-          <a href="#top">
+          <a href="#top" className="hidden lg:block">
             <div className="flex aspect-square items-center justify-center border-x-2 border-solid border-bleach">
               <FontAwesomeIcon
                 icon={solid('circle-arrow-up')}
@@ -52,13 +52,16 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="footer-copyright">
+      <div className="flex h-20 w-full items-center justify-center bg-white px-12 text-slate-400">
         <p>
           Copyright &copy; <Moment interval={1000} date={today} format={date} /> OpenMaze
         </p>
-        <a href="#top" className="footer-right-arrow-sm">
+        <a href="#top" className="ml-auto block lg:hidden">
           <div>
-            <FontAwesomeIcon icon={solid('circle-arrow-up')} />
+            <FontAwesomeIcon
+              icon={solid('circle-arrow-up')}
+              className="h-6 px-6 text-violet transition hover:text-violet-darker"
+            />
           </div>
         </a>
       </div>
