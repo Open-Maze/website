@@ -40,7 +40,7 @@ const Nav = () => {
           <NavLink to="/contact" className="menu-item" activeClassName="active">
             <p className="menu-item">contact</p>
           </NavLink>
-          <Button pageUrl="#bottom" className="button--violet">
+          <Button pageUrl="#bottom" className="button button--violet">
             Get in touch
           </Button>
         </div>

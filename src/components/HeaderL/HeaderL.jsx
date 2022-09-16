@@ -20,7 +20,7 @@ const HeaderL = () => (
           </mark>
         </p>
         <div className="buttons" data-aos="fade-up" data-aos-delay="200">
-          <Button pageUrl="#bottom" className="button--violet">
+          <Button pageUrl="#bottom" className="button button--violet">
             Get in touch
           </Button>
         </div>

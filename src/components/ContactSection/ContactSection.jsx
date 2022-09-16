@@ -17,7 +17,7 @@ const ContactSection = () => (
           also follow us on LinkedIn for the latest news about OpenMaze!
         </p>
         <div className="buttons" data-aos="fade-up" data-aos-delay="300">
-          <Button pageUrl="mailto:hello@openmaze.io" className="button--violet">
+          <Button pageUrl="mailto:hello@openmaze.io" className="button button--violet">
             Mail us
           </Button>
         </div>
