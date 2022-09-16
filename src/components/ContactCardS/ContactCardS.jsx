@@ -8,7 +8,7 @@ const ContactCardS = ({ link, icon, title, content, delay }) => (
         <div
           className={`contact-card-s-container-left flex h-12 w-12 items-center justify-center rounded-full bg-violet-lighter bg-40 bg-center bg-no-repeat ${icon}`}
         />
-        <div className="ml-6 hidden py-6 md:block">
+        <div className="hidden px-6 md:block">
           <p>{title}</p>
         </div>
         <div className="contact-card-s-container-right ml-auto py-4 text-right text-midnight">
