@@ -1,3 +1,19 @@
-.btn-purple-solid {
-  @apply rounded-lg border-2 border-solid border-violet bg-violet px-6 py-2 text-white transition hover:border-violet-darker hover:bg-violet-darker;
+.button {
+  @apply rounded-lg border-2 border-solid px-6 py-2 transition;
+
+  &--violet {
+    @apply border-violet bg-violet text-white hover:border-violet-darker hover:bg-violet-darker;
+  }
+
+  &--violet-outline {
+    @apply border-violet bg-white text-violet hover:border-violet-darker hover:bg-violet-darker hover:text-white;
+  }
+
+  &--skyline {
+    @apply border-skyline bg-skyline text-white hover:border-skyline-darker hover:bg-skyline-darker;
+  }
+
+  &--skyline-outline {
+    @apply border-skyline bg-white text-skyline hover:border-skyline-darker hover:bg-skyline-darker hover:text-white;
+  }
 }
