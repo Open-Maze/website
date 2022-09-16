@@ -26,6 +26,9 @@ module.exports = {
         sans: ['Manrope', 'Helvetica', 'Arial', 'sans-serif'],
         condensed: ['Silka', 'Helvetica', 'Arial', 'sans-serif'],
       },
+      backgroundSize: {
+        '40': '40%',
+      },
       screens: {
         sm: '640px',
         md: '768px',
