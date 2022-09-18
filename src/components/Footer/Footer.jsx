@@ -3,12 +3,14 @@ import React from 'react';
 // External
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import moment from 'moment';
 
 // Assets
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
 
 const Footer = () => {
   const location = useLocation();
+  const year = moment().year();
 
   return (
     <div className="footer">
@@ -42,7 +44,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex h-20 w-full items-center justify-center bg-white px-12 text-slate-400">
-        <p>Copyright &copy; 2022 OpenMaze</p>
+        <p>Copyright &copy; {year} OpenMaze</p>
         <a href="#top" className="ml-auto block lg:hidden">
           <div>
             <FontAwesomeIcon icon="circle" className="h-6 px-6 text-violet transition hover:text-violet-darker" />
