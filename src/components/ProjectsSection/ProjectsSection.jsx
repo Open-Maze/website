@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Assets
-import knowledgeProfiler from '../../assets/images/illustrations-products/knowlegde-profiler.svg';
+import knowledgeProfiler from '../../assets/images/illustrations-products/knowledge-profiler.svg';
 import qApp from '../../assets/images/illustrations-products/q-app.svg';
 import topicExtraction from '../../assets/images/illustrations-products/topic-extraction.svg';
 
