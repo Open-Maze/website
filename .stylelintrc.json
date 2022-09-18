@@ -1,17 +1,11 @@
 {
-  "extends": [
-    "stylelint-config-standard"
-  ],
-  "plugins": [
-    "stylelint-prettier"
-  ],
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-prettier"],
   "rules": {
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": [
-          "tailwind"
-        ]
+        "ignoreAtRules": ["tailwind"]
       }
     ],
     "color-named": "never",

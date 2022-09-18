@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <div className="border-bleach flex w-full flex-col items-stretch justify-start border-b-2 border-solid bg-white px-10">
+      <div className="flex w-full flex-col items-stretch justify-start border-b-2 border-solid border-bleach bg-white px-10">
         <div>
           <a href="/">
             <LogoPurpleBlue className="mt-3 h-6" />
@@ -39,14 +39,14 @@ const Footer = () => {
           >
             <FontAwesomeIcon
               icon={brands('linkedin-in')}
-              className="text-violet hover:text-violet-darker h-6 px-6 transition"
+              className="h-6 px-6 text-violet transition hover:text-violet-darker"
             />
           </a>
           <a href="#top" className="hidden lg:block">
-            <div className="border-bleach flex aspect-square items-center justify-center border-x-2 border-solid">
+            <div className="flex aspect-square items-center justify-center border-x-2 border-solid border-bleach">
               <FontAwesomeIcon
                 icon={solid('circle-arrow-up')}
-                className="text-violet hover:text-violet-darker h-6 px-6 transition"
+                className="h-6 px-6 text-violet transition hover:text-violet-darker"
               />
             </div>
           </a>
@@ -60,7 +60,7 @@ const Footer = () => {
           <div>
             <FontAwesomeIcon
               icon={solid('circle-arrow-up')}
-              className="text-violet hover:text-violet-darker h-6 px-6 transition"
+              className="h-6 px-6 text-violet transition hover:text-violet-darker"
             />
           </div>
         </a>

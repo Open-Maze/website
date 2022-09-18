@@ -6,7 +6,7 @@ import CardIconVertical from '../CardIconVertical/CardIconVertical';
 const CoreValues = () => (
   <div className="cms-block">
     <div className="container">
-      <h4 className="text-midnight pb-2" data-aos="fade-up">
+      <h4 className="pb-2 text-midnight" data-aos="fade-up">
         Our Beliefs
       </h4>
       <h2 data-aos="fade-up" data-aos-delay="100">
