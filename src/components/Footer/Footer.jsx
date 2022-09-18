@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 // External
+import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import Moment from 'react-moment';
@@ -10,6 +11,8 @@ import 'moment-timezone';
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
 
 const Footer = () => {
+  const location = useLocation();
+
   Moment.globalLocale = 'nl';
   const today = Date();
   const date = 'YYYY';
@@ -26,9 +29,16 @@ const Footer = () => {
     <div className="footer">
       <div className="flex w-full flex-col items-stretch justify-start border-b-2 border-solid border-bleach bg-white px-10">
         <div>
-          <a href="/">
-            <LogoPurpleBlue className="mt-3 h-6" />
-          </a>
+          {location.pathname === '/' && (
+            <a href="#top">
+              <LogoPurpleBlue />
+            </a>
+          )}
+          {location.pathname !== '/' && (
+            <Link to="/">
+              <LogoPurpleBlue />
+            </Link>
+          )}
         </div>
         <div className="flex h-full items-center">
           <a

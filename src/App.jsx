@@ -13,7 +13,7 @@ import NotFound from './pages/NotFound';
 // Components
 import Nav from './components/Nav/Nav';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import Footer from './components/Footer/Footer';
+// import Footer from './components/Footer/Footer';
 
 const App = () => (
   <div className="app">
@@ -28,7 +28,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ScrollToTop>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   </div>
 );
