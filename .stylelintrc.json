@@ -1,6 +1,6 @@
 {
   "extends": [
-    "stylelint-config-standard",
+    "stylelint-config-standard"
   ],
   "plugins": [
     "stylelint-prettier"
@@ -16,6 +16,8 @@
     ],
     "color-named": "never",
     "color-hex-case": "lower",
-    "prettier/prettier": true
+    "declaration-colon-newline-after": null,
+    "prettier/prettier": true,
+    "string-quotes": "single"
   }
 }

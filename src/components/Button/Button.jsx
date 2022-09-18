@@ -2,7 +2,7 @@ import React from 'react';
 import './Button.css';
 
 // External
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion } from 'framer-motion';
 
 const Button = ({ children, pageUrl, className }) => {
   let url = pageUrl;

@@ -2,18 +2,18 @@
   @apply rounded-lg border-2 border-solid px-6 py-2 transition;
 
   &--violet {
-    @apply border-violet bg-violet text-white hover:border-violet-darker hover:bg-violet-darker;
+    @apply border-violet bg-violet hover:border-violet-darker hover:bg-violet-darker text-white;
   }
 
   &--violet-outline {
-    @apply border-violet bg-white text-violet hover:border-violet-darker hover:bg-violet-darker hover:text-white;
+    @apply border-violet text-violet hover:border-violet-darker hover:bg-violet-darker bg-white hover:text-white;
   }
 
   &--skyline {
-    @apply border-skyline bg-skyline text-white hover:border-skyline-darker hover:bg-skyline-darker;
+    @apply border-skyline bg-skyline hover:border-skyline-darker hover:bg-skyline-darker text-white;
   }
 
   &--skyline-outline {
-    @apply border-skyline bg-white text-skyline hover:border-skyline-darker hover:bg-skyline-darker hover:text-white;
+    @apply border-skyline text-skyline hover:border-skyline-darker hover:bg-skyline-darker bg-white hover:text-white;
   }
 }
