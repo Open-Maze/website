@@ -33,7 +33,3 @@ module.exports = {
   },
   plugins: ['@tailwindcss/typography', '@tailwindcss/forms', '@tailwindcss/line-clamp', '@tailwindcss/aspect-ratio'],
 };
-
-module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
-};
