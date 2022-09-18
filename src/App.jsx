@@ -11,13 +11,14 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
 // Components
-// import Nav from './components/Nav/Nav';
+import Nav from './components/Nav/Nav';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-// import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 
 const App = () => (
   <div className="app">
     <Router>
+      <Nav />
       <ScrollToTop>
         <Routes>
           <Route index element={<Home />} />
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ScrollToTop>
+      <Footer />
     </Router>
   </div>
 );
