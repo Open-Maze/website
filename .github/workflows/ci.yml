@@ -40,7 +40,7 @@ jobs:
           npm run build --if-present
 
       - name: Run Stylelint
-        run: npx stylelint src/**/*.scss
+        run: npx stylelint src/**/*.css
 
   prettier:
     name: Prettier
