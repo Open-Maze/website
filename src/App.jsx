@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // External
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Core
 import ScrollToTop from './core/ScrollToTop';
@@ -17,22 +19,29 @@ import NotFound from './pages/NotFound';
 import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
 
-const App = () => (
-  <div className="app">
-    <Router>
-      <Nav />
-      <ScrollToTop>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </ScrollToTop>
-      <Footer />
-    </Router>
-  </div>
-);
+const App = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
+  return (
+    <div className="app">
+      <Router>
+        <Nav />
+        <ScrollToTop>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </ScrollToTop>
+        <Footer />
+      </Router>
+    </div>
+  );
+};
 
 export default App;
