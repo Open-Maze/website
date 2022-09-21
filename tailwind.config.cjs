@@ -26,6 +26,9 @@ module.exports = {
         manrope: ['Manrope', 'Helvetica', 'Arial', 'sans-serif'],
         silka: ['Silka', 'Helvetica', 'Arial', 'sans-serif'],
       },
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/images/logo/header-l-background.svg')",
+      },
       backgroundSize: {
         40: '40%',
       },
