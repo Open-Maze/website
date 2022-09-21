@@ -1,4 +1,5 @@
 import React from 'react';
+import './Icon.css';
 
 // External
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -13,9 +14,9 @@ const Icon = ({ front, back }) => {
   library.add(...iconList);
 
   return (
-    <div className="icon">
-      <FontAwesomeIcon className="icon-back" icon={back} />
-      <FontAwesomeIcon className="icon-front" icon={front} />
+    <div className="relative h-[70px] text-6xl">
+      <FontAwesomeIcon className="absolute left-4 top-0 text-skyline" icon={back} />
+      <FontAwesomeIcon className="icon-blur absolute top-2 left-0" icon={front} />
     </div>
   );
 };
