@@ -2,7 +2,7 @@ import React from 'react';
 import './shared.css';
 
 // Components
-import HeaderL from '../components/HeaderL/HeaderL';
+import Header from '../components/Header/Header';
 import CoreValues from '../components/CoreValues/CoreValues';
 import Information from '../components/Information/Information';
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
@@ -13,7 +13,7 @@ import Team from '../assets/images/team.jpg';
 
 const Home = () => (
   <div className="page home">
-    <HeaderL />
+    <Header size="large" />
     <CoreValues />
     <Information
       subtitle="Passionate People"

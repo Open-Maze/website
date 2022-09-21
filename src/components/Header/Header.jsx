@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 
 // Components
 import Button from '../Button/Button';
@@ -6,8 +7,8 @@ import Button from '../Button/Button';
 // Assets
 import { ReactComponent as HeaderImage } from '../../assets/images/illustrations/header.svg';
 
-const HeaderL = () => (
-  <div className="cms-block flex h-fit items-center bg-white bg-hero-pattern bg-cover bg-center bg-no-repeat lg:h-screen">
+const Header = ({ size }) => (
+  <div className={`cms-block flex h-fit items-center bg-white ${size}`}>
     <div className="container grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
       <div className="col-span-5 lg:col-start-1">
         <h1 className="pb-6 leading-tight" data-aos="fade-up">
@@ -32,4 +33,4 @@ const HeaderL = () => (
   </div>
 );
 
-export default HeaderL;
+export default Header;
