@@ -10,6 +10,7 @@ import moment from 'moment';
 
 // Assets
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
+import { ReactComponent as LogoMark } from '../../assets/images/logo/mark.svg';
 
 // Font Awesome Library
 library.add(faLinkedinIn);
@@ -21,7 +22,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="flex w-full flex-col items-start border-b-2 border-solid border-bleach bg-white px-4 text-left sm:flex-row sm:items-center sm:justify-between sm:border-y-2 md:px-10">
-        <div>
+        <div className="hidden w-full justify-center sm:block">
           {location.pathname === '/' && (
             <a href="#top">
               <LogoPurpleBlue className="mt-2 h-6" />
@@ -46,6 +47,18 @@ const Footer = () => {
                 className="h-6 pr-6 text-violet transition hover:text-violet-darker"
               />
             </a>
+          </div>
+          <div className="flex w-full justify-center sm:hidden">
+            {location.pathname === '/' && (
+              <a href="#top">
+                <LogoMark className="h-4" />
+              </a>
+            )}
+            {location.pathname !== '/' && (
+              <Link to="/">
+                <LogoMark className="h-4" />
+              </Link>
+            )}
           </div>
           <a href="#top">
             <div className="flex items-center justify-center py-6 pl-6 sm:border-l-2 sm:border-solid sm:border-bleach">
