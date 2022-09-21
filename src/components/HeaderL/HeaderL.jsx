@@ -7,13 +7,13 @@ import Button from '../Button/Button';
 import headerSvg from '../../assets/images/illustrations/header.svg';
 
 const HeaderL = () => (
-  <div className="header-l">
-    <div className="header-l-wrapper">
-      <div className="left">
-        <h1 data-aos="fade-up">
+  <div className="cms-block bg-white">
+    <div className="container grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
+      <div className="col-span-5 lg:col-start-1">
+        <h1 className="pb-6 leading-relaxed" data-aos="fade-up">
           <mark>Welcome to OpenMaze</mark>
         </h1>
-        <p data-aos="fade-up" data-aos-delay="100">
+        <p className="pb-10" data-aos="fade-up" data-aos-delay="100">
           <mark>
             We aim to provide users of online educational environments with greater insight into their own learning
             journey and performance through the use of AI-based tools.
@@ -25,7 +25,7 @@ const HeaderL = () => (
           </Button>
         </div>
       </div>
-      <div className="right">
+      <div className="col-span-6 lg:col-end-13">
         <img src={headerSvg} alt="Illustration" data-aos="fade-up" data-aos-delay="100" />
       </div>
     </div>

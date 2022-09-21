@@ -86,6 +86,10 @@
     @apply bg-midnight text-white;
   }
 
+  mark {
+    @apply bg-white;
+  }
+
   .cms-block {
     @apply relative px-4 py-20 2xl:py-40;
 
