@@ -3,6 +3,9 @@ import React from 'react';
 // External
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+// Core
+import ScrollToTop from './core/ScrollToTop';
+
 // Pages
 import Home from './pages/Home';
 import Products from './pages/Products';
@@ -12,7 +15,6 @@ import NotFound from './pages/NotFound';
 
 // Components
 import Nav from './components/Nav/Nav';
-import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Footer from './components/Footer/Footer';
 
 const App = () => (
