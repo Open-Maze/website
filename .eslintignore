@@ -4,3 +4,4 @@ coverage
 dist
 src/lib
 node_modules
+src/components/HeaderL/HeaderL.jsx

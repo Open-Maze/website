@@ -63,3 +63,25 @@
     height: fit-content;
   }
 }
+
+.scroll-down {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  width: 24px;
+  height: fit-content;
+  margin: 0 auto;
+  animation: MoveUpDown 1s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 24px;
+  }
+  50% {
+    bottom: 36px;
+  }
+}

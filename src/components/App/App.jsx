@@ -25,7 +25,7 @@ const App = () => {
       <Nav />
       <div className="page">
         <HeaderL />
-        <CoreValues />
+        <ProjectsSection />
         <Information
           subtitle="Passionate People"
           title="About us"
@@ -33,7 +33,7 @@ const App = () => {
           buttonLink="#bottom"
           image={Team}
         />
-        <ProjectsSection />
+        <CoreValues />
         <Contact />
       </div>
       <Footer />
