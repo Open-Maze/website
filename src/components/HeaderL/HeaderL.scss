@@ -74,6 +74,10 @@
   margin: 0 auto;
   animation: MoveUpDown 1s linear infinite;
   cursor: pointer;
+
+  @media only screen and (max-width: calc($break-lg + 100px)) {
+    display: none;
+  }
 }
 
 @keyframes MoveUpDown {
