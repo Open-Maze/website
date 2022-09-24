@@ -47,6 +47,10 @@
 }
 
 @layer components {
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply bg-bleach font-silka text-base leading-relaxed;
   }
