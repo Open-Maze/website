@@ -31,7 +31,7 @@ const ProjectsSection = () => {
               type="button"
             >
               <FontAwesomeIcon className="icon" icon="comment-dots" />
-              <span>Auto Feedback Tool</span>
+              <span>Document Screener</span>
             </button>
           </div>
           <br />
@@ -78,7 +78,7 @@ const ProjectsSection = () => {
           />
           <div className="text">
             <h3 data-aos="fade-up" data-aos-delay="200">
-              Auto Feedback Tool
+              Direct feedback at your fingertips
             </h3>
             <p data-aos="fade-up" data-aos-delay="300">
               Students often have difficulty getting feedback, let alone getting it in a timely manner. In addition, we
@@ -93,7 +93,7 @@ const ProjectsSection = () => {
           <div className="image" style={{ backgroundImage: `url(${qApp})` }} data-aos="fade-up" data-aos-delay="100" />
           <div className="text">
             <h3 data-aos="fade-up" data-aos-delay="200">
-              Q-App
+              Talk to your documents
             </h3>
             <p data-aos="fade-up" data-aos-delay="300">
               People often interact with documents such as research papers or articles in a very linear way. With the
@@ -112,7 +112,7 @@ const ProjectsSection = () => {
           />
           <div className="text">
             <h3 data-aos="fade-up" data-aos-delay="200">
-              Knowledge Profiler
+              Your personally generated skill profile
             </h3>
             <p data-aos="fade-up" data-aos-delay="300">
               Educational institutions allow their students more freedom in what they are learning. Each student has a
