@@ -30,7 +30,7 @@ const ProjectsSection = () => {
               className={isActive1 ? 'projects_button active' : 'projects_button'}
               type="button"
             >
-              <FontAwesomeIcon className="icon" icon="comment-dots" />
+              <FontAwesomeIcon className="icon" icon="book" />
               <span>Document Screener</span>
             </button>
           </div>
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
               className={isActive2 ? 'projects_button active' : 'projects_button'}
               type="button"
             >
-              <FontAwesomeIcon className="icon" icon="book" />
+              <FontAwesomeIcon className="icon" icon="comment-dots" />
               <span>Q-App</span>
             </button>
           </div>
