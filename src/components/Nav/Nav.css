@@ -1,0 +1,19 @@
+.menu-item {
+  @apply relative text-slate-700 transition-all hover:text-violet-darker;
+
+  &::after {
+    @apply absolute -bottom-1 left-0 right-0 mx-auto h-0.5 w-0 bg-slate-700 transition-all content-[''];
+  }
+
+  &:hover {
+    @apply after:w-full after:bg-violet-darker;
+  }
+
+  &.active {
+    @apply text-violet after:w-5 after:bg-violet;
+
+    &:hover {
+      @apply after:w-full after:bg-violet;
+    }
+  }
+}

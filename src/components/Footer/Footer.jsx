@@ -20,7 +20,7 @@ const Footer = () => {
   const year = moment().year();
 
   return (
-    <div className="footer">
+    <>
       <div className="flex w-full flex-col items-start border-b-2 border-solid border-bleach bg-white px-4 text-left sm:flex-row sm:items-center sm:justify-between sm:border-y-2 md:px-10">
         <div className="hidden w-full justify-center sm:block">
           {location.pathname === '/' && (
@@ -73,7 +73,7 @@ const Footer = () => {
       <div className="flex h-20 w-full items-center justify-center bg-white px-4 text-slate-400">
         <p>Copyright &copy; {year} OpenMaze</p>
       </div>
-    </div>
+    </>
   );
 };
 
