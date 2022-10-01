@@ -100,9 +100,5 @@
 
   .cms-block {
     @apply relative px-4 py-20 2xl:py-40;
-
-    .container {
-      @apply mx-auto;
-    }
   }
 }
