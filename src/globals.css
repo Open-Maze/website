@@ -79,6 +79,10 @@
     @apply font-manrope text-xl font-medium leading-relaxed;
   }
 
+  img {
+    @apply object-cover;
+  }
+
   ::selection {
     @apply bg-violet text-white;
   }

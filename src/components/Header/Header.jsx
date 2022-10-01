@@ -38,7 +38,7 @@ const Header = ({ size }) => {
           </div>
         </div>
       </div>
-      <div className="absolute left-0 right-0 bottom-6 mx-auto hidden h-fit w-10 animate-bounce cursor-pointer p-2 lg:block">
+      <div className="relative left-0 right-0 bottom-16 mx-auto hidden h-fit w-10 animate-bounce cursor-pointer p-2 lg:block">
         <div aria-hidden onClick={() => scrollDown()}>
           <ScrollDown />
         </div>
