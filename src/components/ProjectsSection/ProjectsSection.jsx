@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ProjectsSection.css';
 
 // External
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -35,7 +36,7 @@ const ProjectsSection = () => {
                 className={isActive1 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon" icon="book" />
+                <FontAwesomeIcon className="icon mr-4 h-fit w-4" icon="book" />
                 <span>Document Screener</span>
               </button>
             </div>
@@ -51,7 +52,7 @@ const ProjectsSection = () => {
                 className={isActive2 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon" icon="comment-dots" />
+                <FontAwesomeIcon className="icon mr-4 h-fit w-4" icon="comment-dots" />
                 <span>Q-App</span>
               </button>
             </div>
@@ -67,7 +68,7 @@ const ProjectsSection = () => {
                 className={isActive3 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon" icon="graduation-cap" />
+                <FontAwesomeIcon className="icon mr-4 h-fit w-4" icon="graduation-cap" />
                 <span>Knowledge Profiler</span>
               </button>
             </div>

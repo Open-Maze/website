@@ -1,0 +1,7 @@
+.projects-button {
+  @apply w-full rounded-lg bg-white p-6 text-start text-slate-400 transition hover:bg-violet-darker hover:text-white;
+
+  &.active {
+    @apply bg-violet text-white;
+  }
+}
