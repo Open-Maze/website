@@ -1,29 +1,30 @@
 import React from 'react';
-import './ContactSection.scss';
 
 // Components
 import Button from '../Button/Button';
 import ContactCardS from '../ContactCardS/ContactCardS';
 
 const ContactSection = () => (
-  <div className="contact-section">
-    <div className="contact-area">
-      <div className="left">
-        <h4 data-aos="fade-up">Meaningful Connections</h4>
-        <h2 data-aos="fade-up" data-aos-delay="100">
+  <div className="cms-block bg-white">
+    <div className="container grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
+      <div className="col-span-5 lg:col-start-1">
+        <h4 className="pb-2 text-midnight" data-aos="fade-up">
+          Meaningful Connections
+        </h4>
+        <h2 className="pb-6" data-aos="fade-up" data-aos-delay="100">
           Get in touch
         </h2>
-        <p data-aos="fade-up" data-aos-delay="200">
+        <p className="pb-10 text-slate-700" data-aos="fade-up" data-aos-delay="200">
           Questions about our tools or just want to say hi? Feel free to mail us at the address listed here! You can
           also follow us on LinkedIn for the latest news about OpenMaze!
         </p>
-        <div className="buttons" data-aos="fade-up" data-aos-delay="300">
-          <Button pageUrl="mailto:hello@openmaze.io" className="btn-purple-solid">
+        <div data-aos="fade-up" data-aos-delay="300">
+          <Button pageUrl="mailto:hello@openmaze.io" className="button button--violet">
             Mail us
           </Button>
         </div>
       </div>
-      <div className="right">
+      <div className="col-span-6 lg:col-end-13">
         <ContactCardS
           link="mailto:hello@openmaze.io"
           icon="envelope"

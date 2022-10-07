@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.scss';
+import './Button.css';
 
 // External
 import { motion } from 'framer-motion';

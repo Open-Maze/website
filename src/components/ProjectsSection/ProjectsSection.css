@@ -1,0 +1,27 @@
+.projects-button {
+  @apply w-full rounded-lg bg-white p-6 text-start text-slate-400 transition hover:bg-violet-darker hover:text-white;
+
+  &.active {
+    @apply bg-violet text-white;
+  }
+}
+
+.card {
+  @apply hidden rounded-lg bg-white pt-8 shadow-lg;
+
+  &.active {
+    @apply block;
+  }
+
+  .image {
+    @apply h-64 w-full bg-contain bg-center bg-no-repeat px-10;
+  }
+
+  .text {
+    @apply p-10;
+
+    p {
+      @apply pt-6 text-slate-700;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './shared.scss';
+import './shared.css';
 
 const Contact = () => (
   <div className="page contact">
