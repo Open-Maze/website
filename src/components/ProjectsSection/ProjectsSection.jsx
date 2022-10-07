@@ -25,7 +25,7 @@ const ProjectsSection = () => {
             Solutions for every subject, student and school
           </h2>
           <div className="mt-20">
-            <div data-aos="fade-up" data-aos-delay="200">
+            <div data-aos="fade-up" data-aos-delay="100">
               <button
                 id="button-1"
                 onClick={() => {
@@ -41,7 +41,7 @@ const ProjectsSection = () => {
               </button>
             </div>
             <br />
-            <div data-aos="fade-up" data-aos-delay="300">
+            <div data-aos="fade-up" data-aos-delay="100">
               <button
                 id="button-2"
                 onClick={() => {
