@@ -29,7 +29,7 @@ const Nav = () => {
       </div>
       <div data-aos="fade-down">
         <div className="flex items-center gap-10">
-          <NavLink to="/" className="menu-item" activeClassName="active">
+          <NavLink to="/" end className="menu-item" activeClassName="active">
             <p>home</p>
           </NavLink>
           <NavLink to="/products" className="menu-item" activeClassName="active">
