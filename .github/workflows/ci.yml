@@ -41,16 +41,3 @@ jobs:
 
       - name: Run Stylelint
         run: npx stylelint src/**/*.css
-
-  prettier:
-    name: Prettier
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Run Prettier
-        uses: creyD/prettier_action@v4.2
-        with:
-          prettier_options: --check .
