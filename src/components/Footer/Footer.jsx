@@ -3,17 +3,11 @@ import React from 'react';
 // External
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-
 import moment from 'moment';
 
 // Assets
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
 import { ReactComponent as LogoMark } from '../../assets/images/logo/mark.svg';
-
-// Font Awesome Library
-library.add(faLinkedinIn);
 
 const Footer = () => {
   const location = useLocation();

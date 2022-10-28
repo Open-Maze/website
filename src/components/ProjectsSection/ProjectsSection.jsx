@@ -3,7 +3,6 @@ import './ProjectsSection.css';
 
 // External
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faCommentDots, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 // Assets
 import knowledgeProfiler from '../../assets/images/illustrations-products/knowledge-profiler.svg';
@@ -14,6 +13,7 @@ const ProjectsSection = () => {
   const [isActive1, setIsActive1] = useState(true);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
+
   return (
     <div className="cms-block">
       <div className="container grid grid-cols-1 gap-10 lg:grid-cols-12">
@@ -36,7 +36,7 @@ const ProjectsSection = () => {
                 className={isActive1 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 h-fit w-4" icon={faBook} />
+                <FontAwesomeIcon className="icon mr-4 h-fit w-4" icon="fa-solid fa-book" />
                 <span>Document Screener</span>
               </button>
             </div>
@@ -52,7 +52,7 @@ const ProjectsSection = () => {
                 className={isActive2 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 h-fit w-4" icon={faCommentDots} />
+                <FontAwesomeIcon className="icon mr-4 h-fit w-4" icon="fa-solid fa-comment-dots" />
                 <span>Q-App</span>
               </button>
             </div>
@@ -68,7 +68,7 @@ const ProjectsSection = () => {
                 className={isActive3 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 h-fit w-4" icon={faGraduationCap} />
+                <FontAwesomeIcon className="icon mr-4 h-fit w-4" icon="fa-solid fa-graduation-cap" />
                 <span>Knowledge Profiler</span>
               </button>
             </div>

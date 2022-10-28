@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 
 // External
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -20,6 +23,8 @@ import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
 
 const App = () => {
+  library.add(fab, fas);
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
