@@ -1,0 +1,7 @@
+.horizontal {
+  @apply lg:flex;
+
+  .text {
+    @apply lg:ml-28;
+  }
+}

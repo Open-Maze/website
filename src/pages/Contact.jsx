@@ -1,9 +1,12 @@
 import React from 'react';
 import './shared.css';
 
+// Components
+import Header from '../components/Header/Header';
+
 const Contact = () => (
   <div className="page contact">
-    <h1>Contact</h1>
+    <Header size="small" />
   </div>
 );
 

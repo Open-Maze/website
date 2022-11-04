@@ -1,9 +1,12 @@
 import React from 'react';
 import './shared.css';
 
+// Components
+import Header from '../components/Header/Header';
+
 const NotFound = () => (
   <div className="page notfound">
-    <h1>404 not found</h1>
+    <Header size="large" />
   </div>
 );
 
