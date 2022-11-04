@@ -1,10 +1,11 @@
 import React from 'react';
+//Assets
 
-const TeamMember = () => (
+const TeamMember = ({ image, name, role }) => (
   <div>
-    <div>photo</div>
-    <div>name</div>
-    <div>position</div>
+    <img src={image} />
+    <h3 className="mt-4 ">{name}</h3>
+    <p>{role}</p>
   </div>
 );
 
