@@ -1,11 +1,14 @@
 import React from 'react';
 import './shared.css';
+
+// Components
+import Header from '../components/Header/Header';
 import FeatureComponent from '../components/FeatureComponent/FeatureComponent';
 import Placeholder from '../assets/images/iphone-placeholder.png';
 
 const Products = () => (
   <div className="page products">
-    <h1>Products</h1>
+    <Header size="small" />
     <FeatureComponent
       featureNr="Feature 1"
       title="Instant feedback"
