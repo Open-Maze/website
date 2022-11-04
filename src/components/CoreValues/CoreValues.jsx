@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import CardIconVertical from '../CardIconVertical/CardIconVertical';
+import CardIcon from '../CardIcon/CardIcon';
 
 const CoreValues = () => (
   <div className="cms-block">
@@ -14,8 +14,9 @@ const CoreValues = () => (
       </h2>
       <div className="mt-20 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
         <div className="col-span-4">
-          <CardIconVertical
-            iconFront="fa-solid fa-linkedin-in"
+          <CardIcon
+            type="vertical"
+            iconFront="fa-solid fa-rocket"
             iconBack="fa-solid fa-circle"
             title="Cutting edge"
             text="We differ ourselves from existing EdTech companies by implementing state of the art technologies, broadening the diversity of tools available. We unite context and technology."
@@ -23,7 +24,8 @@ const CoreValues = () => (
           />
         </div>
         <div className="col-span-4">
-          <CardIconVertical
+          <CardIcon
+            type="vertical"
             iconFront="fa-solid fa-shield-alt"
             iconBack="fa-solid fa-circle"
             title="Privacy"
@@ -32,7 +34,8 @@ const CoreValues = () => (
           />
         </div>
         <div className="col-span-4">
-          <CardIconVertical
+          <CardIcon
+            type="vertical"
             iconFront="fa-solid fa-heart"
             iconBack="fa-solid fa-circle"
             title="Integrity"
