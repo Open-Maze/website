@@ -1,12 +1,12 @@
 import React from 'react';
 import './shared.css';
-import FeatureComponent from '../components/FeatureComponent/FeatureComponent';
-import CardImageHorizontal from '../components/CardImageHorizontal/CardImageHorizontal';
-import Placeholder from '../assets/images/iphone-placeholder.png';
 
 // Components
 import Header from '../components/Header/Header';
 import FeatureComponent from '../components/FeatureComponent/FeatureComponent';
+import CardImageHorizontal from '../components/CardImageHorizontal/CardImageHorizontal';
+
+// Assets
 import Placeholder from '../assets/images/iphone-placeholder.png';
 
 const Products = () => (
