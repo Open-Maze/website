@@ -5,7 +5,7 @@ const FeatureComponent = ({ featureNr, title, description, image }) => (
     <div className="container">
       <div className="grid grid-flow-dense grid-cols-1 items-center gap-10 lg:grid-cols-12">
         <div className="col-span-6 border-l-2 border-violet p-8 sm:p-12 lg:col-start-1">
-          <h4 className="pb-2 text-midnight" data-aos="fade-up">
+          <h4 className="pb-2 text-dark" data-aos="fade-up">
             {featureNr}
           </h4>
           <h2 className="pb-6" data-aos="fade-up" data-aos-delay="100">

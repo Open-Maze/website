@@ -6,7 +6,7 @@ import CardIcon from '../CardIcon/CardIcon';
 const Goals = () => (
   <div className="cms-block">
     <div className="container">
-      <h4 className="pb-2 text-midnight" data-aos="fade-up">
+      <h4 className="pb-2 text-dark" data-aos="fade-up">
         Goals
       </h4>
       <h2 data-aos="fade-up" data-aos-delay="100">

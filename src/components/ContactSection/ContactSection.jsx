@@ -8,7 +8,7 @@ const ContactSection = () => (
   <div className="cms-block bg-white">
     <div className="container grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
       <div className="col-span-5 lg:col-start-1">
-        <h4 className="pb-2 text-midnight" data-aos="fade-up">
+        <h4 className="pb-2 text-dark" data-aos="fade-up">
           Meaningful Connections
         </h4>
         <h2 className="pb-6" data-aos="fade-up" data-aos-delay="100">
