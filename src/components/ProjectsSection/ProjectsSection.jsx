@@ -18,7 +18,7 @@ const ProjectsSection = () => {
     <div className="cms-block">
       <div className="container grid grid-cols-1 gap-10 lg:grid-cols-12">
         <div className="col-span-6 lg:col-start-1">
-          <h4 className="pb-2 text-midnight" data-aos="fade-up">
+          <h4 className="pb-2 text-dark" data-aos="fade-up">
             Impactful Decisions
           </h4>
           <h2 data-aos="fade-up" data-aos-delay="100">

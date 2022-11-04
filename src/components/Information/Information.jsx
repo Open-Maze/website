@@ -11,7 +11,7 @@ const Information = ({ subtitle, title, buttonLabel, buttonLink, image }) => (
           <img className="h-fit w-full rounded-lg" src={image} alt="Team" data-aos="fade-up" />
         </div>
         <div className="col-span-5 lg:col-end-13">
-          <h4 className="pb-2 text-midnight" data-aos="fade-up">
+          <h4 className="pb-2 text-dark" data-aos="fade-up">
             {subtitle}
           </h4>
           <h2 className="pb-6" data-aos="fade-up" data-aos-delay="100">

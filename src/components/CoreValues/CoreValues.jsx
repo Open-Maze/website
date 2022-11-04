@@ -6,13 +6,13 @@ import CardIcon from '../CardIcon/CardIcon';
 const CoreValues = () => (
   <div className="cms-block">
     <div className="container">
-      <h4 className="pb-2 text-midnight" data-aos="fade-up">
+      <h4 className="pb-2 text-dark" data-aos="fade-up">
         Our Beliefs
       </h4>
       <h2 data-aos="fade-up" data-aos-delay="100">
         Core values
       </h2>
-      <div className="mt-20 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-20 grid grid-cols-1 gap-10 lg:grid-cols-12">
         <div className="col-span-4">
           <CardIcon
             type="vertical"

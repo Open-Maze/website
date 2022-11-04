@@ -1,11 +1,10 @@
 import React from 'react';
-//Assets
 
 const TeamMember = ({ image, name, role }) => (
-  <div>
-    <img src={image} />
-    <h3 className="mt-4 ">{name}</h3>
-    <p>{role}</p>
+  <div data-aos="fade-up">
+    <img src={image} alt={name} className="rounded-md" />
+    <h3 className="mt-4">{name}</h3>
+    <p className="mt-2">{role}</p>
   </div>
 );
 
