@@ -2,7 +2,7 @@ import React from 'react';
 
 // Components
 import Button from '../Button/Button';
-import ContactCardS from '../ContactCardS/ContactCardS';
+import ContactCardL from '../ContactCardL/ContactCardL.jsx';
 
 const ContactSection = () => (
   <div className="cms-block bg-white">
@@ -25,7 +25,7 @@ const ContactSection = () => (
         </div>
       </div>
       <div className="col-span-6 lg:col-end-13">
-        <ContactCardS
+        <ContactCardL
           link="mailto:hello@openmaze.io"
           icon="envelope"
           title="Send an e-mail"
@@ -33,7 +33,7 @@ const ContactSection = () => (
           delay={400}
         />
         <br />
-        <ContactCardS
+        <ContactCardL
           link="https://linkedin.com/company/open-maze"
           icon="linkedin"
           title="LinkedIn"
