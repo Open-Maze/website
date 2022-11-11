@@ -32,6 +32,9 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('/src/assets/images/logo/header-l-background.svg')",
       },
+      backgroundImage: {
+        'cta-pattern': "url('/src/assets/images/logo/cta-pattern.svg')",
+      },
       backgroundSize: {
         40: '40%',
       },

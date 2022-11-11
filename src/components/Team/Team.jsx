@@ -22,7 +22,7 @@ const Team = () => (
           <h2 data-aos="fade-up" data-aos-delay="100">
             Our team
           </h2>
-          <div className="mt-20 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-20 grid grid-cols-2 gap-10 lg:grid-cols-3">
             <div>
               <TeamMember name="Seline" role="Design & Development" image={Seline} />
             </div>
