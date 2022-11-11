@@ -20,7 +20,7 @@ const CTA = () => (
           <h2 data-aos="fade-up" data-aos-delay="100">
             Contact us
           </h2>
-          <div className="mt-8 flex items-center gap-6">
+          <div className="mt-8 flex items-center gap-6" data-aos="fade-up" data-aos-delay="100">
             <div className="flex items-center justify-center rounded-full bg-violet-lighter p-3">
               <FontAwesomeIcon className="text-violet" icon="fa-solid fa-phone" />
             </div>
@@ -28,7 +28,7 @@ const CTA = () => (
               +31 (0)40 1234567
             </a>
           </div>
-          <div className="mt-8 flex items-center gap-6">
+          <div className="mt-8 flex items-center gap-6" data-aos="fade-up" data-aos-delay="100">
             <div className="flex items-center justify-center rounded-full bg-violet-lighter p-3">
               <FontAwesomeIcon className="text-violet" icon="fa-solid fa-envelope" />
             </div>
