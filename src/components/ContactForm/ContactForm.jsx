@@ -1,11 +1,20 @@
 import { React, useState } from 'react';
 import axios from 'axios';
+import Input from '../Input/Input';
+
+const initialState = {
+  name: '',
+  companyName: '',
+  email: '',
+  phone: '',
+  message: '',
+};
 
 function signupUser() {
   axios({
     method: 'POST',
-    url: 'http://localhost:3002/send',
-    data: this.state,
+    url: '/contact-form.php',
+    data: { ...initialState },
   }).then((response) => {
     if (response.data.status === 'success') {
       alert('Message Sent.');
@@ -15,14 +24,6 @@ function signupUser() {
     }
   });
 }
-
-const initialState = {
-  name: '',
-  companyName: '',
-  email: '',
-  phone: '',
-  message: '',
-};
 
 const ContactForm = () => {
   const [{ name, companyName, email, phone, message }, setState] = useState(initialState);
@@ -38,13 +39,24 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    signupUser().then(clearState);
+    signupUser();
+    clearState();
   };
 
   return (
     <div className="App">
       <form id="contact-form" onSubmit={handleSubmit} method="POST">
         <div className="form-group">
+          <Input
+            label=""
+            handleChange={onChange}
+            value={name}
+            placeholder="Voor- en achternaam"
+            outline=""
+            white
+            fullwidth=""
+            inputType=""
+          />
           <input
             placeholder="Voor- en achternaam*"
             type="text"
