@@ -41,8 +41,8 @@ const Nav = () => {
           <NavLink to="/contact" className="menu-item" activeClassName="active">
             <p>contact</p>
           </NavLink>
-          <Button pageUrl="#bottom" className="button button--violet">
-            Get in touch
+          <Button pageUrl="contact" className="button button--violet">
+            get in touch
           </Button>
         </div>
       </div>
