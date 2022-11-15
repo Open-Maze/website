@@ -3,14 +3,14 @@ import React from 'react';
 // Components
 import CardIcon from '../CardIcon/CardIcon';
 
-const CoreValues = () => (
+const CoreValues = ({ subtitle, title }) => (
   <div className="cms-block">
     <div className="container">
       <h4 className="pb-2 text-dark" data-aos="fade-up">
-        Our Beliefs
+        {subtitle}
       </h4>
       <h2 data-aos="fade-up" data-aos-delay="100">
-        Core values
+        {title}
       </h2>
       <div className="mt-20 grid grid-cols-1 gap-10 lg:grid-cols-12">
         <div className="col-span-4">

@@ -2,25 +2,24 @@ import React from 'react';
 
 // Components
 import Button from '../Button/Button';
-import ContactCardL from '../ContactCardL/ContactCardL.jsx';
+import ContactCardL from '../ContactCardL/ContactCardL';
 
-const ContactSection = () => (
+const ContactSection = ({ subtitle, title, text, buttonMail, buttonLabel }) => (
   <div className="cms-block bg-white">
     <div className="container grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
       <div className="col-span-5 lg:col-start-1">
         <h4 className="pb-2 text-dark" data-aos="fade-up">
-          Meaningful Connections
+          {subtitle}
         </h4>
         <h2 className="pb-6" data-aos="fade-up" data-aos-delay="100">
-          Get in touch
+          {title}
         </h2>
         <p className="pb-10 text-slate-700" data-aos="fade-up" data-aos-delay="200">
-          Questions about our tools or just want to say hi? Feel free to mail us at the address listed here! You can
-          also follow us on LinkedIn for the latest news about OpenMaze!
+          {text}
         </p>
         <div data-aos="fade-up" data-aos-delay="300">
-          <Button pageUrl="mailto:hello@openmaze.io" className="button button--violet">
-            Mail us
+          <Button pageUrl={`mailto:${buttonMail}`} className="button button--violet">
+            {buttonLabel}
           </Button>
         </div>
       </div>

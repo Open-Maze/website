@@ -22,8 +22,14 @@ const Home = () => (
       buttonLink="#bottom"
       image={Team}
     />
-    <CoreValues />
-    <ContactSection />
+    <CoreValues title="Core values" subtitle="Our Beliefs" />
+    <ContactSection
+      title="Get in touch"
+      subtitle="Meaningful Connections"
+      text="Questions about our tools or just want to say hi? Feel free to mail us at the address listed here! You can also follow us on LinkedIn for the latest news about OpenMaze!"
+      buttonMail="hello@openmaze.io"
+      buttonLabel="Mail us"
+    />
   </div>
 );
 
