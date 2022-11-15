@@ -14,7 +14,7 @@ const Products = () => (
   <div className="page products">
     <Header
       size="small"
-      title="Oour products"
+      title="Our products"
       text="We aim to provide users of online educational environments with greater insight into their own learning journey and performance through the use of AI-based tools."
       image={headerImage}
     />

@@ -4,7 +4,7 @@ import './CardIcon.css';
 // Components
 import Icon from '../Icon/Icon';
 
-const CardIconVertical = ({ type, iconFront, iconBack, title, text, delay }) => (
+const CardIcon = ({ type, iconFront, iconBack, title, text, delay }) => (
   <div className={`w-full rounded-lg bg-white p-10 ${type}`} data-aos="fade-up" data-aos-delay={delay}>
     <div className="pb-6">
       <Icon front={iconFront} back={iconBack} />
@@ -16,4 +16,4 @@ const CardIconVertical = ({ type, iconFront, iconBack, title, text, delay }) => 
   </div>
 );
 
-export default CardIconVertical;
+export default CardIcon;

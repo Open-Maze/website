@@ -9,9 +9,7 @@ const CoreValues = ({ subtitle, title }) => (
       <h4 className="pb-2 text-dark" data-aos="fade-up">
         {subtitle}
       </h4>
-      <h2 data-aos="fade-up" data-aos-delay="100">
-        {title}
-      </h2>
+      <h2 data-aos="fade-up">{title}</h2>
       <div className="mt-20 grid grid-cols-1 gap-10 lg:grid-cols-12">
         <div className="col-span-4">
           <CardIcon
