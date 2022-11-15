@@ -9,7 +9,7 @@ const CardImageHorizontal = ({ imageLeft, title, description, image, buttonLabel
           <>
             <div className="col-span-6 h-full w-full lg:col-start-1">
               <img src={image} alt={title} className="h-full w-full rounded-l-lg" />
-            </div>{' '}
+            </div>
             <div className="col-span-6 p-10 sm:p-14 lg:col-end-13">
               <h2 className="pb-6" data-aos="fade-up" data-aos-delay="100">
                 {title}
@@ -34,7 +34,7 @@ const CardImageHorizontal = ({ imageLeft, title, description, image, buttonLabel
               <Button pageUrl={buttonLink} className="button button--violet">
                 {buttonLabel}
               </Button>
-            </div>{' '}
+            </div>
             <div className="col-span-6 h-full w-full lg:col-end-13">
               <img src={image} alt={title} className="h-full w-full rounded-r-lg" />
             </div>
