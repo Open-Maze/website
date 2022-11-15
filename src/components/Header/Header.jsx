@@ -23,11 +23,13 @@ const Header = ({ size, title, text, buttonLink, buttonLabel, image }) => {
             <p className="pb-10" data-aos="fade-up" data-aos-delay="100">
               <mark>{text}</mark>
             </p>
-            <div className="buttons" data-aos="fade-up" data-aos-delay="200">
-              <Button pageUrl={buttonLink} className="button button--violet">
-                {buttonLabel}
-              </Button>
-            </div>
+            {buttonLink && (
+              <div className="buttons" data-aos="fade-up" data-aos-delay="200">
+                <Button pageUrl={buttonLink} className="button button--violet">
+                  {buttonLabel}
+                </Button>
+              </div>
+            )}
           </div>
           <div className="col-span-6 lg:col-end-13" data-aos="fade-up" data-aos-delay="100">
             <img src={image} alt={title} className="mt-12 h-full max-h-[70vh] w-96 lg:mt-0 lg:w-full" />

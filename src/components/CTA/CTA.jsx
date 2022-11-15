@@ -39,11 +39,13 @@ const CTA = ({ subtitle, title, phone, phoneLabel, email, image, buttonLink, but
             <div className="col-span-7 col-end-9 bg-cta-pattern bg-contain bg-right bg-no-repeat py-10 2xl:pr-20">
               <img className="h-64 w-full rounded-md shadow" src={image} alt="Contact OpenMaze" />
             </div>
-            <div className="absolute bottom-14 col-span-8">
-              <Button pageUrl={buttonLink} className="button button--violet">
-                {buttonLabel}
-              </Button>
-            </div>
+            {buttonLink && (
+              <div className="absolute bottom-14 col-span-8">
+                <Button pageUrl={buttonLink} className="button button--violet">
+                  {buttonLabel}
+                </Button>
+              </div>
+            )}
           </div>
         </div>
       </div>

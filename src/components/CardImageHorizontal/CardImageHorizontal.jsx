@@ -17,9 +17,11 @@ const CardImageHorizontal = ({ imageLeft, title, description, image, buttonLabel
               <p className="pb-10 text-slate-700" data-aos="fade-up" data-aos-delay="200">
                 {description}
               </p>
-              <Button pageUrl={buttonLink} className="button button--violet">
-                {buttonLabel}
-              </Button>
+              {buttonLink && (
+                <Button pageUrl={buttonLink} className="button button--violet">
+                  {buttonLabel}
+                </Button>
+              )}
             </div>
           </>
         ) : (
@@ -31,9 +33,11 @@ const CardImageHorizontal = ({ imageLeft, title, description, image, buttonLabel
               <p className="pb-10 text-slate-700" data-aos="fade-up" data-aos-delay="200">
                 {description}
               </p>
-              <Button pageUrl={buttonLink} className="button button--violet">
-                {buttonLabel}
-              </Button>
+              {buttonLink && (
+                <Button pageUrl={buttonLink} className="button button--violet">
+                  {buttonLabel}
+                </Button>
+              )}
             </div>
             <div className="col-span-6 h-full w-full lg:col-end-13">
               <img src={image} alt={title} className="h-full w-full rounded-r-lg" />

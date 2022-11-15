@@ -17,11 +17,13 @@ const ContactSection = ({ subtitle, title, text, buttonMail, buttonLabel }) => (
         <p className="pb-10 text-slate-700" data-aos="fade-up" data-aos-delay="200">
           {text}
         </p>
-        <div data-aos="fade-up" data-aos-delay="300">
-          <Button pageUrl={`mailto:${buttonMail}`} className="button button--violet">
-            {buttonLabel}
-          </Button>
-        </div>
+        {buttonMail && (
+          <div data-aos="fade-up" data-aos-delay="300">
+            <Button pageUrl={`mailto:${buttonMail}`} className="button button--violet">
+              {buttonLabel}
+            </Button>
+          </div>
+        )}
       </div>
       <div className="col-span-6 lg:col-end-13">
         <ContactCardL

@@ -20,11 +20,13 @@ const Information = ({ subtitle, title, text, buttonLabel, buttonLink, image }) 
           <p className="pb-10 text-slate-700" data-aos="fade-up" data-aos-delay="200">
             {text}
           </p>
-          <div data-aos="fade-up" data-aos-delay="300">
-            <Button pageUrl={buttonLink} className="button button--violet">
-              {buttonLabel}
-            </Button>
-          </div>
+          {buttonLink && (
+            <div data-aos="fade-up" data-aos-delay="300">
+              <Button pageUrl={buttonLink} className="button button--violet">
+                {buttonLabel}
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     </div>
