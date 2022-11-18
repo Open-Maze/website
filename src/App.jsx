@@ -9,7 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // Core
-import ScrollToTop from './core/ScrollToTop';
+import Scroll from './core/Scroll';
 
 // Pages
 import Home from './pages/Home';
@@ -34,7 +34,7 @@ const App = () => {
     <div className="app">
       <Router>
         <Nav />
-        <ScrollToTop>
+        <Scroll>
           <Routes>
             <Route index element={<Home />} />
             <Route path="/products" element={<Products />} />
@@ -42,7 +42,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </ScrollToTop>
+        </Scroll>
         <Footer linkedin="https://linkedin.com/company/open-maze" />
       </Router>
     </div>
