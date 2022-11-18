@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import TeamMember from '../TeamMember/TeamMember';
+import TeamMember from '../../components/TeamMember/TeamMember';
 
 // Assets
 import Seline from '../../assets/images/team/seline.jpg';

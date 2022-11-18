@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import Button from '../Button/Button';
+import Button from '../../components/Button/Button';
 
 const Information = ({ subtitle, title, text, buttonLabel, buttonLink, image }) => (
   <div className="cms-block bg-white">

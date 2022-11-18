@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 
 // Components
-import Button from '../Button/Button';
+import Button from '../../components/Button/Button';
 
 // Assets
 import { ReactComponent as ScrollDown } from '../../assets/images/icons/chevron-down.svg';

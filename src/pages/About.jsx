@@ -2,10 +2,10 @@ import React from 'react';
 import './shared.css';
 
 // Components
-import Header from '../components/Header/Header';
-import Goals from '../components/Goals/Goals';
-import Team from '../components/Team/Team';
-import CTA from '../components/CTA/CTA';
+import Header from '../blocks/Header/Header';
+import Goals from '../blocks/Goals/Goals';
+import Team from '../blocks/Team/Team';
+import CTA from '../blocks/CTA/CTA';
 
 // Assets
 import headerImage from '../assets/images/illustrations/header.svg';

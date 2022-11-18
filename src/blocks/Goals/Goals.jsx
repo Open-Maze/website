@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import CardIcon from '../CardIcon/CardIcon';
+import CardIcon from '../../components/CardIcon/CardIcon';
 
 const Goals = ({ subtitle, title }) => (
   <div className="cms-block">

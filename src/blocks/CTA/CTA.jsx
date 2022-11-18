@@ -4,7 +4,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Components
-import Button from '../Button/Button';
+import Button from '../../components/Button/Button';
 
 const CTA = ({ subtitle, title, phone, phoneLabel, email, image, buttonLink, buttonLabel }) => (
   <div className="cms-block">

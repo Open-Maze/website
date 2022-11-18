@@ -19,8 +19,8 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
 // Components
-import Nav from './components/Nav/Nav';
-import Footer from './components/Footer/Footer';
+import Nav from './blocks/Nav/Nav';
+import Footer from './blocks/Footer/Footer';
 
 const App = () => {
   library.add(fab, fas);

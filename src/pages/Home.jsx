@@ -2,11 +2,11 @@ import React from 'react';
 import './shared.css';
 
 // Components
-import Header from '../components/Header/Header';
-import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
-import Information from '../components/Information/Information';
-import CoreValues from '../components/CoreValues/CoreValues';
-import ContactSection from '../components/ContactSection/ContactSection';
+import Header from '../blocks/Header/Header';
+import ProjectsSection from '../blocks/ProjectsSection/ProjectsSection';
+import Information from '../blocks/Information/Information';
+import CoreValues from '../blocks/CoreValues/CoreValues';
+import ContactSection from '../blocks/ContactSection/ContactSection';
 
 // Assets
 import headerImage from '../assets/images/illustrations/header.svg';

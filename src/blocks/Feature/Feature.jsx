@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FeatureComponent = ({ featureNr, title, description, image }) => (
+const Feature = ({ featureNr, title, description, image }) => (
   <section className="cms-block">
     <div className="container">
       <div className="grid grid-flow-dense grid-cols-1 items-center gap-10 lg:grid-cols-12">
@@ -23,4 +23,4 @@ const FeatureComponent = ({ featureNr, title, description, image }) => (
   </section>
 );
 
-export default FeatureComponent;
+export default Feature;

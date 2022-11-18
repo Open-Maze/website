@@ -1,8 +1,8 @@
 import React from 'react';
 
 // Components
-import Button from '../Button/Button';
-import ContactCardL from '../ContactCardL/ContactCardL';
+import Button from '../../components/Button/Button';
+import ContactCardL from '../../components/ContactCardL/ContactCardL';
 
 const ContactSection = ({ subtitle, title, text, buttonMail, buttonLabel }) => (
   <div className="cms-block bg-white">

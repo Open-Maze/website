@@ -2,7 +2,7 @@ import React from 'react';
 import './shared.css';
 
 // Components
-import Header from '../components/Header/Header';
+import Header from '../blocks/Header/Header';
 
 // Assets
 import headerImage from '../assets/images/illustrations/header.svg';
