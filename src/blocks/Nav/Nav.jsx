@@ -5,7 +5,7 @@ import './Nav.css';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
 // Components
-import Button from '../Button/Button';
+import Button from '../../components/Button/Button';
 
 // Assets
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
@@ -38,11 +38,8 @@ const Nav = () => {
           <NavLink to="/about" className="menu-item" activeClassName="active">
             <p>about</p>
           </NavLink>
-          <NavLink to="/contact" className="menu-item" activeClassName="active">
-            <p>contact</p>
-          </NavLink>
-          <Button pageUrl="#bottom" className="button button--violet">
-            Get in touch
+          <Button pageUrl="/contact" className="button button--violet">
+            get in touch
           </Button>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
-import './ContactCardL.css';
+import './ContactCard.css';
 
-const ContactCardL = ({ link, icon, title, content, delay }) => (
+const ContactCard = ({ link, icon, title, content, delay }) => (
   <a href={link} target="_blank" rel="noreferrer">
     <div data-aos="fade-up" data-aos-delay={delay}>
       <div className="contact-card-s-container flex min-w-full items-center justify-start rounded-3xl bg-bleach p-6 transition hover:cursor-pointer hover:bg-violet-darker hover:text-white">
@@ -19,4 +19,4 @@ const ContactCardL = ({ link, icon, title, content, delay }) => (
   </a>
 );
 
-export default ContactCardL;
+export default ContactCard;
