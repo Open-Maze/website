@@ -18,7 +18,7 @@ const Footer = ({ linkedin }) => {
       <div className="flex w-full flex-col items-start border-b-2 border-solid border-bleach bg-white px-4 text-left sm:flex-row sm:items-center sm:justify-between sm:border-y-2 md:px-10">
         <div className="hidden w-full justify-center sm:block">
           {location.pathname === '/' && (
-            <a href="src/blocks/Footer/Footer.jsx#top">
+            <a href="#top">
               <LogoPurpleBlue className="mt-2 h-6" />
             </a>
           )}
@@ -39,7 +39,7 @@ const Footer = ({ linkedin }) => {
           </div>
           <div className="flex w-full justify-center sm:hidden">
             {location.pathname === '/' && (
-              <a href="src/blocks/Footer/Footer.jsx#top">
+              <a href="#top">
                 <LogoMark className="h-4" />
               </a>
             )}
@@ -49,7 +49,7 @@ const Footer = ({ linkedin }) => {
               </Link>
             )}
           </div>
-          <a href="src/blocks/Footer/Footer.jsx#top">
+          <a href="#top">
             <div className="flex items-center justify-center py-6 pl-6 sm:border-l-2 sm:border-solid sm:border-bleach">
               <FontAwesomeIcon
                 icon="circle-arrow-up"

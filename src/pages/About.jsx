@@ -17,7 +17,7 @@ const About = () => (
       size="small"
       title="About us"
       text="We aim to provide users of online educational environments with greater insight into their own learning journey and performance through the use of AI-based tools."
-      buttonLink="products"
+      buttonLink="/products"
       buttonLabel="our products"
       image={headerImage}
     />
@@ -30,7 +30,7 @@ const About = () => (
       phoneLabel="+31 (0)40 1234567"
       email="hello@openmaze.io"
       image={office}
-      buttonLink="contact"
+      buttonLink="/contact"
       buttonLabel="De snelste route naar een samenwerking"
     />
   </div>
