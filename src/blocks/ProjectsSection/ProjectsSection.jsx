@@ -32,7 +32,7 @@ const ProjectsSection = () => {
                 className={isActive1 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 h-fit w-4" icon="fa-solid fa-book" />
+                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-book" />
                 <span>Document Screener</span>
               </button>
             </div>
@@ -48,7 +48,7 @@ const ProjectsSection = () => {
                 className={isActive2 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 h-fit w-4" icon="fa-solid fa-comment-dots" />
+                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-comment-dots" />
                 <span>Q-App</span>
               </button>
             </div>
@@ -64,7 +64,7 @@ const ProjectsSection = () => {
                 className={isActive3 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 h-fit w-4" icon="fa-solid fa-graduation-cap" />
+                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-graduation-cap" />
                 <span>Knowledge Profiler</span>
               </button>
             </div>

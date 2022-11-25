@@ -1,5 +1,5 @@
 .projects-button {
-  @apply w-full rounded-lg bg-white p-6 text-start text-slate-400 transition hover:bg-violet-darker hover:text-white;
+  @apply flex h-full w-full items-center rounded-lg bg-white p-6 text-slate-400 transition hover:bg-violet-darker hover:text-white;
 
   span {
     @apply text-base font-medium;

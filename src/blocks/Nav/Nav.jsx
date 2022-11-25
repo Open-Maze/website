@@ -28,7 +28,7 @@ const Nav = () => {
         )}
       </div>
       <div data-aos="fade-down">
-        <div className="flex items-center gap-10">
+        <div className=" top-0 flex h-screen w-full flex-col items-center gap-10 transition lg:static lg:translate-y-0 lg:flex-row">
           <NavLink to="/" end className="menu-item" activeClassName="active">
             <p>home</p>
           </NavLink>
@@ -42,6 +42,10 @@ const Nav = () => {
             get in touch
           </Button>
         </div>
+      </div>
+      <div className="z-50 flex cursor-pointer flex-col items-end gap-2 transition lg:hidden">
+        <div className="h-0.5 w-6 bg-violet" />
+        <div className="h-0.5 w-3 bg-violet" />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const Information = ({ subtitle, title, text, buttonLabel, buttonLink, image }) 
     <div className="container" data-aos="fade-up" data-aos-delay="500">
       <div className="grid grid-flow-dense grid-cols-1 items-center gap-10 lg:grid-cols-12">
         <div className="col-span-6 lg:col-start-1">
-          <img className="h-fit w-full rounded-lg" src={image} alt="Team" />
+          <img className="h-full w-full rounded-lg" src={image} alt="Team" />
         </div>
         <div className="col-span-5 lg:col-end-13">
           <h4 className="pb-2 text-dark">{subtitle}</h4>
