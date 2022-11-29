@@ -5,7 +5,7 @@ import './CardIcon.css';
 import Icon from '../Icon/Icon';
 
 const CardIcon = ({ type, iconFront, iconBack, title, text, delay }) => (
-  <div className={`w-full rounded-lg bg-white p-10 ${type}`} data-aos="fade-up" data-aos-delay={delay}>
+  <div className={`h-full w-full rounded-lg bg-white p-10 ${type}`} data-aos="fade-up" data-aos-delay={delay}>
     <div className="pb-6">
       <Icon front={iconFront} back={iconBack} />
     </div>
