@@ -1,11 +1,3 @@
-.nav-open {
-  @apply translate-y-full;
-}
-
-.nav-closed {
-  @apply translate-y-0;
-}
-
 .menu-item {
   @apply relative text-slate-700 transition-all hover:text-violet-darker;
 
