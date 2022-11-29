@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Nav.css';
 
 // External
@@ -12,6 +12,7 @@ import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoP
 
 const Nav = () => {
   const location = useLocation();
+  const [navOpen, setNavOpen] = useState(false);
 
   return (
     <div className="fixed top-0 z-50 flex h-24 w-full items-center justify-between border-b-2 border-solid border-bleach bg-white px-4 md:px-10">
@@ -27,8 +28,16 @@ const Nav = () => {
           </Link>
         )}
       </div>
-      <div data-aos="fade-down">
-        <div className=" top-0 flex h-screen w-full flex-col items-center gap-10 transition lg:static lg:translate-y-0 lg:flex-row">
+      <div
+        className={`absolute top-0 left-0 right-0 transition-all duration-300 lg:static lg:translate-y-0 ${
+          navOpen ? 'translate-y-0' : '-translate-y-full'
+        }`}
+      >
+        <div
+          className="mt-24 flex h-fit w-screen flex-col items-center gap-6 bg-white pb-12 transition lg:mt-0 lg:w-full lg:flex-row lg:gap-10 lg:bg-none lg:pb-0"
+          aria-hidden
+          onClick={() => setNavOpen((prev) => !prev)}
+        >
           <NavLink to="/" end className="menu-item" activeClassName="active">
             <p>home</p>
           </NavLink>
@@ -43,9 +52,14 @@ const Nav = () => {
           </Button>
         </div>
       </div>
-      <div className="z-50 flex cursor-pointer flex-col items-end gap-2 transition lg:hidden">
-        <div className="h-0.5 w-6 bg-violet" />
-        <div className="h-0.5 w-3 bg-violet" />
+      <div
+        className="z-50 flex cursor-pointer flex-col items-end gap-2 transition lg:hidden"
+        aria-hidden
+        onClick={() => setNavOpen((prev) => !prev)}
+        data-aos="fade-down"
+      >
+        <span className="h-0.5 w-6 bg-violet" />
+        <span className="h-0.5 w-3 bg-violet" />
       </div>
     </div>
   );
