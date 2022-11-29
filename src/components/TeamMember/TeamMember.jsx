@@ -1,10 +1,10 @@
 import React from 'react';
 
-const TeamMember = ({ image, name, role }) => (
-  <div data-aos="fade-up">
+const TeamMember = ({ image, name, text, delay }) => (
+  <div data-aos="fade-up" data-aos-delay={delay}>
     <img src={image} alt={name} className="rounded-md" />
     <h3 className="mt-4">{name}</h3>
-    <p className="mt-2">{role}</p>
+    <p className="mt-2">{text}</p>
   </div>
 );
 

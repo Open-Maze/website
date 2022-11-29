@@ -1,17 +1,13 @@
 import React from 'react';
 
 // Components
-import CardIcon from '../CardIcon/CardIcon';
+import CardIcon from '../../components/CardIcon/CardIcon';
 
-const Goals = () => (
+const Goals = ({ subtitle, title }) => (
   <div className="cms-block">
-    <div className="container">
-      <h4 className="pb-2 text-dark" data-aos="fade-up">
-        Goals
-      </h4>
-      <h2 data-aos="fade-up" data-aos-delay="100">
-        What we want to achieve
-      </h2>
+    <div className="container" data-aos="fade-up" data-aos-delay="500">
+      <h4 className="pb-2 text-dark">{subtitle}</h4>
+      <h2>{title}</h2>
       <div className="mt-20 grid grid-cols-1 gap-10 lg:grid-cols-12">
         <div className="col-span-6">
           <CardIcon
@@ -20,7 +16,7 @@ const Goals = () => (
             iconBack="fa-solid fa-circle"
             title="Cutting edge"
             text="We differ ourselves from existing EdTech companies by implementing state of the art technologies, broadening the diversity of tools available. We unite context and technology."
-            delay={200}
+            delay={500}
           />
         </div>
         <div className="col-span-6">
@@ -30,7 +26,7 @@ const Goals = () => (
             iconBack="fa-solid fa-circle"
             title="Cutting edge"
             text="We differ ourselves from existing EdTech companies by implementing state of the art technologies, broadening the diversity of tools available. We unite context and technology."
-            delay={200}
+            delay={600}
           />
         </div>
         <div className="col-span-6">
@@ -40,7 +36,7 @@ const Goals = () => (
             iconBack="fa-solid fa-circle"
             title="Cutting edge"
             text="We differ ourselves from existing EdTech companies by implementing state of the art technologies, broadening the diversity of tools available. We unite context and technology."
-            delay={200}
+            delay={700}
           />
         </div>
         <div className="col-span-6">
@@ -50,7 +46,7 @@ const Goals = () => (
             iconBack="fa-solid fa-circle"
             title="Cutting edge"
             text="We differ ourselves from existing EdTech companies by implementing state of the art technologies, broadening the diversity of tools available. We unite context and technology."
-            delay={200}
+            delay={800}
           />
         </div>
       </div>

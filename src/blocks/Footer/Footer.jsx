@@ -9,7 +9,7 @@ import moment from 'moment';
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
 import { ReactComponent as LogoMark } from '../../assets/images/logo/mark.svg';
 
-const Footer = () => {
+const Footer = ({ linkedin }) => {
   const location = useLocation();
   const year = moment().year();
 
@@ -30,12 +30,7 @@ const Footer = () => {
         </div>
         <div className="flex h-full w-full items-center justify-between sm:justify-end">
           <div className="flex">
-            <a
-              href="https://linkedin.com/company/open-maze"
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center"
-            >
+            <a href={linkedin} target="_blank" rel="noreferrer" className="flex items-center">
               <FontAwesomeIcon
                 icon="fa-brands fa-linkedin-in"
                 className="h-6 pr-6 text-violet transition hover:text-violet-darker"

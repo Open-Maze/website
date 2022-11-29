@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply bg-bleach font-silka text-base leading-loose;
+    @apply overflow-x-hidden bg-bleach font-silka text-base leading-loose;
   }
 
   h1 {

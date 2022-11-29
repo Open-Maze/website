@@ -9,7 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // Core
-import ScrollToTop from './core/ScrollToTop';
+import Scroll from './core/Scroll';
 
 // Pages
 import Home from './pages/Home';
@@ -19,8 +19,8 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
 // Components
-import Nav from './components/Nav/Nav';
-import Footer from './components/Footer/Footer';
+import Nav from './blocks/Nav/Nav';
+import Footer from './blocks/Footer/Footer';
 
 const App = () => {
   library.add(fab, fas);
@@ -34,7 +34,7 @@ const App = () => {
     <div className="app">
       <Router>
         <Nav />
-        <ScrollToTop>
+        <Scroll>
           <Routes>
             <Route index element={<Home />} />
             <Route path="/products" element={<Products />} />
@@ -42,8 +42,8 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </ScrollToTop>
-        <Footer />
+        </Scroll>
+        <Footer linkedin="https://linkedin.com/company/open-maze" />
       </Router>
     </div>
   );
