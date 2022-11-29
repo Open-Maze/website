@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Nav.css';
 
 // External
@@ -53,13 +53,21 @@ const Nav = () => {
         </div>
       </div>
       <div
-        className="z-50 flex cursor-pointer flex-col items-end gap-2 transition lg:hidden"
+        className="-mr-4 flex cursor-pointer flex-col items-end gap-2 p-4 transition lg:hidden"
         aria-hidden
         onClick={() => setNavOpen((prev) => !prev)}
         data-aos="fade-down"
       >
-        <span className="h-0.5 w-6 bg-violet" />
-        <span className="h-0.5 w-3 bg-violet" />
+        <span
+          className={`h-1 w-6 rounded-full transition-all duration-300 ${
+            navOpen ? 'bg-violet-darker' : 'bg-slate-700'
+          }`}
+        />
+        <span
+          className={`h-1 rounded-full transition-all duration-300 ${
+            navOpen ? 'w-9 bg-violet-darker' : 'w-3 bg-slate-700'
+          }`}
+        />
       </div>
     </div>
   );
