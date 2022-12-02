@@ -1,12 +1,15 @@
 import React from 'react';
 import './shared.css';
 
-// Components
+// Blocks
 import Header from '../blocks/Header/Header';
 import Goals from '../blocks/Goals/Goals';
 import Feature from '../blocks/Feature/Feature';
 import Information from '../blocks/Information/Information';
 import CTA from '../blocks/CTA/CTA';
+
+// Components
+import CardIcon from '../components/CardIcon/CardIcon';
 
 // Assets
 import headerImage from '../assets/images/illustrations/header.svg';
@@ -22,7 +25,26 @@ const QApp = () => (
       text="Traditionally documents are noninteractive, the Q-App changes this by allowing users to interact with a document as if they were talking to a human. Instead of just reading through it, you can now ask questions, and get relevant answers present in the document. It is just as if you were able to talk with the author!"
       image={headerImage}
     />
-    <Goals title="What we want to achieve" subtitle="Goals" />
+    <Goals title="What we want to achieve" subtitle="Goals">
+      <CardIcon
+        type="horizontal"
+        iconFront="fa-solid fa-rocket"
+        iconBack="fa-solid fa-circle"
+        title="A new way of interaction"
+        text="We want to enable students and assessors to experience a new way of interacting with documents."
+        delay={500}
+        className="col-span-6"
+      />
+      <CardIcon
+        type="horizontal"
+        iconFront="fa-solid fa-circle-check"
+        iconBack="fa-solid fa-circle"
+        title="Verification"
+        text="Teachers and students can verify if certain points are present in the document. If the answer is not good enough, it probably is not present or wrongly worded."
+        delay={600}
+        className="col-span-6"
+      />
+    </Goals>
     <Feature
       featureNr="Feature 1"
       title="Conversational"
@@ -42,9 +64,8 @@ const QApp = () => (
       image={Placeholder}
     />
     <Information
-      subtitle="Support human interaction"
-      title="Encouraging Dialogue"
-      text="We find that the most important thing in learning is the meaningful interactions between student and teacher. The Document Screener already picks out the more common mistakes, so that there is room for dialogue between students and teachers about what matters: the actual context of the document."
+      title="Interested?"
+      text="Are you interested in taking a closer look at one of our tools, or curious what OpenMaze can offer your institute? Get in touch by scheduling a demo."
       buttonLink="/products"
       buttonLabel="discover more products"
       image={productImage}

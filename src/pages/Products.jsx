@@ -1,11 +1,14 @@
 import React from 'react';
 import './shared.css';
 
-// Components
+// Blocks
 import Header from '../blocks/Header/Header';
 import CoreValues from '../blocks/CoreValues/CoreValues';
-import CardImageHorizontal from '../components/CardImageHorizontal/CardImageHorizontal';
 import CTA from '../blocks/CTA/CTA';
+
+// Components
+import CardIcon from '../components/CardIcon/CardIcon';
+import CardImageHorizontal from '../components/CardImageHorizontal/CardImageHorizontal';
 
 // Assets
 import headerImage from '../assets/images/illustrations/header.svg';
@@ -20,7 +23,35 @@ const Products = () => (
       text="We aim to provide students using online educational environments with greater insight into their own learning journey and performance through the use of AI powered tools."
       image={headerImage}
     />
-    <CoreValues title="Core values" subtitle="Our beliefs" />
+    <CoreValues title="Core values" subtitle="Our beliefs">
+      <CardIcon
+        type="vertical"
+        iconFront="fa-solid fa-rocket"
+        iconBack="fa-solid fa-circle"
+        title="Innovation"
+        text="What makes us unique is that we use cutting-edge technologies, broadening the variety of tools available. We unite context and technology."
+        delay={500}
+        className="col-span-4"
+      />
+      <CardIcon
+        type="vertical"
+        iconFront="fa-solid fa-shield-alt"
+        iconBack="fa-solid fa-circle"
+        title="Privacy"
+        text="We are of the opinion that data ownership should always remain with the user. We not only comply with regulations, but go the extra mile to ensure that you are in control of your data."
+        delay={600}
+        className="col-span-4"
+      />
+      <CardIcon
+        type="vertical"
+        iconFront="fa-solid fa-heart"
+        iconBack="fa-solid fa-circle"
+        title="Integrity"
+        text="AI can be scary. We think that technology should always be transparent and explainable. Our technology should above all be trusted by its users."
+        delay={700}
+        className="col-span-4"
+      />
+    </CoreValues>{' '}
     <CardImageHorizontal
       imageLeft
       title="Document Screener"

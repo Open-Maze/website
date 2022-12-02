@@ -1,12 +1,15 @@
 import React from 'react';
 import './shared.css';
 
-// Components
+// Blocks
 import Header from '../blocks/Header/Header';
 import Goals from '../blocks/Goals/Goals';
 import Feature from '../blocks/Feature/Feature';
 import Information from '../blocks/Information/Information';
 import CTA from '../blocks/CTA/CTA';
+
+// Components
+import CardIcon from '../components/CardIcon/CardIcon';
 
 // Assets
 import headerImage from '../assets/images/illustrations/header.svg';
@@ -22,7 +25,44 @@ const DocumentScreener = () => (
       text="We noticed that students often receive an initial round of feedback, which is usually about the structure of the document, grammatical errors, missing components, or the quality of writing. The document screener allows students to have their documents reviewed immediately, before they end up with teachers. Giving them a chance to already improve on their documents."
       image={headerImage}
     />
-    <Goals title="What we want to achieve" subtitle="Goals" />
+    <Goals title="What we want to achieve" subtitle="Goals">
+      <CardIcon
+        type="horizontal"
+        iconFront="fa-solid fa-comment"
+        iconBack="fa-solid fa-circle"
+        title="Encourage Dialogue"
+        text="Common mistakes will already be brought to attention, so that the teacher and student can focus on meaningful dialogue about the context."
+        delay={500}
+        className="col-span-6"
+      />
+      <CardIcon
+        type="horizontal"
+        iconFront="fa-solid fa-chart-line"
+        iconBack="fa-solid fa-square"
+        title="Better Insights"
+        text="The parts of a student's documents where it could be improved are highlighted, so that the student gets the chance to improve their work."
+        delay={600}
+        className="col-span-6"
+      />
+      <CardIcon
+        type="horizontal"
+        iconFront="fa-solid fa-face-smile-beam"
+        iconBack="fa-solid fa-circle"
+        title="Student Confidence"
+        text="Gives a student more confidence about their work, since it already has been checked for common mistakes."
+        delay={700}
+        className="col-span-6"
+      />
+      <CardIcon
+        type="horizontal"
+        iconFront="fa-solid fa-circle-check"
+        iconBack="fa-solid fa-circle"
+        title="Higher Quality of Work"
+        text="The student gets the chance to improve their work, before it ends up with a teacher. Allowing the teacher to focus on more meaningful feedback."
+        delay={800}
+        className="col-span-6"
+      />
+    </Goals>
     <Feature
       featureNr="Feature 1"
       title="Instant feedback"

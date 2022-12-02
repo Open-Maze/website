@@ -1,12 +1,15 @@
 import React from 'react';
 import './shared.css';
 
-// Components
+// Blocks
 import Header from '../blocks/Header/Header';
 import Goals from '../blocks/Goals/Goals';
 import Feature from '../blocks/Feature/Feature';
 import Information from '../blocks/Information/Information';
 import CTA from '../blocks/CTA/CTA';
+
+// Components
+import CardIcon from '../components/CardIcon/CardIcon';
 
 // Assets
 import headerImage from '../assets/images/illustrations/header.svg';
@@ -22,7 +25,26 @@ const KnowledgeProfiler = () => (
       text="Every student is unique, as is their learning journey. Over the course of their studies, students will develop domain-specific knowledge that goes beyond the standard curriculum. By extracting all submissions of a student from their online learning environment, the Knowledge Profiler determines and displays these skills in a simple overview."
       image={headerImage}
     />
-    <Goals title="What we want to achieve" subtitle="Goals" />
+    <Goals title="What we want to achieve" subtitle="Goals">
+      <CardIcon
+        type="horizontal"
+        iconFront="fa-solid fa-user"
+        iconBack="fa-solid fa-circle"
+        title="Individual Profile"
+        text="Allow students to show off their unique skills."
+        delay={500}
+        className="col-span-6"
+      />
+      <CardIcon
+        type="horizontal"
+        iconFront="fa-solid fa-link"
+        iconBack="fa-solid fa-circle"
+        title="Connect People"
+        text="The Knowledge Profile can be used to connect Students with other students, teachers, experts or businesses."
+        delay={600}
+        className="col-span-6"
+      />
+    </Goals>
     <Feature
       featureNr="Feature 1"
       title="Unique profile"
@@ -42,9 +64,8 @@ const KnowledgeProfiler = () => (
       image={Placeholder}
     />
     <Information
-      subtitle="Support human interaction"
-      title="Encouraging Dialogue"
-      text="We find that the most important thing in learning is the meaningful interactions between student and teacher. The Document Screener already picks out the more common mistakes, so that there is room for dialogue between students and teachers about what matters: the actual context of the document."
+      title="Interested?"
+      text="Are you interested in taking a closer look at one of our tools, or curious what OpenMaze can offer your institute? Get in touch by scheduling a demo."
       buttonLink="/products"
       buttonLabel="discover more products"
       image={productImage}
