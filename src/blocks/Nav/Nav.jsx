@@ -34,7 +34,7 @@ const Nav = () => {
         }`}
       >
         <div
-          className="mt-24 flex h-fit w-screen flex-col items-center gap-6 bg-white pb-12 pt-6 transition lg:mt-0 lg:w-full lg:flex-row lg:gap-10 lg:bg-none lg:pt-0 lg:pb-0"
+          className="mt-24 flex h-fit w-screen flex-col items-center gap-6 border-b-2 border-solid border-bleach bg-white pb-12 pt-6 transition lg:mt-0 lg:w-full lg:flex-row lg:gap-10 lg:border-none lg:bg-none lg:pt-0 lg:pb-0"
           aria-hidden
           onClick={() => setNavOpen((prev) => !prev)}
         >
