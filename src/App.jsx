@@ -16,6 +16,9 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import DocumentScreener from './pages/DocumentScreener';
+import KnowledgeProfiler from './pages/KnowledgeProfiler';
+import QApp from './pages/QApp';
 import NotFound from './pages/NotFound';
 
 // Components
@@ -40,6 +43,9 @@ const App = () => {
             <Route path="/products" element={<Products />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/document-screener" element={<DocumentScreener />} />
+            <Route path="/knowledge-profiler" element={<KnowledgeProfiler />} />
+            <Route path="/q-app" element={<QApp />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Scroll>

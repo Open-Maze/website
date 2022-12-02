@@ -14,8 +14,8 @@ const CoreValues = ({ subtitle, title }) => (
             type="vertical"
             iconFront="fa-solid fa-rocket"
             iconBack="fa-solid fa-circle"
-            title="Cutting edge"
-            text="We differ ourselves from existing EdTech companies by implementing state of the art technologies, broadening the diversity of tools available. We unite context and technology."
+            title="Innovation"
+            text="What makes us unique is that we use cutting-edge technologies, broadening the variety of tools available. We unite context and technology."
             delay={500}
           />
         </div>
@@ -25,7 +25,7 @@ const CoreValues = ({ subtitle, title }) => (
             iconFront="fa-solid fa-shield-alt"
             iconBack="fa-solid fa-circle"
             title="Privacy"
-            text="We are of the opinion that data ownership should always remain with the user. We not only comply with regulations, but go the extra mile to ensure that you control your data."
+            text="We are of the opinion that data ownership should always remain with the user. We not only comply with regulations, but go the extra mile to ensure that you are in control of your data."
             delay={600}
           />
         </div>

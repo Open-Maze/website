@@ -18,7 +18,7 @@ const ProjectsSection = () => {
     <div className="cms-block">
       <div className="container grid grid-cols-1 gap-10 lg:grid-cols-12" data-aos="fade-up" data-aos-delay="500">
         <div className="col-span-6 lg:col-start-1">
-          <h4 className="pb-2 text-dark">Impactful Decisions</h4>
+          <h4 className="pb-2 text-dark">Impactful technologies</h4>
           <h2>Solutions for every subject, student and school</h2>
           <div className="mt-20">
             <div>
@@ -48,8 +48,8 @@ const ProjectsSection = () => {
                 className={isActive2 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-comment-dots" />
-                <span>Q-App</span>
+                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-graduation-cap" />
+                <span>Knowledge Profiler</span>
               </button>
             </div>
             <br />
@@ -64,8 +64,8 @@ const ProjectsSection = () => {
                 className={isActive3 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-graduation-cap" />
-                <span>Knowledge Profiler</span>
+                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-comment-dots" />
+                <span>Q-App</span>
               </button>
             </div>
           </div>
@@ -74,36 +74,36 @@ const ProjectsSection = () => {
           <div id="card-1" className={isActive1 ? 'card active' : 'card'}>
             <div className="image" style={{ backgroundImage: `url(${topicExtraction})` }} />
             <div className="text">
-              <h3>Direct feedback at your fingertips</h3>
+              <h3>Document Screener</h3>
               <p>
-                Students often have difficulty getting feedback, let alone getting it in a timely manner. In addition,
-                we have found that the feedback they do receive is often very generic. Our Auto Feedback Tool built into
-                your LMS solves these problems by providing feedback on the following: document structure, research
-                questions answered, text coherence, idea cohesion, and other contextual and structural aspects. This
-                then allows students and teachers to immediately engage in meaningful dialogue.
+                We noticed that students often receive an initial round of feedback, which is usually about the
+                structure of the document, grammatical errors, missing components, or the quality of writing. The
+                document screener allows students to have their documents reviewed immediately, before they end up with
+                teachers. Giving them a chance to already improve on their documents.
               </p>
             </div>
           </div>
           <div id="card-2" className={isActive2 ? 'card active' : 'card'}>
-            <div className="image" style={{ backgroundImage: `url(${qApp})` }} />
+            <div className="image" style={{ backgroundImage: `url(${knowledgeProfiler})` }} />
             <div className="text">
-              <h3>Talk to your documents</h3>
+              <h3>Knowledge Profiler</h3>
               <p>
-                People often interact with documents such as research papers or articles in a very linear way. With the
-                Q-App, seamlessly integrated into your LMS, users can ask questions of documents as if they were talking
-                to the author. This leads to a whole new interactive way of working with products. The Q-App not only
-                provides a better customer experience, but also saves time.
+                Every student is unique, as is their learning journey. Over the course of their studies, students will
+                develop domain-specific knowledge that goes beyond the standard curriculum. By extracting all
+                submissions of a student from their online learning environment, the Knowledge Profiler determines and
+                displays these skills in a simple overview.
               </p>
             </div>
           </div>
           <div id="card-3" className={isActive3 ? 'card active' : 'card'}>
-            <div className="image" style={{ backgroundImage: `url(${knowledgeProfiler})` }} />
+            <div className="image" style={{ backgroundImage: `url(${qApp})` }} />
             <div className="text">
-              <h3>Your personally generated skill profile</h3>
+              <h3>Q-App</h3>
               <p>
-                Educational institutions allow their students more freedom in what they are learning. Each student has a
-                unique and personal knowledge profile. The Knowledge Profiler integrated with the LMS automatically
-                processes what a student has submitted and creates a validated overview of the their skills.
+                Traditionally documents are noninteractive, the Q-App changes this by allowing users to interact with a
+                document as if they were talking to a human. Instead of just reading through it, you can now ask
+                questions, and get relevant answers present in the document. It is just as if you were able to talk with
+                the author!
               </p>
             </div>
           </div>

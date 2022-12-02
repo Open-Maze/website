@@ -20,19 +20,19 @@ const Team = ({ subtitle, title }) => (
           <h2>{title}</h2>
           <div className="mt-20 grid grid-cols-2 gap-10 lg:grid-cols-3">
             <div>
-              <TeamMember name="Seline" text="Design & Development" image={Seline} delay={500} />
-            </div>
-            <div>
-              <TeamMember name="Jordy" text="Design & Development" image={Jordy} delay={600} />
-            </div>
-            <div>
               <TeamMember name="Niek" text="CEO" image={Niek} delay={700} />
+            </div>
+            <div>
+              <TeamMember name="Max" text="CEO" image={Max} delay={900} />
             </div>
             <div>
               <TeamMember name="Ruben" text="CEO" image={Ruben} delay={800} />
             </div>
             <div>
-              <TeamMember name="Max" text="CEO" image={Max} delay={900} />
+              <TeamMember name="Seline" text="Design & Development" image={Seline} delay={500} />
+            </div>
+            <div>
+              <TeamMember name="Jordy" text="Design & Development" image={Jordy} delay={600} />
             </div>
             <div>
               <TeamMember name="Stijn" text=" Design en Development" image={Stijn} delay={1000} />
