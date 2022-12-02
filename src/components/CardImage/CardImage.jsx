@@ -22,7 +22,7 @@ const CardImage = ({ imageLeft, title, description, image, buttonLabel, buttonLi
           </>
         ) : (
           <>
-            <div className="col-span-1 p-10 sm:p-8 lg:col-span-7 lg:col-start-1">
+            <div className="order-2 col-span-1 p-10 sm:p-8 lg:order-1 lg:col-span-7 lg:col-start-1">
               <h2 className="pb-6">{title}</h2>
               <p className="pb-10 text-slate-700">{description}</p>
               {buttonLink && (
@@ -31,7 +31,7 @@ const CardImage = ({ imageLeft, title, description, image, buttonLabel, buttonLi
                 </Button>
               )}
             </div>
-            <div className="col-span-1 h-full w-full lg:col-span-5 lg:col-end-13">
+            <div className="order-1 col-span-1 h-full w-full lg:order-2 lg:col-span-5 lg:col-end-13">
               <img src={image} alt={title} className="h-full w-full rounded-r-lg" />
             </div>
           </>
