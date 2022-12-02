@@ -8,7 +8,7 @@ import CTA from '../blocks/CTA/CTA';
 
 // Components
 import CardIcon from '../components/CardIcon/CardIcon';
-import CardImageHorizontal from '../components/CardImageHorizontal/CardImageHorizontal';
+import CardImage from '../components/CardImage/CardImage';
 
 // Assets
 import headerImage from '../assets/images/illustrations/header.svg';
@@ -52,7 +52,7 @@ const Products = () => (
         className="col-span-4"
       />
     </CoreValues>
-    <CardImageHorizontal
+    <CardImage
       imageLeft
       title="Document Screener"
       description="We noticed that students often receive an initial round of feedback, which is usually about the structure of the document, grammatical errors, missing components, or the quality of writing. The document screener allows students to have their documents reviewed immediately, before they end up with teachers. Giving them a chance to already improve on their documents."
@@ -60,7 +60,7 @@ const Products = () => (
       buttonLink="/document-screener"
       buttonLabel="learn more"
     />
-    <CardImageHorizontal
+    <CardImage
       imageRight
       title="Knowledge Profiler"
       description="Every student is unique, as is their learning journey. Over the course of their studies, students will develop domain-specific knowledge that goes beyond the standard curriculum. By extracting all submissions of a student from their online learning environment, the Knowledge Profiler determines and displays these skills in a simple overview."
@@ -68,7 +68,7 @@ const Products = () => (
       buttonLink="/knowledge-profiler"
       buttonLabel="learn more"
     />
-    <CardImageHorizontal
+    <CardImage
       imageLeft
       title="Q-App"
       description="Traditionally documents are noninteractive, the Q-App changes this by allowing users to interact with a document as if they were talking to a human. Instead of just reading through it, you can now ask questions, and get relevant answers present in the document. It is just as if you were able to talk with the author!"

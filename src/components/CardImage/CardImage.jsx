@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../Button/Button';
 
-const CardImageHorizontal = ({ imageLeft, title, description, image, buttonLabel, buttonLink }) => (
+const CardImage = ({ imageLeft, title, description, image, buttonLabel, buttonLink }) => (
   <section className="cms-block">
     <div className="container" data-aos="fade-up" data-aos-delay="500">
       <div className="grid grid-flow-dense grid-cols-1 items-center gap-10 rounded-lg bg-white lg:grid-cols-12">
@@ -41,4 +41,4 @@ const CardImageHorizontal = ({ imageLeft, title, description, image, buttonLabel
   </section>
 );
 
-export default CardImageHorizontal;
+export default CardImage;
