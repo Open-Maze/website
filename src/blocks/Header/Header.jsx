@@ -15,7 +15,7 @@ const Header = ({ size, title, text, buttonLink, buttonLabel, image, external })
   return (
     <>
       <div className={`cms-block flex h-fit items-center bg-white ${size}`}>
-        <div className="container mt-24 grid grid-cols-1 items-center gap-10 lg:mt-0 lg:grid-cols-12">
+        <div className="container grid grid-cols-1 items-center gap-10 pt-24 lg:grid-cols-12">
           <div className="col-span-5 lg:col-start-1">
             <h1 className="pb-6" data-aos="fade-up" data-aos-delay="300">
               <mark>{title}</mark>
