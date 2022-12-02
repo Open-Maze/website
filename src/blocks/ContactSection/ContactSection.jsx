@@ -17,7 +17,7 @@ const ContactSection = ({ subtitle, title, text, buttonMail, buttonLabel }) => (
         {text && <p className="pb-10 text-slate-700">{text}</p>}
         {buttonMail && (
           <div>
-            <Button pageUrl={`mailto:${buttonMail}`} className="button button--violet">
+            <Button external pageUrl={`mailto:${buttonMail}`} className="button button--violet">
               {buttonLabel}
             </Button>
           </div>
