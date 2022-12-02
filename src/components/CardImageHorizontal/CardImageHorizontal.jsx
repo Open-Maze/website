@@ -14,7 +14,7 @@ const CardImageHorizontal = ({ imageLeft, title, description, image, buttonLabel
               <h2 className="pb-6">{title}</h2>
               <p className="pb-10 text-slate-700">{description}</p>
               {buttonLink && (
-                <Button pageUrl={buttonLink} className="button button--violet">
+                <Button pageUrl={buttonLink} className="button button--skyline">
                   {buttonLabel}
                 </Button>
               )}
@@ -26,7 +26,7 @@ const CardImageHorizontal = ({ imageLeft, title, description, image, buttonLabel
               <h2 className="pb-6">{title}</h2>
               <p className="pb-10 text-slate-700">{description}</p>
               {buttonLink && (
-                <Button pageUrl={buttonLink} className="button button--violet">
+                <Button pageUrl={buttonLink} className="button button--skyline">
                   {buttonLabel}
                 </Button>
               )}

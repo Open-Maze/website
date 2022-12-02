@@ -17,7 +17,7 @@ const Information = ({ subtitle, title, text, buttonLabel, buttonLink, image }) 
           {title && <h2 className="pb-6">{title}</h2>}
           {text && <p className="pb-10 text-slate-700">{text}</p>}
           {buttonLink && (
-            <Button pageUrl={buttonLink} className="button button--violet">
+            <Button pageUrl={buttonLink} className="button button--skyline">
               {buttonLabel}
             </Button>
           )}

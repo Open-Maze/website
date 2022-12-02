@@ -2,7 +2,7 @@
   @apply flex h-full w-full items-center rounded-lg bg-white p-6 text-slate-400 transition;
 
   &:hover {
-    @apply bg-violet-darker text-white;
+    @apply bg-skyline-darker text-white;
   }
 
   span {
@@ -10,7 +10,7 @@
   }
 
   &.active {
-    @apply bg-violet text-white;
+    @apply bg-skyline text-white;
   }
 }
 
