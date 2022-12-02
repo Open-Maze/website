@@ -23,6 +23,8 @@ const Home = () => (
       text="We aim to provide students using online educational environments with greater insight into their own learning journey and performance through the use of AI powered tools."
       buttonLink="/products"
       buttonLabel="our products"
+      button2Link="/about"
+      button2Label="about us"
       image={headerImage}
     />
     <ProjectsSection />

@@ -7,7 +7,7 @@ import Button from '../../components/Button/Button';
 // Assets
 import { ReactComponent as ScrollDown } from '../../assets/images/icons/chevron-down.svg';
 
-const Header = ({ size, title, text, buttonLink, buttonLabel, image, external }) => {
+const Header = ({ size, title, text, buttonLink, buttonLabel, button2Link, button2Label, image, external }) => {
   function scrollDown() {
     window.scroll(0, window.scrollY + 400);
   }
@@ -27,13 +27,22 @@ const Header = ({ size, title, text, buttonLink, buttonLabel, image, external })
                 <mark>{text}</mark>
               </p>
             )}
-            {buttonLink && (
-              <div className="buttons" data-aos="fade-up" data-aos-delay="500">
-                <Button external={external} pageUrl={buttonLink} className="button button--violet">
-                  {buttonLabel}
-                </Button>
-              </div>
-            )}
+            <div className="flex flex-col gap-6 sm:flex-row">
+              {buttonLink && (
+                <div className="buttons" data-aos="fade-up" data-aos-delay="500">
+                  <Button external={external} pageUrl={buttonLink} className="button button--violet">
+                    {buttonLabel}
+                  </Button>
+                </div>
+              )}
+              {button2Link && (
+                <div className="buttons" data-aos="fade-up" data-aos-delay="500">
+                  <Button external={external} pageUrl={button2Link} className="button button--violet-outline">
+                    {button2Label}
+                  </Button>
+                </div>
+              )}
+            </div>
           </div>
           {image && (
             <div className="col-span-6 lg:col-end-13" data-aos="fade-up" data-aos-delay="300">

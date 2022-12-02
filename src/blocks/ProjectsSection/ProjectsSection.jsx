@@ -84,7 +84,7 @@ const ProjectsSection = () => {
                 document screener allows students to have their documents reviewed immediately, before they end up with
                 teachers. Giving them a chance to already improve on their documents.
               </p>
-              <Button pageUrl="/document-screener" className="button button--violet">
+              <Button pageUrl="/document-screener" className="button button--skyline-outline">
                 learn more
               </Button>
             </div>
@@ -99,7 +99,7 @@ const ProjectsSection = () => {
                 submissions of a student from their online learning environment, the Knowledge Profiler determines and
                 displays these skills in a simple overview.
               </p>
-              <Button pageUrl="/knowledge-profiler" className="button button--violet">
+              <Button pageUrl="/knowledge-profiler" className="button button--skyline-outline">
                 learn more
               </Button>
             </div>
@@ -114,7 +114,7 @@ const ProjectsSection = () => {
                 questions, and get relevant answers present in the document. It is just as if you were able to talk with
                 the author!
               </p>
-              <Button pageUrl="/q-app" className="button button--violet">
+              <Button pageUrl="/q-app" className="button button--skyline-outline">
                 learn more
               </Button>
             </div>
