@@ -4,6 +4,9 @@ import './ProjectsSection.css';
 // External
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+// Components
+import Button from '../../components/Button/Button';
+
 // Assets
 import knowledgeProfiler from '../../assets/images/illustrations-products/knowledge-profiler.svg';
 import qApp from '../../assets/images/illustrations-products/q-app.svg';
@@ -81,6 +84,9 @@ const ProjectsSection = () => {
                 document screener allows students to have their documents reviewed immediately, before they end up with
                 teachers. Giving them a chance to already improve on their documents.
               </p>
+              <Button pageUrl="/document-screener" className="button button--violet">
+                learn more
+              </Button>
             </div>
           </div>
           <div id="card-2" className={isActive2 ? 'card active' : 'card'}>
@@ -93,6 +99,9 @@ const ProjectsSection = () => {
                 submissions of a student from their online learning environment, the Knowledge Profiler determines and
                 displays these skills in a simple overview.
               </p>
+              <Button pageUrl="/knowledge-profiler" className="button button--violet">
+                learn more
+              </Button>
             </div>
           </div>
           <div id="card-3" className={isActive3 ? 'card active' : 'card'}>
@@ -105,6 +114,9 @@ const ProjectsSection = () => {
                 questions, and get relevant answers present in the document. It is just as if you were able to talk with
                 the author!
               </p>
+              <Button pageUrl="/q-app" className="button button--violet">
+                learn more
+              </Button>
             </div>
           </div>
         </div>
