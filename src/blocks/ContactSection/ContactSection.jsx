@@ -4,7 +4,7 @@ import React from 'react';
 import Button from '../../components/Button/Button';
 import ContactCard from '../../components/ContactCard/ContactCard';
 
-const ContactSection = ({ subtitle, title, text, buttonMail, buttonLabel }) => (
+const ContactSection = ({ subtitle, title, text, buttonLink, buttonLabel }) => (
   <div className="cms-block bg-white">
     <div
       className="container grid grid-cols-1 items-center gap-10 lg:grid-cols-12"
@@ -15,9 +15,9 @@ const ContactSection = ({ subtitle, title, text, buttonMail, buttonLabel }) => (
         {subtitle && <h4 className="pb-2 text-dark">{subtitle}</h4>}
         {title && <h2 className="pb-6">{title}</h2>}
         {text && <p className="pb-10 text-slate-700">{text}</p>}
-        {buttonMail && (
+        {buttonLink && (
           <div>
-            <Button external pageUrl={`mailto:${buttonMail}`} className="button button--violet">
+            <Button pageUrl={buttonLink} className="button button--violet">
               {buttonLabel}
             </Button>
           </div>
