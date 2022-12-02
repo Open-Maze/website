@@ -84,7 +84,7 @@ const Products = () => (
       email="hello@openmaze.io"
       image={office}
       buttonLink="/contact"
-      buttonLabel="De snelste route naar een samenwerking"
+      buttonLabel="The fastest route to a collaboration"
     />
   </div>
 );
