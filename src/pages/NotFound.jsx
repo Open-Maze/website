@@ -1,7 +1,7 @@
 import React from 'react';
 import './shared.css';
 
-// Components
+// Blocks
 import Header from '../blocks/Header/Header';
 
 // Assets

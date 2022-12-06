@@ -46,12 +46,24 @@
   h1::selection,
   h2::selection,
   h3::selection,
+  mark::selection,
   img::selection {
     @apply bg-midnight text-white;
   }
 
   mark {
     @apply bg-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background: $bg;
+
+    @apply w-2 bg-white;
+
+    &-thumb {
+      @apply bg-midnight;
+    }
   }
 }
 
