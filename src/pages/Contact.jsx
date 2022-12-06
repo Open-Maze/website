@@ -1,7 +1,7 @@
 import React from 'react';
 import './shared.css';
 
-// Components
+// Blocks
 import Header from '../blocks/Header/Header';
 
 // Assets
@@ -12,9 +12,10 @@ const Contact = () => (
     <Header
       size="small"
       title="Get in touch"
-      text="We aim to provide users of online educational environments with greater insight into their own learning journey and performance through the use of AI-based tools."
-      buttonLink="/products"
-      buttonLabel="our products"
+      text="We aim to provide students using online educational environments with greater insight into their own learning journey and performance through the use of AI powered tools."
+      external
+      buttonLink="mailto:hello@openmaze.io"
+      buttonLabel="send an email"
       image={headerImage}
     />
   </div>

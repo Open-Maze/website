@@ -1,12 +1,16 @@
 .projects-button {
-  @apply flex h-full w-full items-center rounded-lg bg-white p-6 text-slate-400 transition hover:bg-violet-darker hover:text-white;
+  @apply flex h-full w-full items-center rounded-lg bg-white p-6 text-slate-400 transition;
+
+  &:hover {
+    @apply bg-skyline-darker text-white;
+  }
 
   span {
     @apply text-base font-medium;
   }
 
   &.active {
-    @apply bg-violet text-white;
+    @apply bg-skyline text-white;
   }
 }
 
@@ -25,7 +29,7 @@
     @apply p-10;
 
     p {
-      @apply pt-6 text-slate-700;
+      @apply pt-6 pb-10 text-slate-700;
     }
   }
 }
