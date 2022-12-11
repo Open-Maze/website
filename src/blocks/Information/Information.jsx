@@ -4,7 +4,7 @@ import React from 'react';
 import Button from '../../components/Button/Button';
 
 const Information = ({ subtitle, title, text, buttonLabel, buttonLink, image }) => (
-  <div className="cms-block bg-white">
+  <section className="cms-block bg-white">
     <div className="container" data-aos="fade-up" data-aos-delay="500">
       <div className="grid grid-flow-dense grid-cols-1 items-center gap-10 lg:grid-cols-12">
         {image && (
@@ -24,7 +24,7 @@ const Information = ({ subtitle, title, text, buttonLabel, buttonLink, image }) 
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Information;

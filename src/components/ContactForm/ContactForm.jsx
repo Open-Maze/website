@@ -52,42 +52,40 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="App">
-      <form id="contact-form" onSubmit={handleSubmit} method="POST">
-        {[
-          ['fullName', data.fullName, 'Voor- en achternaam*', 'text'],
-          ['companyName', data.companyName, 'bedrijfsnaam', 'text'],
-          ['email', data.email, 'E-mail*', 'email'],
-          ['phone', data.phone, 'Telefoon', 'phone'],
-        ].map(([label, iValue, placeholder, type]) => (
-          <div className="form-group">
-            <input
-              placeholder={placeholder}
-              type={type}
-              className="form-control"
-              id={label}
-              value={iValue}
-              name={label}
-              onChange={onChange}
-            />
-          </div>
-        ))}
+    <form id="contact-form" onSubmit={handleSubmit} method="POST">
+      {[
+        ['fullName', data.fullName, 'Voor- en achternaam*', 'text'],
+        ['companyName', data.companyName, 'bedrijfsnaam', 'text'],
+        ['email', data.email, 'E-mail*', 'email'],
+        ['phone', data.phone, 'Telefoon', 'phone'],
+      ].map(([label, iValue, placeholder, type]) => (
         <div className="form-group">
-          <textarea
-            placeholder="Bericht"
+          <input
+            placeholder={placeholder}
+            type={type}
             className="form-control"
-            rows="5"
-            id="bericht"
-            value={data.message}
-            name="message"
+            id={label}
+            value={iValue}
+            name={label}
             onChange={onChange}
           />
         </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
-        </button>
-      </form>
-    </div>
+      ))}
+      <div className="form-group">
+        <textarea
+          placeholder="Bericht"
+          className="form-control"
+          rows="5"
+          id="bericht"
+          value={data.message}
+          name="message"
+          onChange={onChange}
+        />
+      </div>
+      <button type="submit" className="btn btn-primary">
+        Submit
+      </button>
+    </form>
   );
 };
 export default ContactForm;

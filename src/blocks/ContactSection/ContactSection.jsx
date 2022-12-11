@@ -5,7 +5,7 @@ import Button from '../../components/Button/Button';
 import ContactCard from '../../components/ContactCard/ContactCard';
 
 const ContactSection = ({ subtitle, title, text, buttonLink, buttonLabel }) => (
-  <div className="cms-block bg-white">
+  <section className="cms-block bg-white">
     <div
       className="container grid grid-cols-1 items-center gap-10 lg:grid-cols-12"
       data-aos="fade-up"
@@ -39,7 +39,7 @@ const ContactSection = ({ subtitle, title, text, buttonLink, buttonLabel }) => (
         />
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default ContactSection;

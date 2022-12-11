@@ -8,7 +8,7 @@ import CTA from '../blocks/CTA/CTA';
 
 // Components
 import CardIcon from '../components/CardIcon/CardIcon';
-import CardImage from '../components/CardImage/CardImage';
+import CardImage from '../blocks/CardImage/CardImage';
 
 // Assets
 import headerImage from '../assets/images/illustrations/header.svg';
