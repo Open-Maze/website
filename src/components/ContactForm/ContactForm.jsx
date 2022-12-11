@@ -1,4 +1,6 @@
-import { React, useState } from 'react';
+import React, { useState } from 'react';
+
+// External
 import axios from 'axios';
 
 const initialState = {
@@ -88,4 +90,5 @@ const ContactForm = () => {
     </form>
   );
 };
+
 export default ContactForm;

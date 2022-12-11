@@ -3,6 +3,8 @@ import './shared.css';
 
 // Blocks
 import Header from '../blocks/Header/Header';
+
+// Components
 import ContactForm from '../components/ContactForm/ContactForm';
 
 // Assets

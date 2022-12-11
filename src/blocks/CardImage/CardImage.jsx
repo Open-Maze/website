@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Components
 import Button from '../../components/Button/Button';
 
 const CardImage = ({ imageLeft, title, description, image, buttonLabel, buttonLink }) => (
