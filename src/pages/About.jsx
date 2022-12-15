@@ -12,7 +12,7 @@ import CardIcon from '../components/CardIcon/CardIcon';
 import TeamMember from '../components/TeamMember/TeamMember';
 
 // Assets
-import headerImage from '../assets/images/illustrations/header.svg';
+import headerImage from '../assets/images/illustrations/team.svg';
 import Seline from '../assets/images/team/seline.jpg';
 import Jordy from '../assets/images/team/jordy.jpg';
 import Stijn from '../assets/images/team/stijn.jpg';
