@@ -4,16 +4,19 @@ import './shared.css';
 // Blocks
 import Header from '../blocks/Header/Header';
 import Goals from '../blocks/Goals/Goals';
-import Feature from '../blocks/Feature/Feature';
+import Features from '../blocks/Features/Features';
 import Information from '../blocks/Information/Information';
 import CTA from '../blocks/CTA/CTA';
 
 // Components
 import CardIcon from '../components/CardIcon/CardIcon';
+import Feature from '../components/Feature/Feature';
 
 // Assets
 import headerImage from '../assets/images/illustrations/documentscreener.svg';
-import Placeholder from '../assets/images/iphone-placeholder.png';
+import InstantFeedback from '../assets/images/products/document-screener/instant-feedback.svg';
+import ContextAware from '../assets/images/products/document-screener/context-aware.svg';
+import Summarization from '../assets/images/products/document-screener/summarization.svg';
 import productImage from '../assets/images/illustrations/product.svg';
 import office from '../assets/images/office.jpeg';
 
@@ -24,6 +27,7 @@ const DocumentScreener = () => (
       title="Document Screener"
       text="We noticed that students often receive an initial round of feedback, which is usually about the structure of the document, grammatical errors, missing components, or the quality of writing. The document screener allows students to have their documents reviewed immediately, before they end up with teachers. Giving them a chance to already improve on their documents."
       image={headerImage}
+      arrow
     />
     <Goals title="What we want to achieve" subtitle="Goals">
       <CardIcon
@@ -63,24 +67,29 @@ const DocumentScreener = () => (
         className="col-span-6"
       />
     </Goals>
-    <Feature
-      featureNr="Feature 1"
-      title="Instant feedback"
-      description="The Document Screener allows students to have their documents reviewed immediately and multiple times. The purpose of the screener is to eliminate the repetitive first round of feedback."
-      image={Placeholder}
-    />
-    <Feature
-      featureNr="Feature 2"
-      title="Context aware"
-      description="Cutting-edge machine learning models are used by the Document Screener, allowing it to understand text like humans. This allows our tool to provide more document-specific feedback on, for example, introductions, research questions, conclusions, writing quality and more."
-      image={Placeholder}
-    />
-    <Feature
-      featureNr="Feature 3"
-      title="Summarization"
-      description="The Document Screen can summarize (parts of) the document, picking out what it thinks to be the most important parts. This can be used by the student to verify if all their talking points are coming across."
-      image={Placeholder}
-    />
+    <Features>
+      <Feature
+        featureNr="Feature 1"
+        title="Instant feedback"
+        description="The Document Screener allows students to have their documents reviewed immediately and multiple times. The purpose of the screener is to eliminate the repetitive first round of feedback."
+        image={InstantFeedback}
+        illustration
+      />
+      <Feature
+        featureNr="Feature 2"
+        title="Context aware"
+        description="Cutting-edge machine learning models are used by the Document Screener, allowing it to understand text like humans. This allows our tool to provide more document-specific feedback on, for example, introductions, research questions, conclusions, writing quality and more."
+        image={ContextAware}
+        illustration
+      />
+      <Feature
+        featureNr="Feature 3"
+        title="Summarization"
+        description="The Document Screen can summarize (parts of) the document, picking out what it thinks to be the most important parts. This can be used by the student to verify if all their talking points are coming across."
+        image={Summarization}
+        illustration
+      />
+    </Features>
     <Information
       subtitle="Support human interaction"
       title="Encouraging Dialogue"
@@ -88,16 +97,16 @@ const DocumentScreener = () => (
       buttonLink="/products"
       buttonLabel="discover more products"
       image={productImage}
+      illustration
     />
     <CTA
       title="Contact us"
       subtitle="Want to talk?"
-      phone="0401234567"
-      phoneLabel="+31 (0)40 1234567"
       email="hello@openmaze.io"
+      linkedin="open-maze"
       image={office}
       buttonLink="/contact"
-      buttonLabel="The fastest route to a collaboration"
+      buttonLabel="the fastest route to a collaboration"
     />
   </div>
 );

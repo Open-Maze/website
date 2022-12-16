@@ -4,6 +4,7 @@ import './shared.css';
 // Blocks
 import Header from '../blocks/Header/Header';
 import CoreValues from '../blocks/CoreValues/CoreValues';
+import Image from '../blocks/Image/Image';
 import Team from '../blocks/Team/Team';
 import CTA from '../blocks/CTA/CTA';
 
@@ -13,6 +14,7 @@ import TeamMember from '../components/TeamMember/TeamMember';
 
 // Assets
 import headerImage from '../assets/images/illustrations/team.svg';
+import TeamImage from '../assets/images/team/team.jpg';
 import Seline from '../assets/images/team/seline.jpg';
 import Jordy from '../assets/images/team/jordy.jpg';
 import Stijn from '../assets/images/team/stijn.jpg';
@@ -28,6 +30,7 @@ const About = () => (
       title="About us"
       text="We aim to provide students using online educational environments with greater insight into their own learning journey and performance through the use of AI powered tools."
       image={headerImage}
+      arrow
     />
     <CoreValues title="Core values" subtitle="Our beliefs">
       <CardIcon
@@ -58,23 +61,23 @@ const About = () => (
         className="col-span-4"
       />
     </CoreValues>
+    <Image src={TeamImage} alt="Meet the OpenMAze team" />
     <Team title="Our team" subtitle="Meet the people behind OpenMaze">
-      <TeamMember name="Niek" text="CEO" image={Niek} delay={500} />
-      <TeamMember name="Max" text="CEO" image={Max} delay={600} />
-      <TeamMember name="Ruben" text="CEO" image={Ruben} delay={700} />
-      <TeamMember name="Seline" text="Design & Development" image={Seline} delay={800} />
-      <TeamMember name="Jordy" text="Design & Development" image={Jordy} delay={900} />
-      <TeamMember name="Stijn" text=" Design & Development" image={Stijn} delay={1000} />
+      <TeamMember name="Niek van Dam" text="Co-founder" image={Niek} delay={500} />
+      <TeamMember name="Max van Hattum" text="Co-founder" image={Max} delay={600} />
+      <TeamMember name="Ruben Fricke" text="Co-founder" image={Ruben} delay={700} />
+      <TeamMember name="Seline Warners" text="Digital Designer" image={Seline} delay={800} />
+      <TeamMember name="Jordy Arntz" text="Digital Designer" image={Jordy} delay={900} />
+      <TeamMember name="Stijn Verhagen" text="Digital Designer" image={Stijn} delay={1000} />
     </Team>
     <CTA
       title="Contact us"
       subtitle="Want to talk?"
-      phone="0401234567"
-      phoneLabel="+31 (0)40 1234567"
       email="hello@openmaze.io"
+      linkedin="open-maze"
       image={office}
       buttonLink="/contact"
-      buttonLabel="The fastest route to a collaboration"
+      buttonLabel="the fastest route to a collaboration"
     />
   </div>
 );

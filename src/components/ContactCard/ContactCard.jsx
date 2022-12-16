@@ -3,7 +3,7 @@ import './ContactCard.css';
 
 const ContactCard = ({ link, icon, title, content }) => (
   <a href={link} target="_blank" rel="noreferrer">
-    <div className="contact-card-s-container flex min-w-full items-center justify-start rounded-3xl bg-bleach p-6 transition hover:cursor-pointer hover:bg-violet-darker hover:text-white">
+    <div className="contact-card-s-container flex min-w-full items-center justify-start rounded-xl bg-bleach p-6 transition hover:cursor-pointer hover:bg-violet-darker hover:text-white">
       <div
         className={`contact-card-s-container-left flex h-12 w-12 items-center justify-center rounded-full bg-violet-lighter bg-40 bg-center bg-no-repeat ${icon}`}
       />
