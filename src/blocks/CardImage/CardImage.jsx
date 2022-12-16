@@ -1,5 +1,7 @@
 import React from 'react';
-import Button from '../Button/Button';
+
+// Components
+import Button from '../../components/Button/Button';
 
 const CardImage = ({ imageLeft, title, description, image, buttonLabel, buttonLink }) => (
   <section className="cms-block">

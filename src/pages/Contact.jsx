@@ -3,6 +3,7 @@ import './shared.css';
 
 // Blocks
 import Header from '../blocks/Header/Header';
+import ContactForm from '../blocks/ContactForm/ContactForm';
 
 // Assets
 import headerImage from '../assets/images/illustrations/contact.svg';
@@ -18,6 +19,7 @@ const Contact = () => (
       buttonLabel="send an email"
       image={headerImage}
     />
+    <ContactForm />
   </div>
 );
 

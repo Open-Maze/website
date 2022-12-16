@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '../../components/Button/Button';
 
 const CTA = ({ subtitle, title, phone, phoneLabel, email, image, buttonLink, buttonLabel }) => (
-  <div className="cms-block">
+  <section className="cms-block">
     <div className="container" data-aos="fade-up" data-aos-delay="500">
       <div className="grid grid-cols-1 gap-10 border-t border-midnight pt-32 md:grid-cols-12">
         <div className="col-span-4 md:col-start-1">
@@ -46,7 +46,7 @@ const CTA = ({ subtitle, title, phone, phoneLabel, email, image, buttonLink, but
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default CTA;
