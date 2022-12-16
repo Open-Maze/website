@@ -5,10 +5,10 @@ import './shared.css';
 import Header from '../blocks/Header/Header';
 import Product from '../blocks/Product/Product';
 import CoreValues from '../blocks/CoreValues/CoreValues';
-import CardImage from '../blocks/CardImage/CardImage';
 import CTA from '../blocks/CTA/CTA';
 
 // Components
+import CardImage from '../components/CardImage/CardImage';
 import CardIcon from '../components/CardIcon/CardIcon';
 
 // Assets

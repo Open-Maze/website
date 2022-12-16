@@ -1,14 +1,14 @@
 import React from 'react';
 
 // Components
-import Button from '../../components/Button/Button';
+import Button from '../Button/Button';
 
 const CardImage = ({ imageLeft, title, description, image, imgBackground, buttonLabel, buttonLink }) => (
   <div className="grid grid-flow-dense grid-cols-1 items-center gap-10 rounded-xl border-8 border-solid border-light-gray bg-white shadow-lg lg:grid-cols-12">
     {imageLeft ? (
       <>
         <div
-          className="col-span-1 h-full w-full rounded-l-md lg:col-span-5 lg:col-start-1"
+          className="col-span-1 h-full w-full rounded-t-md lg:col-span-5 lg:col-start-1 lg:rounded-l-md"
           style={{ backgroundColor: imgBackground }}
         >
           <img src={image} alt={title} className="h-full w-full rounded-l-md" />
@@ -35,7 +35,7 @@ const CardImage = ({ imageLeft, title, description, image, imgBackground, button
           )}
         </div>
         <div
-          className="order-1 col-span-1 h-full w-full rounded-r-md lg:order-2 lg:col-span-5 lg:col-end-13"
+          className="order-1 col-span-1 h-full w-full rounded-t-md lg:order-2 lg:col-span-5 lg:col-end-13 lg:rounded-r-md"
           style={{ backgroundColor: imgBackground }}
         >
           <img src={image} alt={title} className="h-full w-full rounded-r-md" />
