@@ -14,7 +14,9 @@ import Feature from '../components/Feature/Feature';
 
 // Assets
 import headerImage from '../assets/images/illustrations/qapp.svg';
-import Placeholder from '../assets/images/office.jpeg';
+import Conversational from '../assets/images/office.jpeg';
+import DirectReferences from '../assets/images/office.jpeg';
+import ContextAware from '../assets/images/office.jpeg';
 import productImage from '../assets/images/illustrations/product.svg';
 import office from '../assets/images/office.jpeg';
 
@@ -52,19 +54,19 @@ const QApp = () => (
         featureNr="Feature 1"
         title="Conversational"
         description="A new way of interacting with documents, by enabling users to have a conversational experience. Our tool lets you talk and ask questions to your documents instead of having to fully read through a document."
-        image={Placeholder}
+        image={Conversational}
       />
       <Feature
         featureNr="Feature 2"
         title="Direct references"
         description="When conversing with a document, you will directly see where the Q-App takes its references from. A highlight will be made in the document, and can even be exported for later use to quickly find the cited references."
-        image={Placeholder}
+        image={DirectReferences}
       />
       <Feature
         featureNr="Feature 3"
         title="Context aware"
         description="The Q-App understands the context of the document and the questions, so no need to only ask surface-level questions."
-        image={Placeholder}
+        image={ContextAware}
       />
     </Features>
     <Information

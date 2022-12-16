@@ -14,7 +14,9 @@ import Feature from '../components/Feature/Feature';
 
 // Assets
 import headerImage from '../assets/images/illustrations/knowledgeprofiler.svg';
-import Placeholder from '../assets/images/office.jpeg';
+import UniqueProfile from '../assets/images/office.jpeg';
+import Verifiable from '../assets/images/office.jpeg';
+import StudentsBecomeExperts from '../assets/images/office.jpeg';
 import productImage from '../assets/images/illustrations/product.svg';
 import office from '../assets/images/office.jpeg';
 
@@ -52,19 +54,19 @@ const KnowledgeProfiler = () => (
         featureNr="Feature 1"
         title="Unique profile"
         description="Every student has a unique learning journey throughout which they learn their subjects of interest. The Knowledge Profiler aims to visualize the skills mastered throughout a learning journey."
-        image={Placeholder}
+        image={UniqueProfile}
       />
       <Feature
         featureNr="Feature 2"
         title="Verifiable"
         description="The results from the Knowledge Profiler can easily be evaluated and used as a verifiable portfolio, because it uses a student's graded and submitted assignments."
-        image={Placeholder}
+        image={Verifiable}
       />
       <Feature
         featureNr="Feature 3"
         title="Students become experts"
         description="Students and teachers can use their submissions to generate a skill profile using the Knowledge Profiler. The profile determines expertise in a subject, and can be used to locate others with the desired expertise."
-        image={Placeholder}
+        image={StudentsBecomeExperts}
       />
     </Features>
     <Information

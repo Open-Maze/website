@@ -14,7 +14,9 @@ import Feature from '../components/Feature/Feature.jsx';
 
 // Assets
 import headerImage from '../assets/images/illustrations/documentscreener.svg';
-import Placeholder from '../assets/images/office.jpeg';
+import InstantFeedback from '../assets/images/products/document-screener/instant-feedback.svg';
+import ContextAware from '../assets/images/products/document-screener/context-aware.svg';
+import Summarization from '../assets/images/products/document-screener/summarization.svg';
 import productImage from '../assets/images/illustrations/product.svg';
 import office from '../assets/images/office.jpeg';
 
@@ -70,19 +72,22 @@ const DocumentScreener = () => (
         featureNr="Feature 1"
         title="Instant feedback"
         description="The Document Screener allows students to have their documents reviewed immediately and multiple times. The purpose of the screener is to eliminate the repetitive first round of feedback."
-        image={Placeholder}
+        image={InstantFeedback}
+        illustration
       />
       <Feature
         featureNr="Feature 2"
         title="Context aware"
         description="Cutting-edge machine learning models are used by the Document Screener, allowing it to understand text like humans. This allows our tool to provide more document-specific feedback on, for example, introductions, research questions, conclusions, writing quality and more."
-        image={Placeholder}
+        image={ContextAware}
+        illustration
       />
       <Feature
         featureNr="Feature 3"
         title="Summarization"
         description="The Document Screen can summarize (parts of) the document, picking out what it thinks to be the most important parts. This can be used by the student to verify if all their talking points are coming across."
-        image={Placeholder}
+        image={Summarization}
+        illustration
       />
     </Features>
     <Information
