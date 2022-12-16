@@ -22,8 +22,8 @@ import QApp from './pages/QApp';
 import NotFound from './pages/NotFound';
 
 // Components
-import Nav from './blocks/Nav/Nav';
-import Footer from './blocks/Footer/Footer';
+import Nav from './components/Nav/Nav';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   library.add(fab, fas);

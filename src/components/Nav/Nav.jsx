@@ -5,7 +5,7 @@ import './Nav.css';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
 // Components
-import Button from '../../components/Button/Button';
+import Button from '../Button/Button';
 
 // Assets
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
@@ -18,7 +18,7 @@ const Nav = () => {
     <div className="fixed top-0 z-50 flex h-24 w-full items-center justify-between border-b-2 border-solid border-bleach bg-white px-4 md:px-10">
       <div data-aos="fade-down">
         {location.pathname === '/' && (
-          <a href="#top">
+          <a href="src/components/Nav#top">
             <LogoPurpleBlue className="mt-2 h-6" />
           </a>
         )}

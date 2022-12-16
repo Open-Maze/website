@@ -47,7 +47,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="cms-block flex h-fit items-center">
+    <section className="cms-block flex h-fit items-center">
       <div className="container grid grid-cols-1 items-start gap-10 lg:grid-cols-12">
         <div className="col-span-5 lg:col-start-1">
           <h4 className="pb-2 text-dark" data-aos="fade-up">
@@ -124,7 +124,7 @@ const ContactForm = () => {
           </button>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 
