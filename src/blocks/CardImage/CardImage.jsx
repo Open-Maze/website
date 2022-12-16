@@ -13,7 +13,7 @@ const CardImage = ({ imageLeft, title, description, image, imgBackground, button
         >
           <img src={image} alt={title} className="h-full w-full rounded-l-md" />
         </div>
-        <div className="col-span-1 sm:p-8 lg:col-span-7 lg:col-end-13">
+        <div className="col-span-1 p-8 lg:col-span-7 lg:col-end-13">
           <h2 className="pb-6">{title}</h2>
           <p className="pb-10 text-slate-700">{description}</p>
           {buttonLink && (
