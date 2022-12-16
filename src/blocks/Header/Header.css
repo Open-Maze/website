@@ -1,0 +1,7 @@
+.large {
+  @apply bg-hero-pattern bg-cover bg-center bg-no-repeat lg:h-screen;
+}
+
+.small {
+  @apply bg-hero-pattern bg-cover bg-center bg-no-repeat lg:h-[80vh];
+}

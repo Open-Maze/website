@@ -1,11 +1,10 @@
 import React from 'react';
-import './TeamMember.scss';
 
-const TeamMember = () => (
-  <div>
-    <div>photo</div>
-    <div>name</div>
-    <div>position</div>
+const TeamMember = ({ image, name, text, delay }) => (
+  <div data-aos="fade-up" data-aos-delay={delay}>
+    <img src={image} alt={name} className="rounded-xl border-8 border-solid border-light-gray shadow-lg" />
+    <h3 className="mt-4">{name}</h3>
+    <p className="mt-2">{text}</p>
   </div>
 );
 

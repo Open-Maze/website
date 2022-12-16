@@ -1,0 +1,31 @@
+.projects-button {
+  @apply flex h-full w-full items-center rounded-xl bg-white p-6 text-slate-400 transition;
+
+  &:hover {
+    @apply bg-skyline-darker text-white;
+  }
+
+  span {
+    @apply text-base font-medium;
+  }
+
+  &.active {
+    @apply bg-skyline text-white;
+  }
+}
+
+.card {
+  @apply hidden rounded-xl border-8 border-solid border-light-gray bg-white shadow-lg;
+
+  &.active {
+    @apply block;
+  }
+
+  .text {
+    @apply p-10;
+
+    p {
+      @apply pt-6 pb-10 text-slate-700;
+    }
+  }
+}
