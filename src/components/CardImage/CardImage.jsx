@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 const CardImage = ({ imageLeft, title, description, image, buttonLabel, buttonLink }) => (
   <section className="cms-block">
     <div className="container" data-aos="fade-up" data-aos-delay="500">
-      <div className="grid grid-flow-dense grid-cols-1 items-center gap-10 rounded-lg bg-white lg:grid-cols-12">
+      <div className="grid grid-flow-dense grid-cols-1 items-center gap-10 rounded-xl bg-white lg:grid-cols-12">
         {imageLeft ? (
           <>
             <div className="col-span-1 h-full w-full lg:col-span-5 lg:col-start-1">

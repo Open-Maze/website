@@ -1,5 +1,5 @@
 .projects-button {
-  @apply flex h-full w-full items-center rounded-lg bg-white p-6 text-slate-400 transition;
+  @apply flex h-full w-full items-center rounded-xl bg-white p-6 text-slate-400 transition;
 
   &:hover {
     @apply bg-skyline-darker text-white;
@@ -15,7 +15,7 @@
 }
 
 .card {
-  @apply hidden rounded-lg bg-white pt-8 shadow-lg;
+  @apply hidden rounded-xl bg-white pt-8 shadow-lg;
 
   &.active {
     @apply block;

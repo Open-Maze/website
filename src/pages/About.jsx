@@ -4,6 +4,7 @@ import './shared.css';
 // Blocks
 import Header from '../blocks/Header/Header';
 import CoreValues from '../blocks/CoreValues/CoreValues';
+import Image from '../blocks/Image/Image';
 import Team from '../blocks/Team/Team';
 import CTA from '../blocks/CTA/CTA';
 
@@ -59,6 +60,7 @@ const About = () => (
         className="col-span-4"
       />
     </CoreValues>
+    <Image src={office} alt="Meet the OpenMAze team" />
     <Team title="Our team" subtitle="Meet the people behind OpenMaze">
       <TeamMember name="Niek van Dam" text="Co-founder" image={Niek} delay={500} />
       <TeamMember name="Max van Hattum" text="Co-founder" image={Max} delay={600} />

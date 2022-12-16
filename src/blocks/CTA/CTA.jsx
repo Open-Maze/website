@@ -38,7 +38,7 @@ const CTA = ({ subtitle, title, phone, linkedin, email, image, buttonLink, butto
         <div className="col-span-8 md:col-end-13">
           <div className="grid grid-cols-8 gap-0 2xl:-mt-10 2xl:-mr-20">
             <div className="col-span-7 col-end-9 bg-cta-pattern bg-contain bg-right bg-no-repeat py-10 2xl:pr-20">
-              <img className="h-64 w-full rounded-md shadow" src={image} alt="Contact OpenMaze" />
+              <img className="h-64 w-full rounded-xl shadow" src={image} alt="Contact OpenMaze" />
             </div>
             {buttonLink && (
               <div className="absolute bottom-14 col-span-8">
