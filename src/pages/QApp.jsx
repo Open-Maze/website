@@ -55,18 +55,21 @@ const QApp = () => (
         title="Conversational"
         description="A new way of interacting with documents, by enabling users to have a conversational experience. Our tool lets you talk and ask questions to your documents instead of having to fully read through a document."
         image={Conversational}
+        imgBackground="#d1a4f7"
       />
       <Feature
         featureNr="Feature 2"
         title="Direct references"
         description="When conversing with a document, you will directly see where the Q-App takes its references from. A highlight will be made in the document, and can even be exported for later use to quickly find the cited references."
         image={DirectReferences}
+        imgBackground="#adeaf4"
       />
       <Feature
         featureNr="Feature 3"
         title="Context aware"
         description="The Q-App understands the context of the document and the questions, so no need to only ask surface-level questions."
         image={ContextAware}
+        imgBackground="#a3a4e5"
       />
     </Features>
     <Information

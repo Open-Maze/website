@@ -55,18 +55,21 @@ const KnowledgeProfiler = () => (
         title="Unique profile"
         description="Every student has a unique learning journey throughout which they learn their subjects of interest. The Knowledge Profiler aims to visualize the skills mastered throughout a learning journey."
         image={UniqueProfile}
+        imgBackground="#d1a4f7"
       />
       <Feature
         featureNr="Feature 2"
         title="Verifiable"
         description="The results from the Knowledge Profiler can easily be evaluated and used as a verifiable portfolio, because it uses a student's graded and submitted assignments."
         image={Verifiable}
+        imgBackground="#adeaf4"
       />
       <Feature
         featureNr="Feature 3"
         title="Students become experts"
         description="Students and teachers can use their submissions to generate a skill profile using the Knowledge Profiler. The profile determines expertise in a subject, and can be used to locate others with the desired expertise."
         image={StudentsBecomeExperts}
+        imgBackground="#a3a4e5"
       />
     </Features>
     <Information

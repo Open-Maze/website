@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Feature = ({ featureNr, title, description, image, illustration }) => (
+const Feature = ({ featureNr, title, description, image, imgBackground, illustration }) => (
   <div className="grid grid-flow-dense grid-cols-1 items-stretch gap-10 lg:grid-cols-12">
     <div className="col-span-6 flex flex-col justify-center border-l-2 border-violet p-8 sm:p-12 lg:col-start-1">
       {featureNr && <h4 className="pb-2 text-dark">{featureNr}</h4>}
@@ -8,7 +8,7 @@ const Feature = ({ featureNr, title, description, image, illustration }) => (
       {description && <p className="text-slate-700">{description}</p>}
     </div>
     {image && (
-      <div className="col-span-6 lg:col-end-13">
+      <div className="col-span-6 rounded-xl lg:col-end-13" style={{ backgroundColor: imgBackground }}>
         <img
           src={image}
           alt={title}
