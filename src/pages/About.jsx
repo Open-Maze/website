@@ -60,12 +60,12 @@ const About = () => (
       />
     </CoreValues>
     <Team title="Our team" subtitle="Meet the people behind OpenMaze">
-      <TeamMember name="Niek" text="CEO" image={Niek} delay={500} />
-      <TeamMember name="Max" text="CEO" image={Max} delay={600} />
-      <TeamMember name="Ruben" text="CEO" image={Ruben} delay={700} />
-      <TeamMember name="Seline" text="Design & Development" image={Seline} delay={800} />
-      <TeamMember name="Jordy" text="Design & Development" image={Jordy} delay={900} />
-      <TeamMember name="Stijn" text=" Design & Development" image={Stijn} delay={1000} />
+      <TeamMember name="Niek van Dam" text="Co-founder" image={Niek} delay={500} />
+      <TeamMember name="Max van Hattum" text="Co-founder" image={Max} delay={600} />
+      <TeamMember name="Ruben Fricke" text="Co-founder" image={Ruben} delay={700} />
+      <TeamMember name="Seline Warners" text="Head of Design" image={Seline} delay={800} />
+      <TeamMember name="Jordy Arntz" text="Digital Designer" image={Jordy} delay={900} />
+      <TeamMember name="Stijn Verhagen" text="Digital Designer" image={Stijn} delay={1000} />
     </Team>
     <CTA
       title="Contact us"

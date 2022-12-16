@@ -45,7 +45,7 @@ const Header = ({ size, title, text, buttonLink, buttonLabel, button2Link, butto
             </div>
           </div>
           {image && (
-            <div className="col-span-6 h-full  lg:col-end-13" data-aos="fade-up" data-aos-delay="300">
+            <div className="col-span-6 h-full lg:col-end-13" data-aos="fade-up" data-aos-delay="300">
               <img src={image} alt={title} className="mx-auto mt-12 h-full lg:mt-0" />
             </div>
           )}
