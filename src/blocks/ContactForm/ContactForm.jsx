@@ -18,21 +18,8 @@ const initialState = {
 };
 
 const ContactForm = ({ subtitle, title, text }) => {
-  const [
-    {
-      fullName,
-      companyName,
-      email,
-      phone,
-      message,
-      fullNameError,
-      companyNameError,
-      emailError,
-      phoneError,
-      messageError,
-    },
-    setData,
-  ] = useState(initialState);
+  const [{ fullName, companyName, email, phone, message, fullNameError, emailError, messageError }, setData] =
+    useState(initialState);
 
   function sendMessage() {
     const API_PATH = '/api/contact/index.php';
@@ -57,17 +44,11 @@ const ContactForm = ({ subtitle, title, text }) => {
 
   const validate = () => {
     let fullNameError = '';
-    let companyNameError = '';
     let emailError = '';
-    let phoneError = '';
     let messageError = '';
 
     if (!fullName) {
       fullNameError = 'Full name is required';
-    }
-
-    if (!companyName) {
-      companyNameError = 'Company name is required';
     }
 
     if (!email) {
@@ -76,21 +57,15 @@ const ContactForm = ({ subtitle, title, text }) => {
       emailError = 'Invalid email address';
     }
 
-    if (!phone) {
-      phoneError = 'Phone is required';
-    }
-
     if (!message) {
       messageError = 'Message is required';
     }
 
-    if (fullNameError || companyNameError || emailError || phoneError || messageError) {
+    if (fullNameError || emailError || messageError) {
       setData((prevState) => ({
         ...prevState,
         fullNameError,
-        companyNameError,
         emailError,
-        phoneError,
         messageError,
       }));
       return false;
@@ -134,7 +109,7 @@ const ContactForm = ({ subtitle, title, text }) => {
           <div className="form-group flex flex-col">
             <input
               className="form-control h-12 rounded-lg py-2.5 px-5"
-              placeholder="Your name"
+              placeholder="Your name*"
               type="text"
               id="fullName"
               value={fullName}
@@ -153,13 +128,12 @@ const ContactForm = ({ subtitle, title, text }) => {
               name="companyName"
               onChange={onChange}
             />
-            {companyNameError && <div className="text-red-600">{companyNameError}</div>}
           </div>
           <div className="form-group flex flex-row gap-3">
             <div className="w-full">
               <input
                 className="form-control h-12 w-full rounded-lg px-5 py-2.5"
-                placeholder="E-mail"
+                placeholder="E-mail*"
                 type="email"
                 id="email"
                 value={email}
@@ -178,12 +152,11 @@ const ContactForm = ({ subtitle, title, text }) => {
                 name="phone"
                 onChange={onChange}
               />
-              {phoneError && <div className="text-red-600">{phoneError}</div>}
             </div>
           </div>
           <div className="form-group flex flex-col">
             <textarea
-              placeholder="Message"
+              placeholder="Message*"
               className="form-control rounded-lg py-2.5 px-5"
               rows="5"
               id="bericht"
