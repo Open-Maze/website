@@ -3,7 +3,7 @@ import './shared.css';
 
 // Blocks
 import Header from '../blocks/Header/Header';
-import Product from '../blocks/Product/Product.jsx';
+import Product from '../blocks/Product/Product';
 import CoreValues from '../blocks/CoreValues/CoreValues';
 import CardImage from '../blocks/CardImage/CardImage';
 import CTA from '../blocks/CTA/CTA';

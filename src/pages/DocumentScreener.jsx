@@ -10,7 +10,7 @@ import CTA from '../blocks/CTA/CTA';
 
 // Components
 import CardIcon from '../components/CardIcon/CardIcon';
-import Feature from '../components/Feature/Feature.jsx';
+import Feature from '../components/Feature/Feature';
 
 // Assets
 import headerImage from '../assets/images/illustrations/documentscreener.svg';
