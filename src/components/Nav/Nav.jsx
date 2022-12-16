@@ -30,7 +30,7 @@ const Nav = () => {
       </div>
       <div
         className={`absolute top-0 left-0 right-0 transition-all duration-300 lg:static lg:translate-y-0 ${
-          navOpen ? 'translate-y-0 shadow-lg' : '-translate-y-full'
+          navOpen ? 'translate-y-0 shadow-lg lg:shadow-none' : '-translate-y-full'
         }`}
       >
         <div
