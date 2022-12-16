@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 import React, { useState } from 'react';
 
 // External
@@ -9,10 +10,29 @@ const initialState = {
   email: '',
   phone: '',
   message: '',
+  fullNameError: '',
+  companyNameError: '',
+  emailError: '',
+  phoneError: '',
+  messageError: '',
 };
 
 const ContactForm = ({ subtitle, title, text }) => {
-  const [{ fullName, companyName, email, phone, message }, setData] = useState(initialState);
+  const [
+    {
+      fullName,
+      companyName,
+      email,
+      phone,
+      message,
+      fullNameError,
+      companyNameError,
+      emailError,
+      phoneError,
+      messageError,
+    },
+    setData,
+  ] = useState(initialState);
 
   function sendMessage() {
     const API_PATH = '/api/contact/index.php';
@@ -35,6 +55,50 @@ const ContactForm = ({ subtitle, title, text }) => {
     setData({ ...initialState });
   };
 
+  const validate = () => {
+    let fullNameError = '';
+    let companyNameError = '';
+    let emailError = '';
+    let phoneError = '';
+    let messageError = '';
+
+    if (!fullName) {
+      fullNameError = 'Full name is required';
+    }
+
+    if (!companyName) {
+      companyNameError = 'Company name is required';
+    }
+
+    if (!email) {
+      emailError = 'Email is required';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
+      emailError = 'Invalid email address';
+    }
+
+    if (!phone) {
+      phoneError = 'Phone is required';
+    }
+
+    if (!message) {
+      messageError = 'Message is required';
+    }
+
+    if (fullNameError || companyNameError || emailError || phoneError || messageError) {
+      setData((prevState) => ({
+        ...prevState,
+        fullNameError,
+        companyNameError,
+        emailError,
+        phoneError,
+        messageError,
+      }));
+      return false;
+    }
+
+    return true;
+  };
+
   const onChange = (e) => {
     const { name, value } = e.target;
     setData((prevState) => ({ ...prevState, [name]: value }));
@@ -42,8 +106,11 @@ const ContactForm = ({ subtitle, title, text }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    sendMessage();
-    clearState();
+    const isValid = validate();
+    if (isValid) {
+      sendMessage();
+      clearState();
+    }
   };
 
   return (
@@ -74,6 +141,7 @@ const ContactForm = ({ subtitle, title, text }) => {
               name="fullName"
               onChange={onChange}
             />
+            {fullNameError && <div className="text-red-600">{fullNameError}</div>}
           </div>
           <div className="form-group flex flex-col">
             <input
@@ -85,26 +153,33 @@ const ContactForm = ({ subtitle, title, text }) => {
               name="companyName"
               onChange={onChange}
             />
+            {companyNameError && <div className="text-red-600">{companyNameError}</div>}
           </div>
           <div className="form-group flex flex-row gap-3">
-            <input
-              className="form-control h-12 w-full rounded-lg px-5 py-2.5	"
-              placeholder="E-mail"
-              type="email"
-              id="email"
-              value={email}
-              name="email"
-              onChange={onChange}
-            />
-            <input
-              className="form-control h-12 w-full rounded-lg py-2.5 px-5	"
-              placeholder="Phone"
-              type="phone"
-              id="phone"
-              value={phone}
-              name="phone"
-              onChange={onChange}
-            />
+            <div className="w-full">
+              <input
+                className="form-control h-12 w-full rounded-lg px-5 py-2.5"
+                placeholder="E-mail"
+                type="email"
+                id="email"
+                value={email}
+                name="email"
+                onChange={onChange}
+              />
+              {emailError && <div className="text-red-600">{emailError}</div>}
+            </div>
+            <div className="w-full">
+              <input
+                className="form-control h-12 w-full rounded-lg py-2.5 px-5"
+                placeholder="Phone"
+                type="phone"
+                id="phone"
+                value={phone}
+                name="phone"
+                onChange={onChange}
+              />
+              {phoneError && <div className="text-red-600">{phoneError}</div>}
+            </div>
           </div>
           <div className="form-group flex flex-col">
             <textarea
@@ -116,6 +191,7 @@ const ContactForm = ({ subtitle, title, text }) => {
               name="message"
               onChange={onChange}
             />
+            {messageError && <div className="text-red-600">{messageError}</div>}
           </div>
           <button type="submit" className="btn button button--skyline w-28">
             Submit
