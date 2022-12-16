@@ -66,24 +66,48 @@ const ContactForm = () => {
           onSubmit={handleSubmit}
           method="POST"
         >
-          {[
-            ['fullName', fullName, 'Voor- en achternaam*', 'text'],
-            ['companyName', companyName, 'bedrijfsnaam', 'text'],
-            ['email', email, 'E-mail*', 'email'],
-            ['phone', phone, 'Telefoon', 'phone'],
-          ].map(([label, iValue, placeholder, type]) => (
-            <div className="form-group flex flex-col">
-              <input
-                className="form-control h-12 rounded-lg py-2.5 px-5"
-                placeholder={placeholder}
-                type={type}
-                id={label}
-                value={iValue}
-                name={label}
-                onChange={onChange}
-              />
-            </div>
-          ))}
+          <div className="form-group flex flex-col">
+            <input
+              className="form-control h-12 rounded-lg py-2.5 px-5"
+              placeholder="Voor- en achternaam*"
+              type="text"
+              id="fullName"
+              value={fullName}
+              name="fullName"
+              onChange={onChange}
+            />
+          </div>
+          <div className="form-group flex flex-col">
+            <input
+              className="form-control h-12 rounded-lg py-2.5 px-5"
+              placeholder="Bedrijfsnaam"
+              type="text"
+              id="companyName"
+              value={companyName}
+              name="companyName"
+              onChange={onChange}
+            />
+          </div>
+          <div className="form-group flex flex-row gap-3">
+            <input
+              className="form-control h-12 w-full rounded-lg px-5 py-2.5	"
+              placeholder="E-mail*"
+              type="email"
+              id="email"
+              value={email}
+              name="email"
+              onChange={onChange}
+            />
+            <input
+              className="form-control h-12 w-full rounded-lg py-2.5 px-5	"
+              placeholder="Telefoon*"
+              type="phone"
+              id="phone"
+              value={phone}
+              name="phone"
+              onChange={onChange}
+            />
+          </div>
           <div className="form-group flex flex-col">
             <textarea
               placeholder="Bericht"
@@ -95,7 +119,7 @@ const ContactForm = () => {
               onChange={onChange}
             />
           </div>
-          <button type="submit" className="btn button button--violet">
+          <button type="submit" className="btn button button--skyline w-36">
             Submit
           </button>
         </form>
