@@ -8,9 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '../../components/Button/Button';
 
 // Assets
-import knowledgeProfiler from '../../assets/images/illustrations-products/knowledge-profiler.svg';
-import qApp from '../../assets/images/illustrations-products/q-app.svg';
-import topicExtraction from '../../assets/images/illustrations-products/topic-extraction.svg';
+import knowledgeProfiler from '../../assets/images/iphone-placeholder.png';
+import qApp from '../../assets/images/iphone-placeholder.png';
+import topicExtraction from '../../assets/images/iphone-placeholder.png';
 
 const ProjectsSection = () => {
   const [isActive1, setIsActive1] = useState(true);
