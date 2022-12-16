@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Components
 import Button from '../../components/Button/Button';
 
-const CTA = ({ subtitle, title, phone, phoneLabel, email, image, buttonLink, buttonLabel }) => (
+const CTA = ({ subtitle, title, phone, linkedin, email, image, buttonLink, buttonLabel }) => (
   <div className="cms-block">
     <div className="container" data-aos="fade-up" data-aos-delay="500">
       <div className="grid grid-cols-1 gap-10 border-t border-midnight pt-32 md:grid-cols-12">
@@ -15,18 +15,23 @@ const CTA = ({ subtitle, title, phone, phoneLabel, email, image, buttonLink, but
           <h2>{title}</h2>
           <div className="mt-8 flex items-center gap-6">
             <div className="flex items-center justify-center rounded-full bg-violet-lighter p-3">
-              <FontAwesomeIcon className="text-violet" icon="fa-solid fa-phone" />
-            </div>
-            <a href={`tel:${phone}`} className="text-violet underline transition hover:text-midnight">
-              {phoneLabel}
-            </a>
-          </div>
-          <div className="mt-8 flex items-center gap-6">
-            <div className="flex items-center justify-center rounded-full bg-violet-lighter p-3">
               <FontAwesomeIcon className="text-violet" icon="fa-solid fa-envelope" />
             </div>
             <a href={`mailto:${email}`} className="text-violet underline transition hover:text-midnight">
               {email}
+            </a>
+          </div>
+          <div className="mt-8 flex items-center gap-6">
+            <div className="flex items-center justify-center rounded-full bg-violet-lighter p-3">
+              <FontAwesomeIcon className="text-violet" icon="fa-brands fa-linkedin-in" />
+            </div>
+            <a
+              href={`https://linkedin.com/company/${linkedin}`}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="text-violet underline transition hover:text-midnight"
+            >
+              /{linkedin}
             </a>
           </div>
         </div>

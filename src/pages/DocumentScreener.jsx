@@ -92,9 +92,8 @@ const DocumentScreener = () => (
     <CTA
       title="Contact us"
       subtitle="Want to talk?"
-      phone="0401234567"
-      phoneLabel="+31 (0)40 1234567"
       email="hello@openmaze.io"
+      linkedin="open-maze"
       image={office}
       buttonLink="/contact"
       buttonLabel="The fastest route to a collaboration"
