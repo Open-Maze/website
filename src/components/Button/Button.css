@@ -1,5 +1,5 @@
 .button {
-  @apply rounded-lg border-2 border-solid px-6 py-2;
+  @apply flex h-full items-center gap-2 rounded-lg border-2 border-solid px-6 py-2 transition-colors;
 
   &--violet {
     @apply border-violet bg-violet text-white hover:border-violet-darker hover:bg-violet-darker;
