@@ -15,7 +15,6 @@ const Header = ({ size, title, text, buttonLink, buttonLabel, button2Link, butto
   return (
     <>
       <div className={`cms-block flex items-center bg-white ${size}`}>
-
         <div className="container grid grid-cols-1 items-center gap-10 pt-24 lg:grid-cols-12">
           <div className="col-span-5 lg:col-start-1">
             {title && (
@@ -51,7 +50,7 @@ const Header = ({ size, title, text, buttonLink, buttonLabel, button2Link, butto
             </div>
           )}
         </div>
-      </section>
+      </div>
       <div className="relative left-0 right-0 bottom-16 mx-auto hidden h-fit w-10 animate-bounce cursor-pointer p-2 lg:block">
         <div aria-hidden onClick={() => scrollDown()}>
           <ScrollDown />
