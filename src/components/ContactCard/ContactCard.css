@@ -1,0 +1,29 @@
+.contact-card-s-container {
+  .contact-card-s-container-left {
+    &.envelope {
+      background-image: url('../../assets/images/icons/envelope.svg');
+    }
+
+    &.linkedin {
+      background-image: url('../../assets/images/icons/linkedin.svg');
+    }
+  }
+
+  &:hover {
+    .contact-card-s-container-left {
+      @apply bg-violet;
+
+      &.envelope {
+        background-image: url('../../assets/images/icons/envelope-open.svg');
+      }
+
+      &.linkedin {
+        background-image: url('../../assets/images/icons/linkedin-hover.svg');
+      }
+    }
+
+    .contact-card-s-container-right {
+      @apply text-bleach;
+    }
+  }
+}

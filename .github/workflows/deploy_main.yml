@@ -1,4 +1,4 @@
-name: Deploy Production
+name: Deploy Main
 
 on:
   push:
@@ -37,14 +37,14 @@ jobs:
           npm run build
 
       - name: Checkout build
-        run: find build/ -print
+        run: find dist/ -print
 
       - name: Deploy app
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.OPENMAZE_MASTER_HOST }}
+          port: ${{ secrets.OPENMAZE_MASTER_PORT }}
           username: ${{ secrets.OPENMAZE_MASTER_USERNAME }}
           password: ${{ secrets.OPENMAZE_MASTER_PASSWORD }}
-          port: ${{ secrets.OPENMAZE_MASTER_PORT }}
-          source: 'build/'
           target: ${{ secrets.OPENMAZE_MASTER_DIR }}
+          source: 'dist/'
