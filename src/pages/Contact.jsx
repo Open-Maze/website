@@ -36,7 +36,11 @@ const Contact = () => (
         />
       </div>
     </Header>
-    <ContactForm />
+    <ContactForm
+      subtitle="Questions?"
+      title="Send us a message"
+      text="If you have any questions about our tools, submit this form and we will get back to you as soon as possible."
+    />
   </div>
 );
 

@@ -11,7 +11,7 @@ const initialState = {
   message: '',
 };
 
-const ContactForm = () => {
+const ContactForm = ({ subtitle, title, text }) => {
   const [{ fullName, companyName, email, phone, message }, setData] = useState(initialState);
 
   function sendMessage() {
@@ -48,17 +48,15 @@ const ContactForm = () => {
 
   return (
     <section className="cms-block flex h-fit items-center">
-      <div className="container grid grid-cols-1 items-start gap-10 lg:grid-cols-12">
+      <div
+        className="container grid grid-cols-1 items-start gap-10 lg:grid-cols-12"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
         <div className="col-span-5 lg:col-start-1">
-          <h4 className="pb-2 text-dark" data-aos="fade-up">
-            Questions?
-          </h4>
-          <h2 className="pb-6" data-aos="fade-up" data-aos-delay="100">
-            Send us a message
-          </h2>
-          <p className="pb-10 text-slate-700" data-aos="fade-up" data-aos-delay="200">
-            Lorem ipsum dolor sit amet, consectetur adipiscing enterdum. Lorem ipsum dolor sit amet, consectetur a
-          </p>
+          {subtitle && <h4 className="pb-2 text-dark">{subtitle}</h4>}
+          {title && <h2 className="pb-6">{title}</h2>}
+          {text && <p className="text-slate-700">{text}</p>}
         </div>
         <form
           id="contact-form"
