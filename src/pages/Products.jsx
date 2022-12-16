@@ -11,7 +11,7 @@ import CTA from '../blocks/CTA/CTA';
 import CardIcon from '../components/CardIcon/CardIcon';
 
 // Assets
-import headerImage from '../assets/images/illustrations/header.svg';
+import headerImage from '../assets/images/illustrations/expo.svg';
 import Placeholder from '../assets/images/iphone-placeholder.png';
 import office from '../assets/images/office.jpeg';
 

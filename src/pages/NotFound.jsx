@@ -5,13 +5,13 @@ import './shared.css';
 import Header from '../blocks/Header/Header';
 
 // Assets
-import headerImage from '../assets/images/illustrations/header.svg';
+import headerImage from '../assets/images/illustrations/404.svg';
 
 const NotFound = () => (
   <div className="page notfound">
     <Header
       size="large"
-      title="404 &mdash; Not found"
+      title="Page not found"
       text="The page you were looking for could not be found."
       buttonLink="/"
       buttonLabel="go home"

@@ -3,5 +3,5 @@
 }
 
 .small {
-  @apply lg:h-full;
+  @apply lg:h-[80vh];
 }

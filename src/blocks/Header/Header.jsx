@@ -14,7 +14,8 @@ const Header = ({ size, title, text, buttonLink, buttonLabel, button2Link, butto
 
   return (
     <>
-      <section className={`cms-block flex h-fit items-center bg-white ${size}`}>
+      <div className={`cms-block flex items-center bg-white ${size}`}>
+
         <div className="container grid grid-cols-1 items-center gap-10 pt-24 lg:grid-cols-12">
           <div className="col-span-5 lg:col-start-1">
             {title && (
@@ -45,8 +46,8 @@ const Header = ({ size, title, text, buttonLink, buttonLabel, button2Link, butto
             </div>
           </div>
           {image && (
-            <div className="col-span-6 lg:col-end-13" data-aos="fade-up" data-aos-delay="300">
-              <img src={image} alt={title} className="mt-12 h-full max-h-[70vh] w-96 lg:mt-0 lg:w-full" />
+            <div className="col-span-6 h-full  lg:col-end-13" data-aos="fade-up" data-aos-delay="300">
+              <img src={image} alt={title} className="mx-auto mt-12 h-full lg:mt-0" />
             </div>
           )}
         </div>
