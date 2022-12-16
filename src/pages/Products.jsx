@@ -13,7 +13,7 @@ import CardImage from '../components/CardImage/CardImage';
 
 // Assets
 import headerImage from '../assets/images/illustrations/expo.svg';
-import Placeholder from '../assets/images/iphone-placeholder.png';
+import Placeholder from '../assets/images/office.jpeg';
 import office from '../assets/images/office.jpeg';
 
 const Products = () => (

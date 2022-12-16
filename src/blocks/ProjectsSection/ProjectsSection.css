@@ -15,14 +15,10 @@
 }
 
 .card {
-  @apply hidden rounded-xl bg-white pt-8 shadow-lg;
+  @apply hidden rounded-xl border-8 border-solid border-light-gray bg-white shadow-lg;
 
   &.active {
     @apply block;
-  }
-
-  .image {
-    @apply h-64 w-full bg-contain bg-center bg-no-repeat px-10;
   }
 
   .text {

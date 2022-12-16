@@ -14,7 +14,7 @@ import Feature from '../components/Feature/Feature.jsx';
 
 // Assets
 import headerImage from '../assets/images/illustrations/documentscreener.svg';
-import Placeholder from '../assets/images/iphone-placeholder.png';
+import Placeholder from '../assets/images/office.jpeg';
 import productImage from '../assets/images/illustrations/product.svg';
 import office from '../assets/images/office.jpeg';
 
@@ -92,6 +92,7 @@ const DocumentScreener = () => (
       buttonLink="/products"
       buttonLabel="discover more products"
       image={productImage}
+      illustration
     />
     <CTA
       title="Contact us"

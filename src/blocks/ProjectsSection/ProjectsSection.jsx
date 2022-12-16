@@ -8,9 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '../../components/Button/Button';
 
 // Assets
-import knowledgeProfiler from '../../assets/images/iphone-placeholder.png';
-import qApp from '../../assets/images/iphone-placeholder.png';
-import topicExtraction from '../../assets/images/iphone-placeholder.png';
+import documentScreener from '../../assets/images/office.jpeg';
+import knowledgeProfiler from '../../assets/images/office.jpeg';
+import qApp from '../../assets/images/office.jpeg';
 
 const ProjectsSection = () => {
   const [isActive1, setIsActive1] = useState(true);
@@ -75,7 +75,7 @@ const ProjectsSection = () => {
         </div>
         <div className="col-span-6 lg:col-end-13">
           <div id="card-1" className={isActive1 ? 'card active' : 'card'}>
-            <div className="image" style={{ backgroundImage: `url(${topicExtraction})` }} />
+            <img src={documentScreener} alt="Document Screener" className="w-full rounded-t-md" />
             <div className="text">
               <h3>Document Screener</h3>
               <p>
@@ -90,7 +90,7 @@ const ProjectsSection = () => {
             </div>
           </div>
           <div id="card-2" className={isActive2 ? 'card active' : 'card'}>
-            <div className="image" style={{ backgroundImage: `url(${knowledgeProfiler})` }} />
+            <img src={knowledgeProfiler} alt="Knowledge Profiler" className="w-full rounded-t-md" />
             <div className="text">
               <h3>Knowledge Profiler</h3>
               <p>
@@ -105,7 +105,7 @@ const ProjectsSection = () => {
             </div>
           </div>
           <div id="card-3" className={isActive3 ? 'card active' : 'card'}>
-            <div className="image" style={{ backgroundImage: `url(${qApp})` }} />
+            <img src={qApp} alt="Q-App" className="w-full rounded-t-md" />
             <div className="text">
               <h3>Q-App</h3>
               <p>
