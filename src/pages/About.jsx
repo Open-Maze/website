@@ -14,6 +14,7 @@ import TeamMember from '../components/TeamMember/TeamMember';
 
 // Assets
 import headerImage from '../assets/images/illustrations/team.svg';
+import TeamImage from '../assets/images/team/team.jpg';
 import Seline from '../assets/images/team/seline.jpg';
 import Jordy from '../assets/images/team/jordy.jpg';
 import Stijn from '../assets/images/team/stijn.jpg';
@@ -60,7 +61,7 @@ const About = () => (
         className="col-span-4"
       />
     </CoreValues>
-    <Image src={office} alt="Meet the OpenMAze team" />
+    <Image src={TeamImage} alt="Meet the OpenMAze team" />
     <Team title="Our team" subtitle="Meet the people behind OpenMaze">
       <TeamMember name="Niek van Dam" text="Co-founder" image={Niek} delay={500} />
       <TeamMember name="Max van Hattum" text="Co-founder" image={Max} delay={600} />

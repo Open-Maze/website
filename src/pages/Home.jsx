@@ -13,7 +13,7 @@ import CardIcon from '../components/CardIcon/CardIcon';
 
 // Assets
 import headerImage from '../assets/images/illustrations/header.svg';
-import Team from '../assets/images/team.jpg';
+import Team from '../assets/images/team/team-portrait.jpg';
 
 const Home = () => (
   <div className="page home">
