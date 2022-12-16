@@ -24,6 +24,7 @@ const QApp = () => (
       title="Q-App"
       text="Traditionally documents are noninteractive, the Q-App changes this by allowing users to interact with a document as if they were talking to a human. Instead of just reading through it, you can now ask questions, and get relevant answers present in the document. It is just as if you were able to talk with the author!"
       image={headerImage}
+      arrow
     />
     <Goals title="What we want to achieve" subtitle="Goals">
       <CardIcon

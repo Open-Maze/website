@@ -24,6 +24,7 @@ const KnowledgeProfiler = () => (
       title="Knowledge Profiler"
       text="Every student is unique, as is their learning journey. Over the course of their studies, students will develop domain-specific knowledge that goes beyond the standard curriculum. By extracting all submissions of a student from their online learning environment, the Knowledge Profiler determines and displays these skills in a simple overview."
       image={headerImage}
+      arrow
     />
     <Goals title="What we want to achieve" subtitle="Goals">
       <CardIcon

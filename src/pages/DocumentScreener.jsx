@@ -24,6 +24,7 @@ const DocumentScreener = () => (
       title="Document Screener"
       text="We noticed that students often receive an initial round of feedback, which is usually about the structure of the document, grammatical errors, missing components, or the quality of writing. The document screener allows students to have their documents reviewed immediately, before they end up with teachers. Giving them a chance to already improve on their documents."
       image={headerImage}
+      arrow
     />
     <Goals title="What we want to achieve" subtitle="Goals">
       <CardIcon

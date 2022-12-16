@@ -28,6 +28,7 @@ const About = () => (
       title="About us"
       text="We aim to provide students using online educational environments with greater insight into their own learning journey and performance through the use of AI powered tools."
       image={headerImage}
+      arrow
     />
     <CoreValues title="Core values" subtitle="Our beliefs">
       <CardIcon

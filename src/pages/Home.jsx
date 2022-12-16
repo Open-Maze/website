@@ -26,6 +26,7 @@ const Home = () => (
       button2Link="/about"
       button2Label="about us"
       image={headerImage}
+      arrow
     />
     <ProjectsSection />
     <Information

@@ -7,7 +7,7 @@ import Button from '../../components/Button/Button';
 // Assets
 import { ReactComponent as ScrollDown } from '../../assets/images/icons/chevron-down.svg';
 
-const Header = ({ size, title, text, buttonLink, buttonLabel, button2Link, button2Label, image, external }) => {
+const Header = ({ size, title, text, buttonLink, buttonLabel, button2Link, button2Label, image, external, arrow }) => {
   function scrollDown() {
     window.scroll(0, window.scrollY + 400);
   }
@@ -51,11 +51,13 @@ const Header = ({ size, title, text, buttonLink, buttonLabel, button2Link, butto
           )}
         </div>
       </div>
-      <div className="relative left-0 right-0 bottom-16 mx-auto hidden h-fit w-10 animate-bounce cursor-pointer p-2 lg:block">
-        <div aria-hidden onClick={() => scrollDown()}>
-          <ScrollDown />
+      {arrow && (
+        <div className="relative left-0 right-0 bottom-16 mx-auto hidden h-fit w-10 animate-bounce cursor-pointer p-2 lg:block">
+          <div aria-hidden onClick={() => scrollDown()}>
+            <ScrollDown />
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 };
