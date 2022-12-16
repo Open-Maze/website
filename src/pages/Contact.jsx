@@ -3,9 +3,7 @@ import './shared.css';
 
 // Blocks
 import Header from '../blocks/Header/Header';
-
-// Components
-import ContactForm from '../components/ContactForm/ContactForm';
+import ContactForm from '../blocks/ContactForm/ContactForm';
 
 // Assets
 import headerImage from '../assets/images/illustrations/contact.svg';

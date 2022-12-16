@@ -69,7 +69,7 @@ const ContactForm = () => {
           <div className="form-group flex flex-col">
             <input
               className="form-control h-12 rounded-lg py-2.5 px-5"
-              placeholder="Voor- en achternaam*"
+              placeholder="Your name"
               type="text"
               id="fullName"
               value={fullName}
@@ -80,7 +80,7 @@ const ContactForm = () => {
           <div className="form-group flex flex-col">
             <input
               className="form-control h-12 rounded-lg py-2.5 px-5"
-              placeholder="Bedrijfsnaam"
+              placeholder="Company name"
               type="text"
               id="companyName"
               value={companyName}
@@ -91,7 +91,7 @@ const ContactForm = () => {
           <div className="form-group flex flex-row gap-3">
             <input
               className="form-control h-12 w-full rounded-lg px-5 py-2.5	"
-              placeholder="E-mail*"
+              placeholder="E-mail"
               type="email"
               id="email"
               value={email}
@@ -100,7 +100,7 @@ const ContactForm = () => {
             />
             <input
               className="form-control h-12 w-full rounded-lg py-2.5 px-5	"
-              placeholder="Telefoon*"
+              placeholder="Phone"
               type="phone"
               id="phone"
               value={phone}
@@ -110,7 +110,7 @@ const ContactForm = () => {
           </div>
           <div className="form-group flex flex-col">
             <textarea
-              placeholder="Bericht"
+              placeholder="Message"
               className="form-control rounded-lg py-2.5 px-5"
               rows="5"
               id="bericht"
@@ -119,7 +119,7 @@ const ContactForm = () => {
               onChange={onChange}
             />
           </div>
-          <button type="submit" className="btn button button--skyline w-36">
+          <button type="submit" className="btn button button--skyline w-28">
             Submit
           </button>
         </form>

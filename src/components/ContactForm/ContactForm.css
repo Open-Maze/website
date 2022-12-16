@@ -1,7 +1,0 @@
-.form-control {
-  @apply w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow;
-
-  &:focus {
-    @apply shadow-outline outline-none;
-  }
-}
