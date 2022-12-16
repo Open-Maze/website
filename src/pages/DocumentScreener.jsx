@@ -4,12 +4,13 @@ import './shared.css';
 // Blocks
 import Header from '../blocks/Header/Header';
 import Goals from '../blocks/Goals/Goals';
-import Feature from '../blocks/Feature/Feature';
+import Features from '../blocks/Features/Features';
 import Information from '../blocks/Information/Information';
 import CTA from '../blocks/CTA/CTA';
 
 // Components
 import CardIcon from '../components/CardIcon/CardIcon';
+import Feature from '../components/Feature/Feature.jsx';
 
 // Assets
 import headerImage from '../assets/images/illustrations/documentscreener.svg';
@@ -64,24 +65,26 @@ const DocumentScreener = () => (
         className="col-span-6"
       />
     </Goals>
-    <Feature
-      featureNr="Feature 1"
-      title="Instant feedback"
-      description="The Document Screener allows students to have their documents reviewed immediately and multiple times. The purpose of the screener is to eliminate the repetitive first round of feedback."
-      image={Placeholder}
-    />
-    <Feature
-      featureNr="Feature 2"
-      title="Context aware"
-      description="Cutting-edge machine learning models are used by the Document Screener, allowing it to understand text like humans. This allows our tool to provide more document-specific feedback on, for example, introductions, research questions, conclusions, writing quality and more."
-      image={Placeholder}
-    />
-    <Feature
-      featureNr="Feature 3"
-      title="Summarization"
-      description="The Document Screen can summarize (parts of) the document, picking out what it thinks to be the most important parts. This can be used by the student to verify if all their talking points are coming across."
-      image={Placeholder}
-    />
+    <Features>
+      <Feature
+        featureNr="Feature 1"
+        title="Instant feedback"
+        description="The Document Screener allows students to have their documents reviewed immediately and multiple times. The purpose of the screener is to eliminate the repetitive first round of feedback."
+        image={Placeholder}
+      />
+      <Feature
+        featureNr="Feature 2"
+        title="Context aware"
+        description="Cutting-edge machine learning models are used by the Document Screener, allowing it to understand text like humans. This allows our tool to provide more document-specific feedback on, for example, introductions, research questions, conclusions, writing quality and more."
+        image={Placeholder}
+      />
+      <Feature
+        featureNr="Feature 3"
+        title="Summarization"
+        description="The Document Screen can summarize (parts of) the document, picking out what it thinks to be the most important parts. This can be used by the student to verify if all their talking points are coming across."
+        image={Placeholder}
+      />
+    </Features>
     <Information
       subtitle="Support human interaction"
       title="Encouraging Dialogue"
@@ -97,7 +100,7 @@ const DocumentScreener = () => (
       linkedin="open-maze"
       image={office}
       buttonLink="/contact"
-      buttonLabel="The fastest route to a collaboration"
+      buttonLabel="the fastest route to a collaboration"
     />
   </div>
 );

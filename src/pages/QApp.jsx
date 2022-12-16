@@ -4,12 +4,13 @@ import './shared.css';
 // Blocks
 import Header from '../blocks/Header/Header';
 import Goals from '../blocks/Goals/Goals';
-import Feature from '../blocks/Feature/Feature';
+import Features from '../blocks/Features/Features';
 import Information from '../blocks/Information/Information';
 import CTA from '../blocks/CTA/CTA';
 
 // Components
 import CardIcon from '../components/CardIcon/CardIcon';
+import Feature from '../components/Feature/Feature';
 
 // Assets
 import headerImage from '../assets/images/illustrations/qapp.svg';
@@ -46,24 +47,26 @@ const QApp = () => (
         className="col-span-6"
       />
     </Goals>
-    <Feature
-      featureNr="Feature 1"
-      title="Conversational"
-      description="A new way of interacting with documents, by enabling users to have a conversational experience. Our tool lets you talk and ask questions to your documents instead of having to fully read through a document."
-      image={Placeholder}
-    />
-    <Feature
-      featureNr="Feature 2"
-      title="Direct references"
-      description="When conversing with a document, you will directly see where the Q-App takes its references from. A highlight will be made in the document, and can even be exported for later use to quickly find the cited references."
-      image={Placeholder}
-    />
-    <Feature
-      featureNr="Feature 3"
-      title="Context aware"
-      description="The Q-App understands the context of the document and the questions, so no need to only ask surface-level questions."
-      image={Placeholder}
-    />
+    <Features>
+      <Feature
+        featureNr="Feature 1"
+        title="Conversational"
+        description="A new way of interacting with documents, by enabling users to have a conversational experience. Our tool lets you talk and ask questions to your documents instead of having to fully read through a document."
+        image={Placeholder}
+      />
+      <Feature
+        featureNr="Feature 2"
+        title="Direct references"
+        description="When conversing with a document, you will directly see where the Q-App takes its references from. A highlight will be made in the document, and can even be exported for later use to quickly find the cited references."
+        image={Placeholder}
+      />
+      <Feature
+        featureNr="Feature 3"
+        title="Context aware"
+        description="The Q-App understands the context of the document and the questions, so no need to only ask surface-level questions."
+        image={Placeholder}
+      />
+    </Features>
     <Information
       title="Interested?"
       text="Are you interested in taking a closer look at one of our tools, or curious what OpenMaze can offer your institute? Get in touch by scheduling a demo."
@@ -78,7 +81,7 @@ const QApp = () => (
       linkedin="open-maze"
       image={office}
       buttonLink="/contact"
-      buttonLabel="The fastest route to a collaboration"
+      buttonLabel="the fastest route to a collaboration"
     />
   </div>
 );

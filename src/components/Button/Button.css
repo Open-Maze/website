@@ -1,12 +1,12 @@
 .button {
-  @apply flex h-full items-center gap-2 rounded-lg border-8 border-solid px-6 py-2 transition-colors;
+  @apply flex h-full items-center gap-2 rounded-lg border-2 border-solid px-6 py-2 transition-colors;
 
   &--violet {
     @apply border-violet bg-violet text-white hover:border-violet-darker hover:bg-violet-darker;
   }
 
   &--violet-outline {
-    @apply border-violet bg-white text-violet hover:border-violet-darker hover:bg-violet-darker hover:text-white;
+    @apply border-violet bg-white text-slate-700 hover:border-violet-darker hover:bg-violet-darker hover:text-white;
   }
 
   &--skyline {
@@ -14,6 +14,6 @@
   }
 
   &--skyline-outline {
-    @apply border-skyline bg-white text-skyline hover:border-skyline-darker hover:bg-skyline-darker hover:text-white;
+    @apply border-skyline bg-white text-slate-700 hover:border-skyline-darker hover:bg-skyline-darker hover:text-white;
   }
 }

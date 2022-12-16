@@ -4,12 +4,13 @@ import './shared.css';
 // Blocks
 import Header from '../blocks/Header/Header';
 import Goals from '../blocks/Goals/Goals';
-import Feature from '../blocks/Feature/Feature';
+import Features from '../blocks/Features/Features';
 import Information from '../blocks/Information/Information';
 import CTA from '../blocks/CTA/CTA';
 
 // Components
 import CardIcon from '../components/CardIcon/CardIcon';
+import Feature from '../components/Feature/Feature';
 
 // Assets
 import headerImage from '../assets/images/illustrations/knowledgeprofiler.svg';
@@ -46,24 +47,26 @@ const KnowledgeProfiler = () => (
         className="col-span-6"
       />
     </Goals>
-    <Feature
-      featureNr="Feature 1"
-      title="Unique profile"
-      description="Every student has a unique learning journey throughout which they learn their subjects of interest. The Knowledge Profiler aims to visualize the skills mastered throughout a learning journey."
-      image={Placeholder}
-    />
-    <Feature
-      featureNr="Feature 2"
-      title="Verifiable"
-      description="The results from the Knowledge Profiler can easily be evaluated and used as a verifiable portfolio, because it uses a student's graded and submitted assignments."
-      image={Placeholder}
-    />
-    <Feature
-      featureNr="Feature 3"
-      title="Students become experts"
-      description="Students and teachers can use their submissions to generate a skill profile using the Knowledge Profiler. The profile determines expertise in a subject, and can be used to locate others with the desired expertise."
-      image={Placeholder}
-    />
+    <Features>
+      <Feature
+        featureNr="Feature 1"
+        title="Unique profile"
+        description="Every student has a unique learning journey throughout which they learn their subjects of interest. The Knowledge Profiler aims to visualize the skills mastered throughout a learning journey."
+        image={Placeholder}
+      />
+      <Feature
+        featureNr="Feature 2"
+        title="Verifiable"
+        description="The results from the Knowledge Profiler can easily be evaluated and used as a verifiable portfolio, because it uses a student's graded and submitted assignments."
+        image={Placeholder}
+      />
+      <Feature
+        featureNr="Feature 3"
+        title="Students become experts"
+        description="Students and teachers can use their submissions to generate a skill profile using the Knowledge Profiler. The profile determines expertise in a subject, and can be used to locate others with the desired expertise."
+        image={Placeholder}
+      />
+    </Features>
     <Information
       title="Interested?"
       text="Are you interested in taking a closer look at one of our tools, or curious what OpenMaze can offer your institute? Get in touch by scheduling a demo."
@@ -78,7 +81,7 @@ const KnowledgeProfiler = () => (
       linkedin="open-maze"
       image={office}
       buttonLink="/contact"
-      buttonLabel="The fastest route to a collaboration"
+      buttonLabel="the fastest route to a collaboration"
     />
   </div>
 );
