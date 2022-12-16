@@ -13,7 +13,9 @@ import CardIcon from '../components/CardIcon/CardIcon';
 
 // Assets
 import headerImage from '../assets/images/illustrations/expo.svg';
-import Placeholder from '../assets/images/office.jpeg';
+import Qapp from '../assets/images/products/q-app/qapp-1-full.png';
+import KP from '../assets/images/products/knowledge-profiler/kp-1-full.png';
+import DS from '../assets/images/products/q-app/qapp-1-zoom.png';
 import office from '../assets/images/office.jpeg';
 
 const Products = () => (
@@ -28,26 +30,26 @@ const Products = () => (
     <Product>
       <CardImage
         imageLeft
-        title="Document Screener"
-        description="We noticed that students often receive an initial round of feedback, which is usually about the structure of the document, grammatical errors, missing components, or the quality of writing. The document screener allows students to have their documents reviewed immediately, before they end up with teachers. Giving them a chance to already improve on their documents."
-        image={Placeholder}
-        buttonLink="/document-screener"
+        title="Q-App"
+        description="Traditionally documents are noninteractive, the Q-App changes this by allowing users to interact with a document as if they were talking to a human. Instead of just reading through it, you can now ask questions, and get relevant answers present in the document. It is just as if you were able to talk with the author!"
+        image={Qapp}
+        buttonLink="/q-app"
         buttonLabel="learn more"
       />
       <CardImage
         imageRight
         title="Knowledge Profiler"
         description="Every student is unique, as is their learning journey. Over the course of their studies, students will develop domain-specific knowledge that goes beyond the standard curriculum. By extracting all submissions of a student from their online learning environment, the Knowledge Profiler determines and displays these skills in a simple overview."
-        image={Placeholder}
+        image={KP}
         buttonLink="/knowledge-profiler"
         buttonLabel="learn more"
       />
       <CardImage
         imageLeft
-        title="Q-App"
-        description="Traditionally documents are noninteractive, the Q-App changes this by allowing users to interact with a document as if they were talking to a human. Instead of just reading through it, you can now ask questions, and get relevant answers present in the document. It is just as if you were able to talk with the author!"
-        image={Placeholder}
-        buttonLink="/q-app"
+        title="Document Screener"
+        description="We noticed that students often receive an initial round of feedback, which is usually about the structure of the document, grammatical errors, missing components, or the quality of writing. The document screener allows students to have their documents reviewed immediately, before they end up with teachers. Giving them a chance to already improve on their documents."
+        image={DS}
+        buttonLink="/document-screener"
         buttonLabel="learn more"
       />
     </Product>

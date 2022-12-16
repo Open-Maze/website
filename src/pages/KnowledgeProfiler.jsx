@@ -14,9 +14,9 @@ import Feature from '../components/Feature/Feature';
 
 // Assets
 import headerImage from '../assets/images/illustrations/knowledgeprofiler.svg';
-import UniqueProfile from '../assets/images/office.jpeg';
-import Verifiable from '../assets/images/office.jpeg';
-import StudentsBecomeExperts from '../assets/images/office.jpeg';
+import UniqueProfile from '../assets/images/products/knowledge-profiler/kp-1-zoom.png';
+import Verifiable from '../assets/images/products/knowledge-profiler/kp-2-zoom.png';
+import StudentsBecomeExperts from '../assets/images/products/knowledge-profiler/kp-3-zoom.png';
 import productImage from '../assets/images/illustrations/product.svg';
 import office from '../assets/images/office.jpeg';
 

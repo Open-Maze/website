@@ -14,9 +14,9 @@ import Feature from '../components/Feature/Feature';
 
 // Assets
 import headerImage from '../assets/images/illustrations/qapp.svg';
-import Conversational from '../assets/images/office.jpeg';
-import DirectReferences from '../assets/images/office.jpeg';
-import ContextAware from '../assets/images/office.jpeg';
+import Conversational from '../assets/images/products/q-app/qapp-1-zoom.png';
+import DirectReferences from '../assets/images/products/q-app/qapp-2-zoom.png';
+import ContextAware from '../assets/images/products/q-app/qapp-3-zoom.png';
 import productImage from '../assets/images/illustrations/product.svg';
 import office from '../assets/images/office.jpeg';
 

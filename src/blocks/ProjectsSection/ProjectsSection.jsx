@@ -35,8 +35,8 @@ const ProjectsSection = () => {
                 className={isActive1 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-book" />
-                <span>Document Screener</span>
+                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-comment-dots" />
+                <span>Q-App</span>
               </button>
             </div>
             <br />
@@ -67,24 +67,24 @@ const ProjectsSection = () => {
                 className={isActive3 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-comment-dots" />
-                <span>Q-App</span>
+                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-book" />
+                <span>Document Screener</span>
               </button>
             </div>
           </div>
         </div>
         <div className="col-span-6 lg:col-end-13">
           <div id="card-1" className={isActive1 ? 'card active' : 'card'}>
-            <img src={documentScreener} alt="Document Screener" className="w-full rounded-t-md" />
+            <img src={qApp} alt="Q-App" className="w-full rounded-t-md" />
             <div className="text">
-              <h3>Document Screener</h3>
+              <h3>Q-App</h3>
               <p>
-                We noticed that students often receive an initial round of feedback, which is usually about the
-                structure of the document, grammatical errors, missing components, or the quality of writing. The
-                document screener allows students to have their documents reviewed immediately, before they end up with
-                teachers. Giving them a chance to already improve on their documents.
+                Traditionally documents are noninteractive, the Q-App changes this by allowing users to interact with a
+                document as if they were talking to a human. Instead of just reading through it, you can now ask
+                questions, and get relevant answers present in the document. It is just as if you were able to talk with
+                the author!
               </p>
-              <Button pageUrl="/document-screener" className="button button--skyline-outline">
+              <Button pageUrl="/q-app" className="button button--skyline-outline">
                 learn more
               </Button>
             </div>
@@ -105,16 +105,16 @@ const ProjectsSection = () => {
             </div>
           </div>
           <div id="card-3" className={isActive3 ? 'card active' : 'card'}>
-            <img src={qApp} alt="Q-App" className="w-full rounded-t-md" />
+            <img src={documentScreener} alt="Document Screener" className="w-full rounded-t-md" />
             <div className="text">
-              <h3>Q-App</h3>
+              <h3>Document Screener</h3>
               <p>
-                Traditionally documents are noninteractive, the Q-App changes this by allowing users to interact with a
-                document as if they were talking to a human. Instead of just reading through it, you can now ask
-                questions, and get relevant answers present in the document. It is just as if you were able to talk with
-                the author!
+                We noticed that students often receive an initial round of feedback, which is usually about the
+                structure of the document, grammatical errors, missing components, or the quality of writing. The
+                document screener allows students to have their documents reviewed immediately, before they end up with
+                teachers. Giving them a chance to already improve on their documents.
               </p>
-              <Button pageUrl="/q-app" className="button button--skyline-outline">
+              <Button pageUrl="/document-screener" className="button button--skyline-outline">
                 learn more
               </Button>
             </div>
