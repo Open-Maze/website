@@ -39,7 +39,7 @@ const Footer = ({ linkedin }) => {
           </div>
           <div className="flex w-full justify-center sm:hidden">
             {location.pathname === '/' && (
-              <a href="src/components/Footer#top">
+              <a href="#top">
                 <LogoMark className="h-4" />
               </a>
             )}
@@ -49,7 +49,7 @@ const Footer = ({ linkedin }) => {
               </Link>
             )}
           </div>
-          <a href="src/components/Footer#top">
+          <a href="#top">
             <div className="flex items-center justify-center py-6 pl-6 sm:border-l-2 sm:border-solid sm:border-bleach">
               <FontAwesomeIcon
                 icon="circle-arrow-up"
