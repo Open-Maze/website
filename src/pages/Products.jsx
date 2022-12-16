@@ -5,11 +5,11 @@ import './shared.css';
 import Header from '../blocks/Header/Header';
 import Product from '../blocks/Product/Product.jsx';
 import CoreValues from '../blocks/CoreValues/CoreValues';
+import CardImage from '../blocks/CardImage/CardImage';
 import CTA from '../blocks/CTA/CTA';
 
 // Components
 import CardIcon from '../components/CardIcon/CardIcon';
-import CardImage from '../components/CardImage/CardImage';
 
 // Assets
 import headerImage from '../assets/images/illustrations/expo.svg';

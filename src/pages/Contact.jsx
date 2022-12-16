@@ -3,10 +3,13 @@ import './shared.css';
 
 // Blocks
 import Header from '../blocks/Header/Header';
+import ContactForm from '../blocks/ContactForm/ContactForm';
+
+// Components
+import ContactCard from '../components/ContactCard/ContactCard';
 
 // Assets
 import headerImage from '../assets/images/illustrations/contact.svg';
-import ContactCard from '../components/ContactCard/ContactCard.jsx';
 
 const Contact = () => (
   <div className="page contact">
@@ -32,6 +35,7 @@ const Contact = () => (
         />
       </div>
     </Header>
+    <ContactForm />
   </div>
 );
 

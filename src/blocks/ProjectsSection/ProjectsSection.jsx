@@ -18,7 +18,7 @@ const ProjectsSection = () => {
   const [isActive3, setIsActive3] = useState(false);
 
   return (
-    <div className="cms-block">
+    <section className="cms-block">
       <div className="container grid grid-cols-1 gap-10 lg:grid-cols-12" data-aos="fade-up" data-aos-delay="500">
         <div className="col-span-6 lg:col-start-1">
           <h4 className="pb-2 text-dark">Impactful technologies</h4>
@@ -121,7 +121,7 @@ const ProjectsSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,5 +1,7 @@
 import React from 'react';
-import Button from '../Button/Button';
+
+// Components
+import Button from '../../components/Button/Button';
 
 const CardImage = ({ imageLeft, title, description, image, buttonLabel, buttonLink }) => (
   <div className="grid grid-flow-dense grid-cols-1 items-center gap-10 rounded-xl border-8 border-solid border-light-gray bg-white shadow-lg lg:grid-cols-12">

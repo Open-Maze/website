@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Input = ({ label, handleChange, value, placeholder, outline, white, fullwidth, inputType }) => (
-  <div className="input">
+  <>
     {label && <p className="label">{label}</p>}
     <div className="input-wrapper">
       <input
@@ -14,7 +14,7 @@ const Input = ({ label, handleChange, value, placeholder, outline, white, fullwi
         id="input"
       />
     </div>
-  </div>
+  </>
 );
 
 export default Input;
