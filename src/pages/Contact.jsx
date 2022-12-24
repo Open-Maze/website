@@ -23,15 +23,15 @@ const Contact = () => {
   return (
     <div className="page contact">
       <Header
-        size={contact.header?.header_size}
-        title={contact.header?.header_title}
-        text={contact.header?.header_text}
+        size={contact.header?.size}
+        title={contact.header?.title}
+        text={contact.header?.text}
         buttonLink={contact.header?.button1_link}
         buttonLabel={contact.header?.button1_label}
         button2Link={contact.header?.button2_link}
         button2Label={contact.header?.button2_label}
-        image={contact.header?.header_image?.url}
-        arrow={contact.header?.header_arrow}
+        image={contact.header?.image?.url}
+        arrow={contact.header?.arrow}
       >
         <div data-aos="fade-up" data-aos-delay="500">
           <ContactCard

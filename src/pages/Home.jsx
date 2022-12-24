@@ -29,15 +29,15 @@ const Home = () => {
   return (
     <div className="page home">
       <Header
-        size={home.header?.header_size}
-        title={home.header?.header_title}
-        text={home.header?.header_text}
+        size={home.header?.size}
+        title={home.header?.title}
+        text={home.header?.text}
         buttonLink={home.header?.button1_link}
         buttonLabel={home.header?.button1_label}
         button2Link={home.header?.button2_link}
         button2Label={home.header?.button2_label}
-        image={home.header?.header_image?.url}
-        arrow={home.header?.header_arrow}
+        image={home.header?.image?.url}
+        arrow={home.header?.arrow}
       />
       <ProjectsSection />
       <Information

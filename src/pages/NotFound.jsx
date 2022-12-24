@@ -19,15 +19,15 @@ const NotFound = () => {
   return (
     <div className="page notfound">
       <Header
-        size={notFound.header?.header_size}
-        title={notFound.header?.header_title}
-        text={notFound.header?.header_text}
+        size={notFound.header?.size}
+        title={notFound.header?.title}
+        text={notFound.header?.text}
         buttonLink={notFound.header?.button1_link}
         buttonLabel={notFound.header?.button1_label}
         button2Link={notFound.header?.button2_link}
         button2Label={notFound.header?.button2_label}
-        image={notFound.header?.header_image?.url}
-        arrow={notFound.header?.header_arrow}
+        image={notFound.header?.image?.url}
+        arrow={notFound.header?.arrow}
       />
     </div>
   );

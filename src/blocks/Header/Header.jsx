@@ -61,7 +61,7 @@ const Header = ({
           </div>
           {image && (
             <div className="col-span-1 h-full lg:col-span-6 lg:col-end-13" data-aos="fade-up" data-aos-delay="300">
-              <img src={`https://api.openmaze.io/${image}`} alt={title} className="mx-auto mt-12 w-full lg:mt-0" />
+              <img src={`https://api.openmaze.io${image}`} alt={title} className="mx-auto mt-12 w-full lg:mt-0" />
             </div>
           )}
         </div>

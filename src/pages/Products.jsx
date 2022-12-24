@@ -32,15 +32,15 @@ const Products = () => {
   return (
     <div className="page products">
       <Header
-        size={products.header?.header_size}
-        title={products.header?.header_title}
-        text={products.header?.header_text}
+        size={products.header?.size}
+        title={products.header?.title}
+        text={products.header?.text}
         buttonLink={products.header?.button1_link}
         buttonLabel={products.header?.button1_label}
         button2Link={products.header?.button2_link}
         button2Label={products.header?.button2_label}
-        image={products.header?.header_image?.url}
-        arrow={products.header?.header_arrow}
+        image={products.header?.image?.url}
+        arrow={products.header?.arrow}
       />
       <Product>
         <CardImage

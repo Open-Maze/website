@@ -37,15 +37,15 @@ const About = () => {
   return (
     <div className="page about">
       <Header
-        size={about.header?.header_size}
-        title={about.header?.header_title}
-        text={about.header?.header_text}
+        size={about.header?.size}
+        title={about.header?.title}
+        text={about.header?.text}
         buttonLink={about.header?.button1_link}
         buttonLabel={about.header?.button1_label}
         button2Link={about.header?.button2_link}
         button2Label={about.header?.button2_label}
-        image={about.header?.header_image?.url}
-        arrow={about.header?.header_arrow}
+        image={about.header?.image?.url}
+        arrow={about.header?.arrow}
       />
       <CoreValues title="Core values" subtitle="Our beliefs">
         <CardIcon
