@@ -13,10 +13,14 @@ import ContactCard from '../components/ContactCard/ContactCard';
 
 const Contact = () => {
   const [contact, setContact] = useState({});
+  const [info, setInfo] = useState({});
 
   useEffect(() => {
     axios.get('https://api.openmaze.io/contact').then((response) => {
       setContact(response.data);
+    });
+    axios.get('https://api.openmaze.io/info').then((response) => {
+      setInfo(response.data);
     });
   }, []);
 
@@ -33,19 +37,14 @@ const Contact = () => {
         image={contact.header?.image?.url}
         arrow={contact.header?.arrow}
       >
-        <div data-aos="fade-up" data-aos-delay="500">
-          <ContactCard
-            link="mailto:hello@openmaze.io"
-            icon="envelope"
-            title="Send an e-mail"
-            content="hello@openmaze.io"
-          />
+        <div data-aos="fade-up" data-aos-delay="700">
+          <ContactCard link={`mailto:${info.email}`} icon="envelope" title="Send an e-mail" content={info.email} />
           <br />
           <ContactCard
-            link="https://linkedin.com/company/open-maze"
+            link={`https://linkedin.com/company/${info.linkedin}`}
             icon="linkedin"
             title="LinkedIn"
-            content="/open-maze"
+            content={`/${info.linkedin}`}
           />
         </div>
       </Header>

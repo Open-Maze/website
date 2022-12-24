@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 // External
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import axios from 'axios';
 import moment from 'moment';
 
 // Assets
 import { ReactComponent as LogoPurpleBlue } from '../../assets/images/logo/logoPurpleBlue.svg';
 import { ReactComponent as LogoMark } from '../../assets/images/logo/mark.svg';
 
-const Footer = ({ linkedin }) => {
+const Footer = () => {
+  const [info, setInfo] = useState({});
   const location = useLocation();
   const year = moment().year();
+
+  useEffect(() => {
+    axios.get('https://api.openmaze.io/info').then((response) => {
+      setInfo(response.data);
+    });
+  }, []);
 
   return (
     <>
@@ -30,7 +38,12 @@ const Footer = ({ linkedin }) => {
         </div>
         <div className="flex h-full w-full items-center justify-between sm:justify-end">
           <div className="flex">
-            <a href={linkedin} target="_blank" rel="noreferrer" className="flex items-center">
+            <a
+              href={`https://linkedin.com/company/${info.linkedin}`}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center"
+            >
               <FontAwesomeIcon
                 icon="fa-brands fa-linkedin-in"
                 className="h-6 pr-6 text-violet transition hover:text-violet-darker"

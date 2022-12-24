@@ -98,8 +98,6 @@ const QApp = () => {
       <CTA
         title="Contact us"
         subtitle="Want to talk?"
-        email="hello@openmaze.io"
-        linkedin="open-maze"
         image={office}
         buttonLink="/contact"
         buttonLabel="the fastest route to a collaboration"
