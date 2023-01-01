@@ -23,7 +23,7 @@
     "@originjs/vite-plugin-commonjs": "^1.0.3",
     "@vitejs/plugin-react": "^3.0.0",
     "aos": "^2.3.4",
-    "axios": "^1.2.1",
+    "axios": "^1.2.2",
     "dotenv": "^16.0.3",
     "framer-motion": "^8.0.1",
     "moment": "^2.29.4",
