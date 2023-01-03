@@ -15,11 +15,6 @@ import CTA from '../blocks/CTA/CTA';
 import CardIcon from '../components/CardIcon/CardIcon';
 import Feature from '../components/Feature/Feature';
 
-// Assets
-import InstantFeedback from '../assets/images/products/document-screener/instant-feedback.svg';
-import ContextAware from '../assets/images/products/document-screener/context-aware.svg';
-import Summarization from '../assets/images/products/document-screener/summarization.svg';
-
 const DocumentScreener = () => {
   const [documentScreener, setDocumentScreener] = useState({});
 
@@ -56,27 +51,17 @@ const DocumentScreener = () => {
         ))}
       </Goals>
       <Features>
-        <Feature
-          featureNr="Feature 1"
-          title="Instant feedback"
-          description="The Document Screener allows students to have their documents reviewed immediately and multiple times. The purpose of the screener is to eliminate the repetitive first round of feedback."
-          image={InstantFeedback}
-          illustration
-        />
-        <Feature
-          featureNr="Feature 2"
-          title="Context aware"
-          description="Cutting-edge machine learning models are used by the Document Screener, allowing it to understand text like humans. This allows our tool to provide more document-specific feedback on, for example, introductions, research questions, conclusions, writing quality and more."
-          image={ContextAware}
-          illustration
-        />
-        <Feature
-          featureNr="Feature 3"
-          title="Summarization"
-          description="The Document Screen can summarize (parts of) the document, picking out what it thinks to be the most important parts. This can be used by the student to verify if all their talking points are coming across."
-          image={Summarization}
-          illustration
-        />
+        {documentScreener.features?.map((feature) => (
+          <Feature
+            key={feature.id}
+            featureNr={feature.subtitle}
+            title={feature.title}
+            description={feature.text}
+            image={feature.image?.url}
+            imgBackground={feature.color_background}
+            illustration={feature.illustration}
+          />
+        ))}
       </Features>
       <Information
         subtitle={documentScreener.information?.subtitle}

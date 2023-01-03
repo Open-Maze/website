@@ -10,9 +10,11 @@ const Feature = ({ featureNr, title, description, image, imgBackground, illustra
     {image && (
       <div className="col-span-6 rounded-xl lg:col-end-13" style={{ backgroundColor: imgBackground }}>
         <img
-          src={image}
+          src={`https://api.openmaze.io/${image}`}
           alt={title}
-          className={`w-full ${!illustration && 'rounded-xl border-8 border-solid border-light-gray shadow-lg'}`}
+          className={`h-full w-full ${
+            illustration === false && 'rounded-xl border-8 border-solid border-light-gray shadow-lg'
+          }`}
         />
       </div>
     )}

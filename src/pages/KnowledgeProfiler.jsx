@@ -15,11 +15,6 @@ import CTA from '../blocks/CTA/CTA';
 import CardIcon from '../components/CardIcon/CardIcon';
 import Feature from '../components/Feature/Feature';
 
-// Assets
-import UniqueProfile from '../assets/images/products/knowledge-profiler/kp-1-zoom.png';
-import Verifiable from '../assets/images/products/knowledge-profiler/kp-2-zoom.png';
-import StudentsBecomeExperts from '../assets/images/products/knowledge-profiler/kp-3-zoom.png';
-
 const KnowledgeProfiler = () => {
   const [knowledgeProfiler, setKnowledgeProfiler] = useState({});
 
@@ -56,27 +51,17 @@ const KnowledgeProfiler = () => {
         ))}
       </Goals>
       <Features>
-        <Feature
-          featureNr="Feature 1"
-          title="Unique profile"
-          description="Every student has a unique learning journey throughout which they learn their subjects of interest. The Knowledge Profiler aims to visualize the skills mastered throughout a learning journey."
-          image={UniqueProfile}
-          imgBackground="#d1a4f7"
-        />
-        <Feature
-          featureNr="Feature 2"
-          title="Verifiable"
-          description="The results from the Knowledge Profiler can easily be evaluated and used as a verifiable portfolio, because it uses a student's graded and submitted assignments."
-          image={Verifiable}
-          imgBackground="#adeaf4"
-        />
-        <Feature
-          featureNr="Feature 3"
-          title="Students become experts"
-          description="Students and teachers can use their submissions to generate a skill profile using the Knowledge Profiler. The profile determines expertise in a subject, and can be used to locate others with the desired expertise."
-          image={StudentsBecomeExperts}
-          imgBackground="#a3a4e5"
-        />
+        {knowledgeProfiler.features?.map((feature) => (
+          <Feature
+            key={feature.id}
+            featureNr={feature.subtitle}
+            title={feature.title}
+            description={feature.text}
+            image={feature.image?.url}
+            imgBackground={feature.color_background}
+            illustration={feature.illustration}
+          />
+        ))}
       </Features>
       <Information
         subtitle={knowledgeProfiler.information?.subtitle}
