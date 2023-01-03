@@ -39,7 +39,22 @@ const Home = () => {
         image={home.header?.image?.url}
         arrow={home.header?.arrow}
       />
-      <ProjectsSection />
+      <ProjectsSection
+        subtitle={home.solutions?.subtitle}
+        title={home.solutions?.title}
+        icon1={home.solutions?.icon1}
+        icon2={home.solutions?.icon2}
+        icon3={home.solutions?.icon3}
+        name1={home.solutions?.name1}
+        name2={home.solutions?.name2}
+        name3={home.solutions?.name3}
+        image1={home.solutions?.image1?.url}
+        image2={home.solutions?.image2?.url}
+        image3={home.solutions?.image3?.url}
+        text1={home.solutions?.text1}
+        text2={home.solutions?.text2}
+        text3={home.solutions?.text3}
+      />
       <Information
         subtitle="Passionate people"
         title="About us"
