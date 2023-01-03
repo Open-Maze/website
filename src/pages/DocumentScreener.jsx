@@ -42,43 +42,18 @@ const DocumentScreener = () => {
         image={documentScreener.header?.image?.url}
         arrow={documentScreener.header?.arrow}
       />
-      <Goals title="What we want to achieve" subtitle="Goals">
-        <CardIcon
-          type="horizontal"
-          iconFront="fa-solid fa-comment"
-          iconBack="fa-solid fa-circle"
-          title="Encourage Dialogue"
-          text="Common mistakes will already be brought to attention, so that the teacher and student can focus on meaningful dialogue about the context."
-          delay={500}
-          className="col-span-6"
-        />
-        <CardIcon
-          type="horizontal"
-          iconFront="fa-solid fa-chart-line"
-          iconBack="fa-solid fa-square"
-          title="Better Insights"
-          text="The parts of a student's documents where it could be improved are highlighted, so that the student gets the chance to improve their work."
-          delay={600}
-          className="col-span-6"
-        />
-        <CardIcon
-          type="horizontal"
-          iconFront="fa-solid fa-face-smile-beam"
-          iconBack="fa-solid fa-circle"
-          title="Student Confidence"
-          text="Gives a student more confidence about their work, since it already has been checked for common mistakes."
-          delay={700}
-          className="col-span-6"
-        />
-        <CardIcon
-          type="horizontal"
-          iconFront="fa-solid fa-circle-check"
-          iconBack="fa-solid fa-circle"
-          title="Higher Quality of Work"
-          text="The student gets the chance to improve their work, before it ends up with a teacher. Allowing the teacher to focus on more meaningful feedback."
-          delay={800}
-          className="col-span-6"
-        />
+      <Goals title={documentScreener.title} subtitle={documentScreener.subtitle}>
+        {documentScreener.goals?.map((goal) => (
+          <CardIcon
+            key={goal.id}
+            type={goal.type}
+            iconFront={`fa-solid fa-${goal.icon}`}
+            iconBack={`fa-solid fa-${goal.icon_background}`}
+            title={goal.title}
+            text={goal.text}
+            className="col-span-6"
+          />
+        ))}
       </Goals>
       <Features>
         <Feature

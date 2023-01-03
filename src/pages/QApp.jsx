@@ -19,7 +19,6 @@ import Feature from '../components/Feature/Feature';
 import Conversational from '../assets/images/products/q-app/qapp-1-zoom.png';
 import DirectReferences from '../assets/images/products/q-app/qapp-2-zoom.png';
 import ContextAware from '../assets/images/products/q-app/qapp-3-zoom.png';
-import productImage from '../assets/images/illustrations/product.svg';
 
 const QApp = () => {
   const [qApp, setQApp] = useState({});
@@ -43,25 +42,18 @@ const QApp = () => {
         image={qApp.header?.image?.url}
         arrow={qApp.header?.arrow}
       />
-      <Goals title="What we want to achieve" subtitle="Goals">
-        <CardIcon
-          type="horizontal"
-          iconFront="fa-solid fa-rocket"
-          iconBack="fa-solid fa-circle"
-          title="A new way of interaction"
-          text="We want to enable students and assessors to experience a new way of interacting with documents."
-          delay={500}
-          className="col-span-6"
-        />
-        <CardIcon
-          type="horizontal"
-          iconFront="fa-solid fa-circle-check"
-          iconBack="fa-solid fa-circle"
-          title="Verification"
-          text="Teachers and students can verify if certain points are present in the document. If the answer is not good enough, it probably is not present or wrongly worded."
-          delay={600}
-          className="col-span-6"
-        />
+      <Goals title={qApp.title} subtitle={qApp.subtitle}>
+        {qApp.goals?.map((goal) => (
+          <CardIcon
+            key={goal.id}
+            type={goal.type}
+            iconFront={`fa-solid fa-${goal.icon}`}
+            iconBack={`fa-solid fa-${goal.icon_background}`}
+            title={goal.title}
+            text={goal.text}
+            className="col-span-6"
+          />
+        ))}
       </Goals>
       <Features>
         <Feature

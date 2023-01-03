@@ -19,7 +19,6 @@ import Feature from '../components/Feature/Feature';
 import UniqueProfile from '../assets/images/products/knowledge-profiler/kp-1-zoom.png';
 import Verifiable from '../assets/images/products/knowledge-profiler/kp-2-zoom.png';
 import StudentsBecomeExperts from '../assets/images/products/knowledge-profiler/kp-3-zoom.png';
-import productImage from '../assets/images/illustrations/product.svg';
 
 const KnowledgeProfiler = () => {
   const [knowledgeProfiler, setKnowledgeProfiler] = useState({});
@@ -43,25 +42,18 @@ const KnowledgeProfiler = () => {
         image={knowledgeProfiler.header?.image?.url}
         arrow={knowledgeProfiler.header?.arrow}
       />
-      <Goals title="What we want to achieve" subtitle="Goals">
-        <CardIcon
-          type="horizontal"
-          iconFront="fa-solid fa-user"
-          iconBack="fa-solid fa-circle"
-          title="Individual Profile"
-          text="Allow students to show off their unique skills."
-          delay={500}
-          className="col-span-6"
-        />
-        <CardIcon
-          type="horizontal"
-          iconFront="fa-solid fa-link"
-          iconBack="fa-solid fa-circle"
-          title="Connect People"
-          text="The Knowledge Profile can be used to connect Students with other students, teachers, experts or businesses."
-          delay={600}
-          className="col-span-6"
-        />
+      <Goals title={knowledgeProfiler.title} subtitle={knowledgeProfiler.subtitle}>
+        {knowledgeProfiler.goals?.map((goal) => (
+          <CardIcon
+            key={goal.id}
+            type={goal.type}
+            iconFront={`fa-solid fa-${goal.icon}`}
+            iconBack={`fa-solid fa-${goal.icon_background}`}
+            title={goal.title}
+            text={goal.text}
+            className="col-span-6"
+          />
+        ))}
       </Goals>
       <Features>
         <Feature
