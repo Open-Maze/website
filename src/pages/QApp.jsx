@@ -46,7 +46,7 @@ const QApp = () => {
             iconBack={`fa-solid fa-${goal.icon_background}`}
             title={goal.title}
             text={goal.text}
-            className="col-span-6"
+            className={goal.column_width === 'half' ? 'col-span-6' : 'col-span-4'}
           />
         ))}
       </Goals>

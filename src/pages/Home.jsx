@@ -75,7 +75,7 @@ const Home = () => {
             iconBack={`fa-solid fa-${value.background_icon}`}
             title={value.title}
             text={value.text}
-            className="col-span-4"
+            className={value.column_width === 'half' ? 'col-span-6' : 'col-span-4'}
           />
         ))}
       </CoreValues>
