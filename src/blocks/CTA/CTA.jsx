@@ -50,7 +50,7 @@ const CTA = ({ subtitle, title, image, buttonLink, buttonLabel }) => {
               <div className="col-span-7 col-end-9 bg-cta-pattern bg-contain bg-right bg-no-repeat py-10 2xl:pr-20">
                 <img
                   className="h-64 w-full rounded-xl border-8 border-solid border-light-gray shadow-lg"
-                  src={image}
+                  src={`https://api.openmaze.io/${image}`}
                   alt="Contact OpenMaze"
                 />
               </div>

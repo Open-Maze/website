@@ -70,11 +70,11 @@ const About = () => {
         ))}
       </Team>
       <CTA
-        title="Contact us"
-        subtitle="Want to talk?"
-        image={office}
-        buttonLink="/contact"
-        buttonLabel="the fastest route to a collaboration"
+        title={about.cta?.title}
+        subtitle={about.cta?.subtitle}
+        image={about.cta?.image?.url}
+        buttonLink={about.cta?.button_link}
+        buttonLabel={about.cta?.button_text}
       />
     </div>
   );
