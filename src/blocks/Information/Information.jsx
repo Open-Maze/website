@@ -11,9 +11,9 @@ const Information = ({ subtitle, title, text, buttonLabel, buttonLink, image, il
           <div className="col-span-6 lg:col-start-1">
             <img
               className={`h-full w-full ${
-                !illustration && 'rounded-xl border-8 border-solid border-light-gray shadow-lg'
+                illustration === false && 'rounded-xl border-8 border-solid border-light-gray shadow-lg'
               }`}
-              src={image}
+              src={`https://api.openmaze.io${image}`}
               alt="Team"
             />
           </div>
