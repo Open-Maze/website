@@ -16,21 +16,19 @@ import CardIcon from '../components/CardIcon/CardIcon';
 import TeamMember from '../components/TeamMember/TeamMember';
 
 // Assets
-import TeamImage from '../assets/images/team/team.jpg';
-import Seline from '../assets/images/team/seline.jpg';
-import Jordy from '../assets/images/team/jordy.jpg';
-import Stijn from '../assets/images/team/stijn.jpg';
-import Niek from '../assets/images/team/niek.jpg';
-import Max from '../assets/images/team/max.jpg';
-import Ruben from '../assets/images/team/ruben.jpg';
 import office from '../assets/images/office.jpeg';
 
 const About = () => {
   const [about, setAbout] = useState({});
+  const [team, setTeam] = useState([]);
 
   useEffect(() => {
     axios.get('https://api.openmaze.io/about').then((response) => {
       setAbout(response.data);
+    });
+    axios.get('https://api.openmaze.io/team-members').then((response) => {
+      const sortedArray = response.data.sort((a, b) => a.order - b.order);
+      setTeam(sortedArray);
     });
   }, []);
 
@@ -76,14 +74,11 @@ const About = () => {
           className="col-span-4"
         />
       </CoreValues>
-      <Image src={TeamImage} alt="Meet the OpenMAze team" />
+      <Image src={about.image?.url} alt={about.image?.alternativeText} />
       <Team title="Our team" subtitle="Meet the people behind OpenMaze">
-        <TeamMember name="Niek van Dam" text="Co-founder" image={Niek} delay={500} />
-        <TeamMember name="Max van Hattum" text="Co-founder" image={Max} delay={600} />
-        <TeamMember name="Ruben Fricke" text="Co-founder" image={Ruben} delay={700} />
-        <TeamMember name="Seline Warners" text="Digital Designer" image={Seline} delay={800} />
-        <TeamMember name="Jordy Arntz" text="Digital Designer" image={Jordy} delay={900} />
-        <TeamMember name="Stijn Verhagen" text="Digital Designer" image={Stijn} delay={1000} />
+        {team?.map((member) => (
+          <TeamMember key={member.id} name={member.name} text={member.function} image={member.image?.url} />
+        ))}
       </Team>
       <CTA
         title="Contact us"
