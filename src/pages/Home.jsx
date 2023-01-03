@@ -14,9 +14,6 @@ import ContactSection from '../blocks/ContactSection/ContactSection';
 // Components
 import CardIcon from '../components/CardIcon/CardIcon';
 
-// Assets
-import Team from '../assets/images/team/team-portrait.jpg';
-
 const Home = () => {
   const [home, setHome] = useState({});
 
@@ -63,41 +60,25 @@ const Home = () => {
         buttonLabel={home.information_home?.button_text}
         image={home.information_home?.image?.url}
       />
-      <CoreValues title="Core values" subtitle="Our beliefs">
-        <CardIcon
-          type="vertical"
-          iconFront="fa-solid fa-rocket"
-          iconBack="fa-solid fa-circle"
-          title="Innovation"
-          text="What makes us unique is that we use cutting-edge technologies, broadening the variety of tools available. We unite context and technology."
-          delay={500}
-          className="col-span-4"
-        />
-        <CardIcon
-          type="vertical"
-          iconFront="fa-solid fa-shield-alt"
-          iconBack="fa-solid fa-circle"
-          title="Privacy"
-          text="We are of the opinion that data ownership should always remain with the user. We not only comply with regulations, but go the extra mile to ensure that you are in control of your data."
-          delay={600}
-          className="col-span-4"
-        />
-        <CardIcon
-          type="vertical"
-          iconFront="fa-solid fa-heart"
-          iconBack="fa-solid fa-circle"
-          title="Integrity"
-          text="AI can be scary. We think that technology should always be transparent and explainable. Our technology should above all be trusted by its users."
-          delay={700}
-          className="col-span-4"
-        />
+      <CoreValues title={home.core_values?.title} subtitle={home.core_values?.subtitle}>
+        {home.core_values?.core_value?.map((value) => (
+          <CardIcon
+            key={value.id}
+            type={value.type}
+            iconFront={`fa-solid fa-${value.icon}`}
+            iconBack={`fa-solid fa-${value.background_icon}`}
+            title={value.title}
+            text={value.text}
+            className="col-span-4"
+          />
+        ))}
       </CoreValues>
       <ContactSection
-        title="Get in touch"
-        subtitle="Meaningful Connections"
-        text="Questions about our tools or just want to say hi? Feel free to mail us at the address listed here! You can also follow us on LinkedIn for the latest news about OpenMaze!"
-        buttonLink="/contact"
-        buttonLabel="get in touch"
+        title={home.contact_section?.title}
+        subtitle={home.contact_section?.subtitle}
+        text={home.contact_section?.text}
+        buttonLink={home.contact_section?.button_link}
+        buttonLabel={home.contact_section?.button_text}
       />
     </div>
   );
