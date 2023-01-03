@@ -20,7 +20,6 @@ import Conversational from '../assets/images/products/q-app/qapp-1-zoom.png';
 import DirectReferences from '../assets/images/products/q-app/qapp-2-zoom.png';
 import ContextAware from '../assets/images/products/q-app/qapp-3-zoom.png';
 import productImage from '../assets/images/illustrations/product.svg';
-import office from '../assets/images/office.jpeg';
 
 const QApp = () => {
   const [qApp, setQApp] = useState({});
@@ -88,19 +87,20 @@ const QApp = () => {
         />
       </Features>
       <Information
-        title="Interested?"
-        text="Are you interested in taking a closer look at one of our tools, or curious what OpenMaze can offer your institute? Get in touch by scheduling a demo."
-        buttonLink="/products"
-        buttonLabel="discover more products"
-        image={productImage}
-        illustration
+        subtitle={qApp.information?.subtitle}
+        title={qApp.information?.title}
+        text={qApp.information?.text}
+        buttonLink={qApp.information?.button_link}
+        buttonLabel={qApp.information?.button_text}
+        image={qApp.information?.image?.url}
+        illustration={qApp.information?.illustration}
       />
       <CTA
-        title="Contact us"
-        subtitle="Want to talk?"
-        image={office}
-        buttonLink="/contact"
-        buttonLabel="the fastest route to a collaboration"
+        title={qApp.cta?.title}
+        subtitle={qApp.cta?.subtitle}
+        image={qApp.cta?.image?.url}
+        buttonLink={qApp.cta?.button_link}
+        buttonLabel={qApp.cta?.button_text}
       />
     </div>
   );

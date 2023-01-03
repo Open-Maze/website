@@ -64,6 +64,7 @@ const Home = () => {
         buttonLink={home.information_home?.button_link}
         buttonLabel={home.information_home?.button_text}
         image={home.information_home?.image?.url}
+        illustration={home.information_home?.illustration}
       />
       <CoreValues title={home.core_values?.title} subtitle={home.core_values?.subtitle}>
         {coreValues?.map((value) => (

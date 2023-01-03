@@ -19,8 +19,6 @@ import Feature from '../components/Feature/Feature';
 import InstantFeedback from '../assets/images/products/document-screener/instant-feedback.svg';
 import ContextAware from '../assets/images/products/document-screener/context-aware.svg';
 import Summarization from '../assets/images/products/document-screener/summarization.svg';
-import productImage from '../assets/images/illustrations/product.svg';
-import office from '../assets/images/office.jpeg';
 
 const DocumentScreener = () => {
   const [documentScreener, setDocumentScreener] = useState({});
@@ -106,20 +104,20 @@ const DocumentScreener = () => {
         />
       </Features>
       <Information
-        subtitle="Support human interaction"
-        title="Encouraging Dialogue"
-        text="We find that the most important thing in learning is the meaningful interactions between student and teacher. The Document Screener already picks out the more common mistakes, so that there is room for dialogue between students and teachers about what matters: the actual context of the document."
-        buttonLink="/products"
-        buttonLabel="discover more products"
-        image={productImage}
-        illustration
+        subtitle={documentScreener.information?.subtitle}
+        title={documentScreener.information?.title}
+        text={documentScreener.information?.text}
+        buttonLink={documentScreener.information?.button_link}
+        buttonLabel={documentScreener.information?.button_text}
+        image={documentScreener.information?.image?.url}
+        illustration={documentScreener.information?.illustration}
       />
       <CTA
-        title="Contact us"
-        subtitle="Want to talk?"
-        image={office}
-        buttonLink="/contact"
-        buttonLabel="the fastest route to a collaboration"
+        title={documentScreener.cta?.title}
+        subtitle={documentScreener.cta?.subtitle}
+        image={documentScreener.cta?.image?.url}
+        buttonLink={documentScreener.cta?.button_link}
+        buttonLabel={documentScreener.cta?.button_text}
       />
     </div>
   );

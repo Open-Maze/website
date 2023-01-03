@@ -20,7 +20,6 @@ import UniqueProfile from '../assets/images/products/knowledge-profiler/kp-1-zoo
 import Verifiable from '../assets/images/products/knowledge-profiler/kp-2-zoom.png';
 import StudentsBecomeExperts from '../assets/images/products/knowledge-profiler/kp-3-zoom.png';
 import productImage from '../assets/images/illustrations/product.svg';
-import office from '../assets/images/office.jpeg';
 
 const KnowledgeProfiler = () => {
   const [knowledgeProfiler, setKnowledgeProfiler] = useState({});
@@ -88,19 +87,20 @@ const KnowledgeProfiler = () => {
         />
       </Features>
       <Information
-        title="Interested?"
-        text="Are you interested in taking a closer look at one of our tools, or curious what OpenMaze can offer your institute? Get in touch by scheduling a demo."
-        buttonLink="/products"
-        buttonLabel="discover more products"
-        image={productImage}
-        illustration
+        subtitle={knowledgeProfiler.information?.subtitle}
+        title={knowledgeProfiler.information?.title}
+        text={knowledgeProfiler.information?.text}
+        buttonLink={knowledgeProfiler.information?.button_link}
+        buttonLabel={knowledgeProfiler.information?.button_text}
+        image={knowledgeProfiler.information?.image?.url}
+        illustration={knowledgeProfiler.information?.illustration}
       />
       <CTA
-        title="Contact us"
-        subtitle="Want to talk?"
-        image={office}
-        buttonLink="/contact"
-        buttonLabel="the fastest route to a collaboration"
+        title={knowledgeProfiler.cta?.title}
+        subtitle={knowledgeProfiler.cta?.subtitle}
+        image={knowledgeProfiler.cta?.image?.url}
+        buttonLink={knowledgeProfiler.cta?.button_link}
+        buttonLabel={knowledgeProfiler.cta?.button_text}
       />
     </div>
   );
