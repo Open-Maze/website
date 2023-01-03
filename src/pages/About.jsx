@@ -15,9 +15,6 @@ import CTA from '../blocks/CTA/CTA';
 import CardIcon from '../components/CardIcon/CardIcon';
 import TeamMember from '../components/TeamMember/TeamMember';
 
-// Assets
-import office from '../assets/images/office.jpeg';
-
 const About = () => {
   const [about, setAbout] = useState({});
   const [coreValues, setCoreValues] = useState([]);
