@@ -1,23 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './shared.css';
+
+// External
+import axios from 'axios';
 
 // Blocks
 import Header from '../blocks/Header/Header';
 
-// Assets
-import headerImage from '../assets/images/illustrations/404.svg';
+const NotFound = () => {
+  const [notFound, setNotFound] = useState({});
 
-const NotFound = () => (
-  <div className="page notfound">
-    <Header
-      size="large"
-      title="Page not found"
-      text="The page you were looking for could not be found."
-      buttonLink="/"
-      buttonLabel="go home"
-      image={headerImage}
-    />
-  </div>
-);
+  useEffect(() => {
+    axios.get('https://api.openmaze.io/not-found').then((response) => {
+      setNotFound(response.data);
+    });
+  }, []);
+
+  return (
+    <div className="page notfound">
+      <Header
+        size={notFound.header?.size}
+        title={notFound.header?.title}
+        text={notFound.header?.text}
+        buttonLink={notFound.header?.button1_link}
+        buttonLabel={notFound.header?.button1_label}
+        button2Link={notFound.header?.button2_link}
+        button2Label={notFound.header?.button2_label}
+        image={notFound.header?.image?.url}
+        arrow={notFound.header?.arrow}
+      />
+    </div>
+  );
+};
 
 export default NotFound;

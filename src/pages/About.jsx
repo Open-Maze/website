@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './shared.css';
+
+// External
+import axios from 'axios';
 
 // Blocks
 import Header from '../blocks/Header/Header';
@@ -12,74 +15,66 @@ import CTA from '../blocks/CTA/CTA';
 import CardIcon from '../components/CardIcon/CardIcon';
 import TeamMember from '../components/TeamMember/TeamMember';
 
-// Assets
-import headerImage from '../assets/images/illustrations/team.svg';
-import TeamImage from '../assets/images/team/team.jpg';
-import Seline from '../assets/images/team/seline.jpg';
-import Jordy from '../assets/images/team/jordy.jpg';
-import Stijn from '../assets/images/team/stijn.jpg';
-import Niek from '../assets/images/team/niek.jpg';
-import Max from '../assets/images/team/max.jpg';
-import Ruben from '../assets/images/team/ruben.jpg';
-import office from '../assets/images/office.jpeg';
+const About = () => {
+  const [about, setAbout] = useState({});
+  const [coreValues, setCoreValues] = useState([]);
+  const [teamMembers, setTeamMembers] = useState([]);
 
-const About = () => (
-  <div className="page about">
-    <Header
-      size="small"
-      title="About us"
-      text="We aim to provide students using online educational environments with greater insight into their own learning journey and performance through the use of AI powered tools."
-      image={headerImage}
-      arrow
-    />
-    <CoreValues title="Core values" subtitle="Our beliefs">
-      <CardIcon
-        type="vertical"
-        iconFront="fa-solid fa-rocket"
-        iconBack="fa-solid fa-circle"
-        title="Innovation"
-        text="What makes us unique is that we use cutting-edge technologies, broadening the variety of tools available. We unite context and technology."
-        delay={500}
-        className="col-span-4"
+  useEffect(() => {
+    axios.get('https://api.openmaze.io/about').then((response) => {
+      setAbout(response.data);
+    });
+    axios.get('https://api.openmaze.io/core-values').then((response) => {
+      const sortedArray = response.data.sort((a, b) => a.order - b.order);
+      setCoreValues(sortedArray);
+    });
+    axios.get('https://api.openmaze.io/team-members').then((response) => {
+      const sortedArray = response.data.sort((a, b) => a.order - b.order);
+      setTeamMembers(sortedArray);
+    });
+  }, []);
+
+  return (
+    <div className="page about">
+      <Header
+        size={about.header?.size}
+        title={about.header?.title}
+        text={about.header?.text}
+        buttonLink={about.header?.button1_link}
+        buttonLabel={about.header?.button1_label}
+        button2Link={about.header?.button2_link}
+        button2Label={about.header?.button2_label}
+        image={about.header?.image?.url}
+        arrow={about.header?.arrow}
       />
-      <CardIcon
-        type="vertical"
-        iconFront="fa-solid fa-shield-alt"
-        iconBack="fa-solid fa-circle"
-        title="Privacy"
-        text="We are of the opinion that data ownership should always remain with the user. We not only comply with regulations, but go the extra mile to ensure that you are in control of your data."
-        delay={600}
-        className="col-span-4"
+      <CoreValues title={about.core_values?.title} subtitle={about.core_values?.subtitle}>
+        {coreValues?.map((value) => (
+          <CardIcon
+            key={value.id}
+            type={value.type}
+            iconFront={`fa-solid fa-${value.icon}`}
+            iconBack={`fa-solid fa-${value.background_icon}`}
+            title={value.title}
+            text={value.text}
+            className={value.column_width === 'half' ? 'col-span-6' : 'col-span-4'}
+          />
+        ))}
+      </CoreValues>
+      <Image src={about.image?.url} alt={about.image?.alternativeText} />
+      <Team title="Our team" subtitle="Meet the people behind OpenMaze">
+        {teamMembers?.map((member) => (
+          <TeamMember key={member.id} name={member.name} text={member.function} image={member.image?.url} />
+        ))}
+      </Team>
+      <CTA
+        title={about.cta?.title}
+        subtitle={about.cta?.subtitle}
+        image={about.cta?.image?.url}
+        buttonLink={about.cta?.button_link}
+        buttonLabel={about.cta?.button_text}
       />
-      <CardIcon
-        type="vertical"
-        iconFront="fa-solid fa-heart"
-        iconBack="fa-solid fa-circle"
-        title="Integrity"
-        text="AI can be scary. We think that technology should always be transparent and explainable. Our technology should above all be trusted by its users."
-        delay={700}
-        className="col-span-4"
-      />
-    </CoreValues>
-    <Image src={TeamImage} alt="Meet the OpenMAze team" />
-    <Team title="Our team" subtitle="Meet the people behind OpenMaze">
-      <TeamMember name="Niek van Dam" text="Co-founder" image={Niek} delay={500} />
-      <TeamMember name="Max van Hattum" text="Co-founder" image={Max} delay={600} />
-      <TeamMember name="Ruben Fricke" text="Co-founder" image={Ruben} delay={700} />
-      <TeamMember name="Seline Warners" text="Digital Designer" image={Seline} delay={800} />
-      <TeamMember name="Jordy Arntz" text="Digital Designer" image={Jordy} delay={900} />
-      <TeamMember name="Stijn Verhagen" text="Digital Designer" image={Stijn} delay={1000} />
-    </Team>
-    <CTA
-      title="Contact us"
-      subtitle="Want to talk?"
-      email="hello@openmaze.io"
-      linkedin="open-maze"
-      image={office}
-      buttonLink="/contact"
-      buttonLabel="the fastest route to a collaboration"
-    />
-  </div>
-);
+    </div>
+  );
+};
 
 export default About;

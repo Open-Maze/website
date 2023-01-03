@@ -49,7 +49,7 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Scroll>
-        <Footer linkedin="https://linkedin.com/company/open-maze" />
+        <Footer />
       </Router>
     </div>
   );

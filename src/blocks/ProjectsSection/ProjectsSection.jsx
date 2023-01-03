@@ -7,12 +7,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Components
 import Button from '../../components/Button/Button';
 
-// Assets
-import documentScreener from '../../assets/images/products/q-app/qapp-1-full.png';
-import knowledgeProfiler from '../../assets/images/products/knowledge-profiler/kp-1-zoom.png';
-import qApp from '../../assets/images/products/q-app/qapp-1-zoom.png';
-
-const ProjectsSection = () => {
+const ProjectsSection = ({
+  subtitle,
+  title,
+  icon1,
+  icon2,
+  icon3,
+  name1,
+  name2,
+  name3,
+  image1,
+  image2,
+  image3,
+  text1,
+  text2,
+  text3,
+}) => {
   const [isActive1, setIsActive1] = useState(true);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
@@ -21,8 +31,8 @@ const ProjectsSection = () => {
     <section className="cms-block">
       <div className="container grid grid-cols-1 gap-10 lg:grid-cols-12" data-aos="fade-up" data-aos-delay="500">
         <div className="col-span-6 lg:col-start-1">
-          <h4 className="pb-2 text-dark">Impactful technologies</h4>
-          <h2>Solutions for every subject, student and school</h2>
+          <h4 className="pb-2 text-dark">{subtitle}</h4>
+          <h2>{title}</h2>
           <div className="mt-20">
             <div>
               <button
@@ -35,8 +45,8 @@ const ProjectsSection = () => {
                 className={isActive1 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-comment-dots" />
-                <span>Q-App</span>
+                <FontAwesomeIcon className="icon mr-4 w-4" icon={`fa-solid fa-${icon1}`} />
+                <span>{name1}</span>
               </button>
             </div>
             <br />
@@ -51,8 +61,8 @@ const ProjectsSection = () => {
                 className={isActive2 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-graduation-cap" />
-                <span>Knowledge Profiler</span>
+                <FontAwesomeIcon className="icon mr-4 w-4" icon={`fa-solid fa-${icon2}`} />
+                <span>{name2}</span>
               </button>
             </div>
             <br />
@@ -67,23 +77,23 @@ const ProjectsSection = () => {
                 className={isActive3 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
-                <FontAwesomeIcon className="icon mr-4 w-4" icon="fa-solid fa-book" />
-                <span>Document Screener</span>
+                <FontAwesomeIcon className="icon mr-4 w-4" icon={`fa-solid fa-${icon3}`} />
+                <span>{name3}</span>
               </button>
             </div>
           </div>
         </div>
         <div className="col-span-6 lg:col-end-13">
           <div id="card-1" className={isActive1 ? 'card active' : 'card'}>
-            <img src={qApp} alt="Q-App" className="w-full rounded-t-md" style={{ backgroundColor: '#d1a4f7' }} />
+            <img
+              src={`https://api.openmaze.io${image1}`}
+              alt={name1}
+              className="w-full rounded-t-md"
+              style={{ backgroundColor: '#d1a4f7' }}
+            />
             <div className="text">
-              <h3>Q-App</h3>
-              <p>
-                Traditionally documents are noninteractive, the Q-App changes this by allowing users to interact with a
-                document as if they were talking to a human. Instead of just reading through it, you can now ask
-                questions, and get relevant answers present in the document. It is just as if you were able to talk with
-                the author!
-              </p>
+              <h3>{name1}</h3>
+              <p>{text1}</p>
               <Button pageUrl="/q-app" className="button button--skyline-outline">
                 learn more
               </Button>
@@ -91,19 +101,14 @@ const ProjectsSection = () => {
           </div>
           <div id="card-2" className={isActive2 ? 'card active' : 'card'}>
             <img
-              src={knowledgeProfiler}
-              alt="Knowledge Profiler"
+              src={`https://api.openmaze.io${image2}`}
+              alt={name2}
               className="w-full rounded-t-md"
               style={{ backgroundColor: '#adeaf4' }}
             />
             <div className="text">
-              <h3>Knowledge Profiler</h3>
-              <p>
-                Every student is unique, as is their learning journey. Over the course of their studies, students will
-                develop domain-specific knowledge that goes beyond the standard curriculum. By extracting all
-                submissions of a student from their online learning environment, the Knowledge Profiler determines and
-                displays these skills in a simple overview.
-              </p>
+              <h3>{name2}</h3>
+              <p>{text2}</p>
               <Button pageUrl="/knowledge-profiler" className="button button--skyline-outline">
                 learn more
               </Button>
@@ -111,19 +116,14 @@ const ProjectsSection = () => {
           </div>
           <div id="card-3" className={isActive3 ? 'card active' : 'card'}>
             <img
-              src={documentScreener}
-              alt="Document Screener"
+              src={`https://api.openmaze.io${image3}`}
+              alt={name3}
               className="w-full rounded-t-md"
               style={{ backgroundColor: '#a3a4e5' }}
             />
             <div className="text">
-              <h3>Document Screener</h3>
-              <p>
-                We noticed that students often receive an initial round of feedback, which is usually about the
-                structure of the document, grammatical errors, missing components, or the quality of writing. The
-                document screener allows students to have their documents reviewed immediately, before they end up with
-                teachers. Giving them a chance to already improve on their documents.
-              </p>
+              <h3>{name3}</h3>
+              <p>{text3}</p>
               <Button pageUrl="/document-screener" className="button button--skyline-outline">
                 learn more
               </Button>
