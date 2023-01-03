@@ -16,10 +16,15 @@ import CardIcon from '../components/CardIcon/CardIcon';
 
 const Home = () => {
   const [home, setHome] = useState({});
+  const [coreValues, setCoreValues] = useState([]);
 
   useEffect(() => {
     axios.get('https://api.openmaze.io/home').then((response) => {
       setHome(response.data);
+    });
+    axios.get('https://api.openmaze.io/core-values').then((response) => {
+      const sortedArray = response.data.sort((a, b) => a.order - b.order);
+      setCoreValues(sortedArray);
     });
   }, []);
 
@@ -61,7 +66,7 @@ const Home = () => {
         image={home.information_home?.image?.url}
       />
       <CoreValues title={home.core_values?.title} subtitle={home.core_values?.subtitle}>
-        {home.core_values?.core_value?.map((value) => (
+        {coreValues?.map((value) => (
           <CardIcon
             key={value.id}
             type={value.type}

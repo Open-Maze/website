@@ -20,15 +20,20 @@ import office from '../assets/images/office.jpeg';
 
 const About = () => {
   const [about, setAbout] = useState({});
-  const [team, setTeam] = useState([]);
+  const [coreValues, setCoreValues] = useState([]);
+  const [teamMembers, setTeamMembers] = useState([]);
 
   useEffect(() => {
     axios.get('https://api.openmaze.io/about').then((response) => {
       setAbout(response.data);
     });
+    axios.get('https://api.openmaze.io/core-values').then((response) => {
+      const sortedArray = response.data.sort((a, b) => a.order - b.order);
+      setCoreValues(sortedArray);
+    });
     axios.get('https://api.openmaze.io/team-members').then((response) => {
       const sortedArray = response.data.sort((a, b) => a.order - b.order);
-      setTeam(sortedArray);
+      setTeamMembers(sortedArray);
     });
   }, []);
 
@@ -45,38 +50,22 @@ const About = () => {
         image={about.header?.image?.url}
         arrow={about.header?.arrow}
       />
-      <CoreValues title="Core values" subtitle="Our beliefs">
-        <CardIcon
-          type="vertical"
-          iconFront="fa-solid fa-rocket"
-          iconBack="fa-solid fa-circle"
-          title="Innovation"
-          text="What makes us unique is that we use cutting-edge technologies, broadening the variety of tools available. We unite context and technology."
-          delay={500}
-          className="col-span-4"
-        />
-        <CardIcon
-          type="vertical"
-          iconFront="fa-solid fa-shield-alt"
-          iconBack="fa-solid fa-circle"
-          title="Privacy"
-          text="We are of the opinion that data ownership should always remain with the user. We not only comply with regulations, but go the extra mile to ensure that you are in control of your data."
-          delay={600}
-          className="col-span-4"
-        />
-        <CardIcon
-          type="vertical"
-          iconFront="fa-solid fa-heart"
-          iconBack="fa-solid fa-circle"
-          title="Integrity"
-          text="AI can be scary. We think that technology should always be transparent and explainable. Our technology should above all be trusted by its users."
-          delay={700}
-          className="col-span-4"
-        />
+      <CoreValues title={about.core_values?.title} subtitle={about.core_values?.subtitle}>
+        {coreValues?.map((value) => (
+          <CardIcon
+            key={value.id}
+            type={value.type}
+            iconFront={`fa-solid fa-${value.icon}`}
+            iconBack={`fa-solid fa-${value.background_icon}`}
+            title={value.title}
+            text={value.text}
+            className="col-span-4"
+          />
+        ))}
       </CoreValues>
       <Image src={about.image?.url} alt={about.image?.alternativeText} />
       <Team title="Our team" subtitle="Meet the people behind OpenMaze">
-        {team?.map((member) => (
+        {teamMembers?.map((member) => (
           <TeamMember key={member.id} name={member.name} text={member.function} image={member.image?.url} />
         ))}
       </Team>
