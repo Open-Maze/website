@@ -12,15 +12,15 @@ import Header from '../blocks/Header/Header';
 import ContactCard from '../components/ContactCard/ContactCard';
 
 const Contact = () => {
-  const [contact, setContact] = useState({});
   const [info, setInfo] = useState({});
+  const [contact, setContact] = useState({});
 
   useEffect(() => {
-    axios.get('https://api.openmaze.io/contact').then((response) => {
-      setContact(response.data);
-    });
     axios.get('https://api.openmaze.io/info').then((response) => {
       setInfo(response.data);
+    });
+    axios.get('https://api.openmaze.io/contact').then((response) => {
+      setContact(response.data);
     });
   }, []);
 
@@ -34,7 +34,7 @@ const Contact = () => {
         buttonLabel={contact.header?.button1_label}
         button2Link={contact.header?.button2_link}
         button2Label={contact.header?.button2_label}
-        image={contact.header?.image?.url}
+        image={info.api_base + contact.header?.image?.url}
         arrow={contact.header?.arrow}
       >
         <div data-aos="fade-up" data-aos-delay="700">

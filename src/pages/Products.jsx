@@ -15,11 +15,15 @@ import CardImage from '../components/CardImage/CardImage';
 import CardIcon from '../components/CardIcon/CardIcon';
 
 const Products = () => {
+  const [info, setInfo] = useState({});
   const [products, setProducts] = useState({});
   const [productsCollections, setProductsCollection] = useState([]);
   const [coreValues, setCoreValues] = useState([]);
 
   useEffect(() => {
+    axios.get('https://api.openmaze.io/info').then((response) => {
+      setInfo(response.data);
+    });
     axios.get('https://api.openmaze.io/products').then((response) => {
       setProducts(response.data);
     });
@@ -43,7 +47,7 @@ const Products = () => {
         buttonLabel={products.header?.button1_label}
         button2Link={products.header?.button2_link}
         button2Label={products.header?.button2_label}
-        image={products.header?.image?.url}
+        image={info.api_base + products.header?.image?.url}
         arrow={products.header?.arrow}
       />
       <Product>
@@ -53,7 +57,7 @@ const Products = () => {
             imagePosition={product.image_position}
             title={product.title}
             description={product.text}
-            image={product.image?.url}
+            image={info.api_base + product.image?.url}
             imgBackground={product.color_background}
             buttonLink={product.button_link}
             buttonLabel={product.button_text}
@@ -76,9 +80,11 @@ const Products = () => {
       <CTA
         title={products.cta?.title}
         subtitle={products.cta?.subtitle}
-        image={products.cta?.image?.url}
+        image={info.api_base + products.cta?.image?.url}
         buttonLink={products.cta?.button_link}
         buttonLabel={products.cta?.button_text}
+        email={info.email}
+        linkedin={info.linkedin}
       />
     </div>
   );

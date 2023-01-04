@@ -16,9 +16,13 @@ import CardIcon from '../components/CardIcon/CardIcon';
 import Feature from '../components/Feature/Feature';
 
 const KnowledgeProfiler = () => {
+  const [info, setInfo] = useState({});
   const [knowledgeProfiler, setKnowledgeProfiler] = useState({});
 
   useEffect(() => {
+    axios.get('https://api.openmaze.io/info').then((response) => {
+      setInfo(response.data);
+    });
     axios.get('https://api.openmaze.io/knowledge-profiler').then((response) => {
       setKnowledgeProfiler(response.data);
     });
@@ -34,7 +38,7 @@ const KnowledgeProfiler = () => {
         buttonLabel={knowledgeProfiler.header?.button1_label}
         button2Link={knowledgeProfiler.header?.button2_link}
         button2Label={knowledgeProfiler.header?.button2_label}
-        image={knowledgeProfiler.header?.image?.url}
+        image={info.api_base + knowledgeProfiler.header?.image?.url}
         arrow={knowledgeProfiler.header?.arrow}
       />
       <Goals title={knowledgeProfiler.title} subtitle={knowledgeProfiler.subtitle}>
@@ -57,7 +61,7 @@ const KnowledgeProfiler = () => {
             featureNr={feature.subtitle}
             title={feature.title}
             description={feature.text}
-            image={feature.image?.url}
+            image={info.api_base + feature.image?.url}
             imgBackground={feature.color_background}
             illustration={feature.illustration}
           />
@@ -69,15 +73,17 @@ const KnowledgeProfiler = () => {
         text={knowledgeProfiler.information?.text}
         buttonLink={knowledgeProfiler.information?.button_link}
         buttonLabel={knowledgeProfiler.information?.button_text}
-        image={knowledgeProfiler.information?.image?.url}
+        image={info.api_base + knowledgeProfiler.information?.image?.url}
         illustration={knowledgeProfiler.information?.illustration}
       />
       <CTA
         title={knowledgeProfiler.cta?.title}
         subtitle={knowledgeProfiler.cta?.subtitle}
-        image={knowledgeProfiler.cta?.image?.url}
+        image={info.api_base + knowledgeProfiler.cta?.image?.url}
         buttonLink={knowledgeProfiler.cta?.button_link}
         buttonLabel={knowledgeProfiler.cta?.button_text}
+        email={info.email}
+        linkedin={info.linkedin}
       />
     </div>
   );

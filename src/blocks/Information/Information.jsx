@@ -13,7 +13,7 @@ const Information = ({ subtitle, title, text, buttonLabel, buttonLink, image, il
               className={`h-full w-full ${
                 illustration === false && 'rounded-xl border-8 border-solid border-light-gray shadow-lg'
               }`}
-              src={`https://api.openmaze.io${image}`}
+              src={image}
               alt="Team"
             />
           </div>

@@ -15,10 +15,14 @@ import ContactSection from '../blocks/ContactSection/ContactSection';
 import CardIcon from '../components/CardIcon/CardIcon';
 
 const Home = () => {
+  const [info, setInfo] = useState({});
   const [home, setHome] = useState({});
   const [coreValues, setCoreValues] = useState([]);
 
   useEffect(() => {
+    axios.get('https://api.openmaze.io/info').then((response) => {
+      setInfo(response.data);
+    });
     axios.get('https://api.openmaze.io/home').then((response) => {
       setHome(response.data);
     });
@@ -38,7 +42,7 @@ const Home = () => {
         buttonLabel={home.header?.button1_label}
         button2Link={home.header?.button2_link}
         button2Label={home.header?.button2_label}
-        image={home.header?.image?.url}
+        image={info.api_base + home.header?.image?.url}
         arrow={home.header?.arrow}
       />
       <ProjectsSection
@@ -50,9 +54,9 @@ const Home = () => {
         name1={home.solutions?.name1}
         name2={home.solutions?.name2}
         name3={home.solutions?.name3}
-        image1={home.solutions?.image1?.url}
-        image2={home.solutions?.image2?.url}
-        image3={home.solutions?.image3?.url}
+        image1={info.api_base + home.solutions?.image1?.url}
+        image2={info.api_base + home.solutions?.image2?.url}
+        image3={info.api_base + home.solutions?.image3?.url}
         text1={home.solutions?.text1}
         text2={home.solutions?.text2}
         text3={home.solutions?.text3}
@@ -63,7 +67,7 @@ const Home = () => {
         text={home.information_home?.text}
         buttonLink={home.information_home?.button_link}
         buttonLabel={home.information_home?.button_text}
-        image={home.information_home?.image?.url}
+        image={info.api_base + home.information_home?.image?.url}
         illustration={home.information_home?.illustration}
       />
       <CoreValues title={home.core_values?.title} subtitle={home.core_values?.subtitle}>
@@ -85,6 +89,8 @@ const Home = () => {
         text={home.contact_section?.text}
         buttonLink={home.contact_section?.button_link}
         buttonLabel={home.contact_section?.button_text}
+        email={info.email}
+        linkedin={info.linkedin}
       />
     </div>
   );

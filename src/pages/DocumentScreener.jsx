@@ -16,9 +16,13 @@ import CardIcon from '../components/CardIcon/CardIcon';
 import Feature from '../components/Feature/Feature';
 
 const DocumentScreener = () => {
+  const [info, setInfo] = useState({});
   const [documentScreener, setDocumentScreener] = useState({});
 
   useEffect(() => {
+    axios.get('https://api.openmaze.io/info').then((response) => {
+      setInfo(response.data);
+    });
     axios.get('https://api.openmaze.io/document-screener').then((response) => {
       setDocumentScreener(response.data);
     });
@@ -34,7 +38,7 @@ const DocumentScreener = () => {
         buttonLabel={documentScreener.header?.button1_label}
         button2Link={documentScreener.header?.button2_link}
         button2Label={documentScreener.header?.button2_label}
-        image={documentScreener.header?.image?.url}
+        image={info.api_base + documentScreener.header?.image?.url}
         arrow={documentScreener.header?.arrow}
       />
       <Goals title={documentScreener.title} subtitle={documentScreener.subtitle}>
@@ -57,7 +61,7 @@ const DocumentScreener = () => {
             featureNr={feature.subtitle}
             title={feature.title}
             description={feature.text}
-            image={feature.image?.url}
+            image={info.api_base + feature.image?.url}
             imgBackground={feature.color_background}
             illustration={feature.illustration}
           />
@@ -69,15 +73,17 @@ const DocumentScreener = () => {
         text={documentScreener.information?.text}
         buttonLink={documentScreener.information?.button_link}
         buttonLabel={documentScreener.information?.button_text}
-        image={documentScreener.information?.image?.url}
+        image={info.api_base + documentScreener.information?.image?.url}
         illustration={documentScreener.information?.illustration}
       />
       <CTA
         title={documentScreener.cta?.title}
         subtitle={documentScreener.cta?.subtitle}
-        image={documentScreener.cta?.image?.url}
+        image={info.api_base + documentScreener.cta?.image?.url}
         buttonLink={documentScreener.cta?.button_link}
         buttonLabel={documentScreener.cta?.button_text}
+        email={info.email}
+        linkedin={info.linkedin}
       />
     </div>
   );

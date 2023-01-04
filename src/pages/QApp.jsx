@@ -16,9 +16,13 @@ import CardIcon from '../components/CardIcon/CardIcon';
 import Feature from '../components/Feature/Feature';
 
 const QApp = () => {
+  const [info, setInfo] = useState({});
   const [qApp, setQApp] = useState({});
 
   useEffect(() => {
+    axios.get('https://api.openmaze.io/info').then((response) => {
+      setInfo(response.data);
+    });
     axios.get('https://api.openmaze.io/q-app').then((response) => {
       setQApp(response.data);
     });
@@ -34,7 +38,7 @@ const QApp = () => {
         buttonLabel={qApp.header?.button1_label}
         button2Link={qApp.header?.button2_link}
         button2Label={qApp.header?.button2_label}
-        image={qApp.header?.image?.url}
+        image={info.api_base + qApp.header?.image?.url}
         arrow={qApp.header?.arrow}
       />
       <Goals title={qApp.title} subtitle={qApp.subtitle}>
@@ -57,7 +61,7 @@ const QApp = () => {
             featureNr={feature.subtitle}
             title={feature.title}
             description={feature.text}
-            image={feature.image?.url}
+            image={info.api_base + feature.image?.url}
             imgBackground={feature.color_background}
             illustration={feature.illustration}
           />
@@ -69,15 +73,17 @@ const QApp = () => {
         text={qApp.information?.text}
         buttonLink={qApp.information?.button_link}
         buttonLabel={qApp.information?.button_text}
-        image={qApp.information?.image?.url}
+        image={info.api_base + qApp.information?.image?.url}
         illustration={qApp.information?.illustration}
       />
       <CTA
         title={qApp.cta?.title}
         subtitle={qApp.cta?.subtitle}
-        image={qApp.cta?.image?.url}
+        image={info.api_base + qApp.cta?.image?.url}
         buttonLink={qApp.cta?.button_link}
         buttonLabel={qApp.cta?.button_text}
+        email={info.email}
+        linkedin={info.linkedin}
       />
     </div>
   );
