@@ -85,12 +85,7 @@ const ProjectsSection = ({
         </div>
         <div className="col-span-6 lg:col-end-13">
           <div id="card-1" className={isActive1 ? 'card active' : 'card'}>
-            <img
-              src={`https://api.openmaze.io${image1}`}
-              alt={name1}
-              className="w-full rounded-t-md"
-              style={{ backgroundColor: '#d1a4f7' }}
-            />
+            <img src={image1} alt={name1} className="w-full rounded-t-md" style={{ backgroundColor: '#d1a4f7' }} />
             <div className="text">
               <h3>{name1}</h3>
               <p>{text1}</p>
@@ -100,12 +95,7 @@ const ProjectsSection = ({
             </div>
           </div>
           <div id="card-2" className={isActive2 ? 'card active' : 'card'}>
-            <img
-              src={`https://api.openmaze.io${image2}`}
-              alt={name2}
-              className="w-full rounded-t-md"
-              style={{ backgroundColor: '#adeaf4' }}
-            />
+            <img src={image2} alt={name2} className="w-full rounded-t-md" style={{ backgroundColor: '#adeaf4' }} />
             <div className="text">
               <h3>{name2}</h3>
               <p>{text2}</p>
@@ -115,12 +105,7 @@ const ProjectsSection = ({
             </div>
           </div>
           <div id="card-3" className={isActive3 ? 'card active' : 'card'}>
-            <img
-              src={`https://api.openmaze.io${image3}`}
-              alt={name3}
-              className="w-full rounded-t-md"
-              style={{ backgroundColor: '#a3a4e5' }}
-            />
+            <img src={image3} alt={name3} className="w-full rounded-t-md" style={{ backgroundColor: '#a3a4e5' }} />
             <div className="text">
               <h3>{name3}</h3>
               <p>{text3}</p>

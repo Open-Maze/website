@@ -8,9 +8,13 @@ import axios from 'axios';
 import Header from '../blocks/Header/Header';
 
 const NotFound = () => {
+  const [info, setInfo] = useState({});
   const [notFound, setNotFound] = useState({});
 
   useEffect(() => {
+    axios.get('https://api.openmaze.io/info').then((response) => {
+      setInfo(response.data);
+    });
     axios.get('https://api.openmaze.io/not-found').then((response) => {
       setNotFound(response.data);
     });
@@ -26,7 +30,7 @@ const NotFound = () => {
         buttonLabel={notFound.header?.button1_label}
         button2Link={notFound.header?.button2_link}
         button2Label={notFound.header?.button2_label}
-        image={notFound.header?.image?.url}
+        image={info.api_base + notFound.header?.image?.url}
         arrow={notFound.header?.arrow}
       />
     </div>

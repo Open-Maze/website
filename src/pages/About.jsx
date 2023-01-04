@@ -16,11 +16,15 @@ import CardIcon from '../components/CardIcon/CardIcon';
 import TeamMember from '../components/TeamMember/TeamMember';
 
 const About = () => {
+  const [info, setInfo] = useState({});
   const [about, setAbout] = useState({});
   const [coreValues, setCoreValues] = useState([]);
   const [teamMembers, setTeamMembers] = useState([]);
 
   useEffect(() => {
+    axios.get('https://api.openmaze.io/info').then((response) => {
+      setInfo(response.data);
+    });
     axios.get('https://api.openmaze.io/about').then((response) => {
       setAbout(response.data);
     });
@@ -44,7 +48,7 @@ const About = () => {
         buttonLabel={about.header?.button1_label}
         button2Link={about.header?.button2_link}
         button2Label={about.header?.button2_label}
-        image={about.header?.image?.url}
+        image={info.api_base + about.header?.image?.url}
         arrow={about.header?.arrow}
       />
       <CoreValues title={about.core_values?.title} subtitle={about.core_values?.subtitle}>
@@ -60,18 +64,25 @@ const About = () => {
           />
         ))}
       </CoreValues>
-      <Image src={about.image?.url} alt={about.image?.alternativeText} />
+      <Image src={info.api_base + about.image?.url} alt={info.api_base + about.image?.alternativeText} />
       <Team title="Our team" subtitle="Meet the people behind OpenMaze">
         {teamMembers?.map((member) => (
-          <TeamMember key={member.id} name={member.name} text={member.function} image={member.image?.url} />
+          <TeamMember
+            key={member.id}
+            name={member.name}
+            text={member.function}
+            image={info.api_base + member.image?.url}
+          />
         ))}
       </Team>
       <CTA
         title={about.cta?.title}
         subtitle={about.cta?.subtitle}
-        image={about.cta?.image?.url}
+        image={info.api_base + about.cta?.image?.url}
         buttonLink={about.cta?.button_link}
         buttonLabel={about.cta?.button_text}
+        email={info.email}
+        linkedin={info.linkedin}
       />
     </div>
   );
