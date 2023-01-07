@@ -65,7 +65,7 @@ const About = () => {
         ))}
       </CoreValues>
       <Image src={info.api_base + about.image?.url} alt={info.api_base + about.image?.alternativeText} />
-      <Team title="Our team" subtitle="Meet the people behind OpenMaze">
+      <Team title={about.team?.title} subtitle={about.team?.subtitle}>
         {teamMembers?.map((member) => (
           <TeamMember
             key={member.id}
