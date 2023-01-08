@@ -21,14 +21,14 @@ const Button = ({ children, pageUrl, className, external, icon }) => {
         <a href={url} target="_blank" rel="noreferrer">
           <motion.button whileHover={{ scale: 0.95 }} whileTap={{ scale: 0.9 }} type="button" className={className}>
             {icon && <FontAwesomeIcon icon={`fa-solid fa-${icon}`} />}
-            {children && children}
+            {children && children.toLowerCase()}
           </motion.button>
         </a>
       ) : (
         <Link to={url}>
           <motion.button whileHover={{ scale: 0.95 }} whileTap={{ scale: 0.9 }} type="button" className={className}>
             {icon && <FontAwesomeIcon icon={`fa-solid fa-${icon}`} />}
-            {children && children}
+            {children && children.toLowerCase()}
           </motion.button>
         </Link>
       )}
