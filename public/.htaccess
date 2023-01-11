@@ -1,17 +1,12 @@
 Options -MultiViews
 RewriteEngine On
 
-# RewriteCond %{HTTP_HOST} !^www\. [NC]
-
-# RewriteRule ^(.\*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
-
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.html [QSA,L]
 
 Redirect 301 /cp https://api.openmaze.io/admin
 Redirect 301 /cms https://api.openmaze.io/admin
 Redirect 301 /admin https://api.openmaze.io/admin
-
 Redirect 301 /l https://linkedin.com/company/open-maze
 Redirect 301 /in https://linkedin.com/company/open-maze
 Redirect 301 /linkedin https://linkedin.com/company/open-maze

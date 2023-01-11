@@ -4,7 +4,7 @@ import './CardIcon.css';
 // Components
 import Icon from '../Icon/Icon';
 
-const CardIcon = ({ type, iconFront, iconBack, title, text, delay, className }) => (
+const CardIcon = ({ type, iconFront, iconBack, title, text, className }) => (
   <div
     className={`h-full w-full rounded-xl border-8 border-solid border-light-gray bg-white p-10 shadow-lg ${type} ${className}`}
     data-aos="fade-up"
