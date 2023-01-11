@@ -70,7 +70,7 @@ The latest version of the design prototype is available via [this Figma link](ht
 ### Build outputs
 
 | Branch    |                                          Build URL |
-|:----------|---------------------------------------------------:|
+| :-------- | -------------------------------------------------: |
 | `main`    |                 [openmaze.io](https://openmaze.io) |
 | `staging` | [staging.openmaze.io](https://staging.openmaze.io) |
 
