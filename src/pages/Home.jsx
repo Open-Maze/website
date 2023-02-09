@@ -25,7 +25,6 @@ const Home = () => {
     });
     axios.get('https://api.openmaze.io/home').then((response) => {
       setHome(response.data);
-      console.log(home.solutions?.image4?.url);
     });
     axios.get('https://api.openmaze.io/core-values').then((response) => {
       const sortedArray = response.data.sort((a, b) => a.order - b.order);
