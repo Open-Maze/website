@@ -13,19 +13,24 @@ const ProjectsSection = ({
   icon1,
   icon2,
   icon3,
+  icon4,
   name1,
   name2,
   name3,
+  name4,
   image1,
   image2,
   image3,
+  image4,
   text1,
   text2,
   text3,
+  text4,
 }) => {
   const [isActive1, setIsActive1] = useState(true);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
+  const [isActive4, setIsActive4] = useState(false);
 
   return (
     <section className="cms-block">
@@ -41,6 +46,7 @@ const ProjectsSection = ({
                   setIsActive1(true);
                   setIsActive2(false);
                   setIsActive3(false);
+                  setIsActive4(false);
                 }}
                 className={isActive1 ? 'projects-button active' : 'projects-button'}
                 type="button"
@@ -57,6 +63,7 @@ const ProjectsSection = ({
                   setIsActive1(false);
                   setIsActive2(true);
                   setIsActive3(false);
+                  setIsActive4(false);
                 }}
                 className={isActive2 ? 'projects-button active' : 'projects-button'}
                 type="button"
@@ -73,12 +80,30 @@ const ProjectsSection = ({
                   setIsActive1(false);
                   setIsActive2(false);
                   setIsActive3(true);
+                  setIsActive4(false);
                 }}
                 className={isActive3 ? 'projects-button active' : 'projects-button'}
                 type="button"
               >
                 <FontAwesomeIcon className="icon mr-4 w-4" icon={`fa-solid fa-${icon3}`} />
                 <span>{name3}</span>
+              </button>
+            </div>
+            <br />
+            <div>
+              <button
+                id="button-4"
+                onClick={() => {
+                  setIsActive1(false);
+                  setIsActive2(false);
+                  setIsActive3(false);
+                  setIsActive4(true);
+                }}
+                className={isActive4 ? 'projects-button active' : 'projects-button'}
+                type="button"
+              >
+                <FontAwesomeIcon className="icon mr-4 w-4" icon={`fa-solid fa-${icon4}`} />
+                <span>{name4}</span>
               </button>
             </div>
           </div>
@@ -111,6 +136,16 @@ const ProjectsSection = ({
               <p>{text3}</p>
               <Button pageUrl="/document-screener" className="button button--skyline-outline">
                 learn more
+              </Button>
+            </div>
+          </div>
+          <div id="card-4" className={isActive4 ? 'card active' : 'card'}>
+            <img src={image4} alt={name4} className="w-full rounded-t-md" style={{ backgroundColor: '#a3a4e5' }} />
+            <div className="text">
+              <h3>{name4}</h3>
+              <p>{text4}</p>
+              <Button pageUrl="https://scanner.openmaze.io" className="button button--skyline-outline">
+                Try it out
               </Button>
             </div>
           </div>
